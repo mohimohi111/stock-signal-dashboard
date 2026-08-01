@@ -1,4 +1,4 @@
-const CACHE_NAME = "stock-signal-v2";
+const CACHE_NAME = "stock-signal-v3";
 const APP_SHELL = ["./", "./index.html", "./manifest.json", "./icon-192.png", "./icon-512.png"];
 
 self.addEventListener("install", (event) => {
@@ -17,16 +17,15 @@ self.addEventListener("activate", (event) => {
   self.clients.claim();
 });
 
+// 常にネットワーク優先。オフライン時のみキャッシュにフォールバック(更新の反映漏れを防ぐ)
 self.addEventListener("fetch", (event) => {
-  const url = new URL(event.request.url);
-  if (url.pathname.endsWith("data.json")) {
-    // データは常にネットワーク優先(古い情報を見せないため)
-    event.respondWith(
-      fetch(event.request).catch(() => caches.match(event.request))
-    );
-    return;
-  }
   event.respondWith(
-    caches.match(event.request).then((cached) => cached || fetch(event.request))
+    fetch(event.request)
+      .then((res) => {
+        const resClone = res.clone();
+        caches.open(CACHE_NAME).then((cache) => cache.put(event.request, resClone));
+        return res;
+      })
+      .catch(() => caches.match(event.request))
   );
 });
