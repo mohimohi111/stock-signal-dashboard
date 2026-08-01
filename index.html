@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>株価シグナル ウォッチリスト</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta name="theme-color" content="#2a78d6">
+<style>
+  :root {
+    color-scheme: light;
+    --surface-1:      #fcfcfb;
+    --surface-2:      #f3f2ef;
+    --border:         #e3e1da;
+    --text-primary:   #0b0b0b;
+    --text-secondary: #52514e;
+    --text-muted:     #86847c;
+    --series-1:       #2a78d6;
+    --good:           #0ca30c;
+    --critical:       #d03b3b;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: dark;
+      --surface-1:      #1a1a19;
+      --surface-2:      #242422;
+      --border:         #3a3937;
+      --text-primary:   #ffffff;
+      --text-secondary: #c3c2b7;
+      --text-muted:     #8a887f;
+      --series-1:       #3987e5;
+      --good:           #0ca30c;
+      --critical:       #e66767;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--surface-1);
+    color: var(--text-primary);
+    font-family: -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif;
+    padding: max(16px, env(safe-area-inset-top)) 16px 40px;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  header { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 4px; }
+  h1 { font-size: 19px; margin: 0; }
+  .updated { font-size: 12px; color: var(--text-muted); margin-bottom: 18px; }
+  .refresh-btn {
+    background: var(--surface-2); border: 1px solid var(--border); color: var(--text-primary);
+    border-radius: 8px; padding: 6px 12px; font-size: 12px;
+  }
+  .empty {
+    text-align: center; color: var(--text-muted); padding: 60px 20px; font-size: 14px; line-height: 1.8;
+  }
+  .card {
+    background: var(--surface-2); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 10px;
+  }
+  .card-title { font-size: 15px; font-weight: 600; margin-bottom: 8px; display: flex; justify-content: space-between; }
+  .card-title .span { font-size: 11px; color: var(--good); font-weight: 500; }
+  .rows { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; font-size: 12px; }
+  .rows div { display: flex; flex-direction: column; }
+  .rows .label { color: var(--text-muted); margin-bottom: 2px; }
+  .rows .value { font-variant-numeric: tabular-nums; font-weight: 600; }
+  .value.entry { color: var(--series-1); }
+  .value.sl { color: var(--critical); }
+  .value.tp { color: var(--good); }
+  .retracted-banner {
+    background: rgba(208,59,59,0.1); border: 1px solid var(--critical); color: var(--critical);
+    border-radius: 10px; padding: 10px 14px; font-size: 12px; margin-bottom: 14px;
+  }
+  section h2 { font-size: 13px; color: var(--text-secondary); margin: 24px 0 8px; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>📈 株価シグナル</h1>
+    <button class="refresh-btn" onclick="load()">更新</button>
+  </header>
+  <div class="updated" id="updated">読み込み中...</div>
+  <div id="retracted"></div>
+  <div id="list"></div>
+
+<script>
+function fmtYen(n) { return '¥' + Math.round(n).toLocaleString('ja-JP'); }
+
+async function load() {
+  document.getElementById('updated').textContent = '更新中...';
+  try {
+    const res = await fetch('data.json?t=' + Date.now());
+    const data = await res.json();
+    render(data);
+  } catch (e) {
+    document.getElementById('updated').textContent = '取得に失敗しました。時間をおいて再試行してください。';
+  }
+}
+
+function render(data) {
+  document.getElementById('updated').textContent = '最終更新: ' + data.updated;
+
+  const retractedEl = document.getElementById('retracted');
+  if (data.retracted && data.retracted.length) {
+    retractedEl.innerHTML = data.retracted.map(r =>
+      `<div class="retracted-banner">⚠️ ${r.name}: 東証監理・整理銘柄に指定されたため対象外になりました</div>`
+    ).join('');
+  } else {
+    retractedEl.innerHTML = '';
+  }
+
+  const listEl = document.getElementById('list');
+  if (!data.candidates || data.candidates.length === 0) {
+    listEl.innerHTML = '<div class="empty">現在、条件に該当する銘柄はありません。</div>';
+    return;
+  }
+  listEl.innerHTML = data.candidates.map(c => `
+    <div class="card">
+      <div class="card-title">
+        <span>${c.name}(${c.code})</span>
+        <span class="span">値幅${(c.span_pct*100).toFixed(0)}%</span>
+      </div>
+      <div class="rows">
+        <div><span class="label">指値買い</span><span class="value entry">${fmtYen(c.entry)}</span></div>
+        <div><span class="label">損切り</span><span class="value sl">${fmtYen(c.sl)}</span></div>
+        <div><span class="label">利確</span><span class="value tp">${fmtYen(c.tp)}</span></div>
+      </div>
+    </div>
+  `).join('');
+}
+
+load();
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js');
+}
+</script>
+</body>
+</html>
