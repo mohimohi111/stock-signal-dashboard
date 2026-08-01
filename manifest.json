@@ -1,6 +1,6 @@
 {
-  "name": "株価シグナル ウォッチリスト",
-  "short_name": "株シグナル",
+  "name": "モリオリジナルシグナル",
+  "short_name": "モリオリジナルシグナル",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",

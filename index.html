@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>株価シグナル ウォッチリスト</title>
+<title>モリオリジナルシグナル</title>
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="icon-192.png">
 <link rel="apple-touch-icon" href="icon-192.png">
@@ -45,7 +45,8 @@
   }
   header { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 4px; }
   h1 { font-size: 19px; margin: 0; }
-  .updated { font-size: 12px; color: var(--text-muted); margin-bottom: 18px; }
+  .updated { font-size: 12px; color: var(--text-muted); margin-bottom: 8px; }
+  .disclaimer { color: var(--loss); font-weight: 700; font-size: 13px; text-align: center; margin-bottom: 18px; }
   .refresh-btn {
     background: var(--surface-2); border: 1px solid var(--border); color: var(--text-primary);
     border-radius: 8px; padding: 6px 12px; font-size: 12px;
@@ -89,10 +90,11 @@
 </head>
 <body>
   <header>
-    <h1>📈 株価シグナル</h1>
+    <h1>📈 モリオリジナルシグナル</h1>
     <button class="refresh-btn" onclick="load()">更新</button>
   </header>
   <div class="updated" id="updated">読み込み中...</div>
+  <div class="disclaimer">破産しても責任は取りません！</div>
   <div id="retracted"></div>
 
   <section>
