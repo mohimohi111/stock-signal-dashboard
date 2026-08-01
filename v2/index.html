@@ -144,7 +144,7 @@ function render(data) {
   ).join('');
 
   // 監視中(色なし)
-  const watching = data.watching || [];
+  const watching = (data.watching || []).slice().sort((a, b) => Math.abs(a.gap_pct) - Math.abs(b.gap_pct));
   document.getElementById('watchingCount').textContent = watching.length ? `(${watching.length})` : '';
   document.getElementById('watchingList').innerHTML = watching.length === 0
     ? '<div class="empty">現在、監視中の銘柄はありません。</div>'
