@@ -234,10 +234,12 @@ function render(data) {
           <span>${c.name}(${c.code})</span>
           <span class="badge ${cls}">含み損益 ${fmtPct(c.unrealized_pct)}</span>
         </div>
-        <div class="rows">
-          <div><span class="label">建値</span><span class="value">${fmtYen(c.entry)}</span></div>
+        <div class="rows rows-current">
           <div><span class="label">現在値</span><span class="value ${cls}">${fmtYen(c.last_price)}</span></div>
-          <div><span class="label">利確まで</span><span class="value">${fmtYen(Math.abs(c.gap_tp_yen))}(${Math.abs(c.gap_tp_pct).toFixed(1)}%)</span></div>
+        </div>
+        <div class="rows rows-2col">
+          <div><span class="label">建値</span><span class="value">${fmtYen(c.entry)}</span></div>
+          <div><span class="label">利確まで / 損切りまで</span><span class="value-line"><span class="value tp-green">${fmtYen(Math.abs(c.gap_tp_yen))}(${Math.abs(c.gap_tp_pct).toFixed(1)}%)</span> / <span class="value sl-red">${fmtYen(Math.abs(c.gap_sl_yen))}(${Math.abs(c.gap_sl_pct).toFixed(1)}%)</span></span></div>
         </div>
       </div>`;
     }).join('');
