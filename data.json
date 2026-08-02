@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-03 05:41 JST",
+  "updated": "2026-08-03 05:51 JST",
   "watching": [
     {
       "code": "5201",
@@ -364,19 +364,6 @@
       "gap_yen": 342.0,
       "gap_pct": 4.808097849008857,
       "span_pct": 0.2094958394517866
-    },
-    {
-      "code": "5444",
-      "name": "大和工業",
-      "strategy": "uptrend",
-      "strategy_label": "上昇型",
-      "entry": 13202.5,
-      "sl": 12115.0,
-      "tp": 14290.0,
-      "last_price": 13500.0,
-      "gap_yen": 297.5,
-      "gap_pct": 2.2037037037037037,
-      "span_pct": 0.17952950887329758
     },
     {
       "code": "7309",
@@ -1365,6 +1352,22 @@
       "gap_sl_yen": 208.0,
       "gap_sl_pct": 13.684210526315791,
       "unrealized_pct": 3.1207598371777476
+    },
+    {
+      "code": "5444",
+      "name": "大和工業",
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 13202.5,
+      "sl": 12115.0,
+      "tp": 14290.0,
+      "last_price": 13500.0,
+      "entered_date": "2026-08-03",
+      "gap_tp_yen": 790.0,
+      "gap_tp_pct": 5.851851851851852,
+      "gap_sl_yen": 1385.0,
+      "gap_sl_pct": 10.25925925925926,
+      "unrealized_pct": 2.2533611058511647
     },
     {
       "code": "3107",
