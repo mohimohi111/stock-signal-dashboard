@@ -66,6 +66,11 @@
   .card-title .badge { font-size: 11px; color: var(--text-muted); font-weight: 500; }
   .card-title .badge.profit { color: var(--profit); }
   .card-title .badge.loss { color: var(--loss); }
+  .strategy-tag {
+    display: inline-block; font-size: 10px; font-weight: 700; padding: 2px 6px;
+    border-radius: 5px; margin-right: 6px; vertical-align: middle;
+    background: var(--surface-1); border: 1px solid var(--border); color: var(--text-secondary);
+  }
   .rows { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; font-size: 12px; }
   .rows.rows-2col { grid-template-columns: 1fr 1fr; row-gap: 10px; }
   .rows-2col .value { white-space: nowrap; font-size: 11px; }
@@ -208,7 +213,7 @@ function render(data) {
     : watching.map(c => `
       <div class="card">
         <div class="card-title">
-          <span>${c.name}(${c.code})</span>
+          <span><span class="strategy-tag">${c.strategy_label || ''}</span>${c.name}(${c.code})</span>
           <span class="badge loss">あと${fmtYen(Math.abs(c.gap_yen))}(${Math.abs(c.gap_pct).toFixed(1)}%)</span>
         </div>
         <div class="rows rows-current">
@@ -231,7 +236,7 @@ function render(data) {
       return `
       <div class="card ${cls}">
         <div class="card-title">
-          <span>${c.name}(${c.code})</span>
+          <span><span class="strategy-tag">${c.strategy_label || ''}</span>${c.name}(${c.code})</span>
           <span class="badge ${cls}">含み損益 ${fmtPct(c.unrealized_pct)}</span>
         </div>
         <div class="rows rows-current">
@@ -254,7 +259,7 @@ function render(data) {
       return `
       <div class="card ${cls}">
         <div class="card-title">
-          <span>${c.name}(${c.code})</span>
+          <span><span class="strategy-tag">${c.strategy_label || ''}</span>${c.name}(${c.code})</span>
           <span class="badge ${cls}">${fmtPct(c.pnl_pct)}</span>
         </div>
         <div class="rows">
