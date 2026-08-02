@@ -56,6 +56,7 @@
     border-radius: 8px; padding: 6px 12px; font-size: 12px;
   }
   .empty { text-align: center; color: var(--text-muted); padding: 24px 20px; font-size: 13px; line-height: 1.8; }
+  .trailing-note { font-size: 11px; color: var(--text-muted); margin-top: 8px; line-height: 1.5; }
   .card {
     background: var(--surface-2); border: 1px solid var(--border); border-radius: 12px;
     padding: 14px 16px; margin-bottom: 10px;
@@ -221,8 +222,9 @@ function render(data) {
         </div>
         <div class="rows rows-2col">
           <div><span class="label">指値</span><span class="value entry-price">${fmtYen(c.entry)}</span><span class="shares">10万円で${sharesFor100k(c.entry)}株</span></div>
-          <div><span class="label">利確/損切り</span><span class="value-line"><span class="value tp-green">${fmtYen(c.tp)}</span> / <span class="value sl-red">${fmtYen(c.sl)}</span></span></div>
+          <div><span class="label">${c.strategy === 'uptrend' ? '現在の目標(直近高値) / 損切り' : '利確/損切り'}</span><span class="value-line"><span class="value tp-green">${fmtYen(c.tp)}</span> / <span class="value sl-red">${fmtYen(c.sl)}</span></span></div>
         </div>
+        ${c.strategy === 'uptrend' ? '<div class="trailing-note">※エントリー後は固定の利確ラインなし。新高値のたび損切りラインが切り上がります</div>' : ''}
       </div>
     `).join('');
 
@@ -244,8 +246,12 @@ function render(data) {
         </div>
         <div class="rows rows-2col">
           <div><span class="label">建値</span><span class="value">${fmtYen(c.entry)}</span><span class="shares">10万円で${sharesFor100k(c.entry)}株</span></div>
-          <div><span class="label">利確まで / 損切りまで</span><span class="value-line"><span class="value tp-green">${fmtYen(Math.abs(c.gap_tp_yen))}(${Math.abs(c.gap_tp_pct).toFixed(1)}%)</span> / <span class="value sl-red">${fmtYen(Math.abs(c.gap_sl_yen))}(${Math.abs(c.gap_sl_pct).toFixed(1)}%)</span></span></div>
+          ${c.strategy === 'uptrend'
+            ? `<div><span class="label">直近高値(目標) / 損切り(トレーリング中)まで</span><span class="value-line"><span class="value tp-green">${fmtYen(c.tp)}</span> / <span class="value sl-red">${fmtYen(Math.abs(c.gap_sl_yen))}(${Math.abs(c.gap_sl_pct).toFixed(1)}%)</span></span></div>`
+            : `<div><span class="label">利確まで / 損切りまで</span><span class="value-line"><span class="value tp-green">${fmtYen(Math.abs(c.gap_tp_yen))}(${Math.abs(c.gap_tp_pct).toFixed(1)}%)</span> / <span class="value sl-red">${fmtYen(Math.abs(c.gap_sl_yen))}(${Math.abs(c.gap_sl_pct).toFixed(1)}%)</span></span></div>`
+          }
         </div>
+        ${c.strategy === 'uptrend' ? '<div class="trailing-note">※固定の利確ラインはありません。新高値のたび損切りラインが切り上がります</div>' : ''}
       </div>`;
     }).join('');
 
