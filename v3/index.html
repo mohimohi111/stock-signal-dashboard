@@ -202,7 +202,7 @@ function render(data) {
       <div class="card">
         <div class="card-title">
           <span>${c.name}(${c.code})</span>
-          <span class="badge">あと${fmtYen(Math.abs(c.gap_yen))}(${Math.abs(c.gap_pct).toFixed(1)}%)</span>
+          <span class="badge loss">あと${fmtYen(Math.abs(c.gap_yen))}(${Math.abs(c.gap_pct).toFixed(1)}%)</span>
         </div>
         <div class="rows rows-2col">
           <div><span class="label">指値買い</span><span class="value entry-price">${fmtYen(c.entry)}</span><span class="shares">10万円で${sharesFor100k(c.entry)}株</span></div>
