@@ -19,6 +19,7 @@
     --text-muted:     #86847c;
     --profit:         #2a78d6;
     --loss:           #d03b3b;
+    --entry-yellow:   #a37a00;
   }
   @media (prefers-color-scheme: dark) {
     :root {
@@ -31,6 +32,7 @@
       --text-muted:     #8a887f;
       --profit:         #3987e5;
       --loss:           #e66767;
+      --entry-yellow:   #e0b12c;
     }
   }
   * { box-sizing: border-box; }
@@ -68,6 +70,8 @@
   .rows .value { font-variant-numeric: tabular-nums; font-weight: 600; }
   .value.profit { color: var(--profit); }
   .value.loss { color: var(--loss); }
+  .value.entry-price { color: var(--entry-yellow); }
+  .rows .shares { font-size: 10px; color: var(--text-muted); margin-top: 1px; }
   .retracted-banner {
     background: color-mix(in srgb, var(--loss) 10%, var(--surface-1)); border: 1px solid var(--loss); color: var(--loss);
     border-radius: 10px; padding: 10px 14px; font-size: 12px; margin-bottom: 14px;
@@ -126,7 +130,6 @@
     <button class="refresh-btn" onclick="load()">更新</button>
   </header>
   <div class="updated" id="updated">読み込み中...</div>
-  <div class="disclaimer">成功したら商材として売ろうかな？改善あったら教えてね</div>
   <div id="retracted"></div>
 
   <section>
@@ -162,6 +165,7 @@ function closeModal() {
 <script>
 function fmtYen(n) { return '¥' + Math.round(n).toLocaleString('ja-JP'); }
 function fmtPct(n) { return (n >= 0 ? '+' : '') + n.toFixed(1) + '%'; }
+function sharesFor100k(entry) { return Math.floor(100000 / entry); }
 
 async function load() {
   document.getElementById('updated').textContent = '更新中...';
@@ -194,7 +198,7 @@ function render(data) {
           <span class="badge">あと${fmtYen(Math.abs(c.gap_yen))}(${Math.abs(c.gap_pct).toFixed(1)}%)</span>
         </div>
         <div class="rows">
-          <div><span class="label">指値買い</span><span class="value">${fmtYen(c.entry)}</span></div>
+          <div><span class="label">指値買い</span><span class="value entry-price">${fmtYen(c.entry)}</span><span class="shares">10万円で${sharesFor100k(c.entry)}株</span></div>
           <div><span class="label">現在値</span><span class="value">${fmtYen(c.last_price)}</span></div>
           <div><span class="label">損切り/利確</span><span class="value">${fmtYen(c.sl)} / ${fmtYen(c.tp)}</span></div>
         </div>
