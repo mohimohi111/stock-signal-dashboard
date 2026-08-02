@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-03 04:50 JST",
+  "updated": "2026-08-03 05:41 JST",
   "watching": [
     {
       "code": "5201",
@@ -312,6 +312,97 @@
       "gap_yen": 86.5,
       "gap_pct": 4.294935451837141,
       "span_pct": 0.20411663807890223
+    },
+    {
+      "code": "8306",
+      "name": "三菱UFJフィナンシャル・グループ",
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 3389.75,
+      "sl": 2966.5,
+      "tp": 3813.0,
+      "last_price": 3571.0,
+      "gap_yen": 181.25,
+      "gap_pct": 5.075609073088771,
+      "span_pct": 0.28535310972526545
+    },
+    {
+      "code": "8316",
+      "name": "三井住友フィナンシャルグループ",
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 6499.0,
+      "sl": 5738.0,
+      "tp": 7260.0,
+      "last_price": 6814.0,
+      "gap_yen": 315.0,
+      "gap_pct": 4.622835339007924,
+      "span_pct": 0.26524921575461835
+    },
+    {
+      "code": "8601",
+      "name": "大和証券グループ本社",
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 1704.5,
+      "sl": 1522.5,
+      "tp": 1886.5,
+      "last_price": 1807.0,
+      "gap_yen": 102.5,
+      "gap_pct": 5.672385168788047,
+      "span_pct": 0.23908045977011494
+    },
+    {
+      "code": "8630",
+      "name": "SOMPOホールディングス",
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 6771.0,
+      "sl": 6129.0,
+      "tp": 7413.0,
+      "last_price": 7113.0,
+      "gap_yen": 342.0,
+      "gap_pct": 4.808097849008857,
+      "span_pct": 0.2094958394517866
+    },
+    {
+      "code": "5444",
+      "name": "大和工業",
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 13202.5,
+      "sl": 12115.0,
+      "tp": 14290.0,
+      "last_price": 13500.0,
+      "gap_yen": 297.5,
+      "gap_pct": 2.2037037037037037,
+      "span_pct": 0.17952950887329758
+    },
+    {
+      "code": "7309",
+      "name": "シマノ",
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 19395.0,
+      "sl": 17260.0,
+      "tp": 21530.0,
+      "last_price": 20125.0,
+      "gap_yen": 730.0,
+      "gap_pct": 3.6273291925465836,
+      "span_pct": 0.2473928157589803
+    },
+    {
+      "code": "9090",
+      "name": "AZ-COM丸和ホールディングス",
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 881.0,
+      "sl": 795.0,
+      "tp": 967.0,
+      "last_price": 921.0,
+      "gap_yen": 40.0,
+      "gap_pct": 4.3431053203040175,
+      "span_pct": 0.21635220125786164
     }
   ],
   "entered": [
@@ -1258,6 +1349,38 @@
       "gap_sl_yen": 208.5,
       "gap_sl_pct": 10.33457249070632,
       "unrealized_pct": 2.398172820708032
+    },
+    {
+      "code": "8604",
+      "name": "野村ホールディングス",
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 1474.0,
+      "sl": 1312.0,
+      "tp": 1636.0,
+      "last_price": 1520.0,
+      "entered_date": "2026-07-30",
+      "gap_tp_yen": 116.0,
+      "gap_tp_pct": 7.631578947368421,
+      "gap_sl_yen": 208.0,
+      "gap_sl_pct": 13.684210526315791,
+      "unrealized_pct": 3.1207598371777476
+    },
+    {
+      "code": "3107",
+      "name": "ダイワボウホールディングス",
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 3330.5,
+      "sl": 3067.0,
+      "tp": 3673.0,
+      "last_price": 3576.0,
+      "entered_date": "2026-05-25",
+      "gap_tp_yen": 97.0,
+      "gap_tp_pct": 2.7125279642058167,
+      "gap_sl_yen": 509.0,
+      "gap_sl_pct": 14.233780760626399,
+      "unrealized_pct": 7.371265575739379
     }
   ],
   "closed": [],
