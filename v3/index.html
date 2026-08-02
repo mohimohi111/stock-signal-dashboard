@@ -68,6 +68,8 @@
   .card-title .badge.loss { color: var(--loss); }
   .rows { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; font-size: 12px; }
   .rows.rows-2col { grid-template-columns: 1fr 1fr; row-gap: 10px; }
+  .rows.rows-current { margin-bottom: 10px; }
+  .rows-current .value { font-size: 18px; }
   .rows div { display: flex; flex-direction: column; }
   .rows .label { color: var(--text-muted); margin-bottom: 2px; }
   .rows .value { font-variant-numeric: tabular-nums; font-weight: 600; }
@@ -204,11 +206,12 @@ function render(data) {
           <span>${c.name}(${c.code})</span>
           <span class="badge loss">あと${fmtYen(Math.abs(c.gap_yen))}(${Math.abs(c.gap_pct).toFixed(1)}%)</span>
         </div>
-        <div class="rows rows-2col">
-          <div><span class="label">指値買い</span><span class="value entry-price">${fmtYen(c.entry)}</span><span class="shares">10万円で${sharesFor100k(c.entry)}株</span></div>
+        <div class="rows rows-current">
           <div><span class="label">現在値</span><span class="value">${fmtYen(c.last_price)}</span></div>
-          <div><span class="label">損切り</span><span class="value sl-red">${fmtYen(c.sl)}</span></div>
-          <div><span class="label">利確</span><span class="value tp-green">${fmtYen(c.tp)}</span></div>
+        </div>
+        <div class="rows rows-2col">
+          <div><span class="label">指値</span><span class="value entry-price">${fmtYen(c.entry)}</span><span class="shares">10万円で${sharesFor100k(c.entry)}株</span></div>
+          <div><span class="label">利確/損切り</span><span class="value tp-green">${fmtYen(c.tp)}</span> / <span class="value sl-red">${fmtYen(c.sl)}</span></div>
         </div>
       </div>
     `).join('');
