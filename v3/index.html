@@ -20,6 +20,7 @@
     --profit:         #2a78d6;
     --loss:           #d03b3b;
     --entry-yellow:   #a37a00;
+    --tp-green:       #0ca30c;
   }
   @media (prefers-color-scheme: dark) {
     :root {
@@ -33,6 +34,7 @@
       --profit:         #3987e5;
       --loss:           #e66767;
       --entry-yellow:   #e0b12c;
+      --tp-green:       #0ca30c;
     }
   }
   * { box-sizing: border-box; }
@@ -71,6 +73,8 @@
   .value.profit { color: var(--profit); }
   .value.loss { color: var(--loss); }
   .value.entry-price { color: var(--entry-yellow); }
+  .value.tp-green { color: var(--tp-green); }
+  .value.sl-red { color: var(--loss); }
   .rows .shares { font-size: 10px; color: var(--text-muted); margin-top: 1px; }
   .retracted-banner {
     background: color-mix(in srgb, var(--loss) 10%, var(--surface-1)); border: 1px solid var(--loss); color: var(--loss);
@@ -115,10 +119,9 @@
       <h2>ご利用にあたって</h2>
       <p>
         ルールは簡単！<br>
-        毎日ディスコードに通知される銘柄を、株数ではなく<b>金額ベース</b>で指値注文と利確・損切り注文を同時に行うだけ。<br>
+        毎日ディスコードに通知される銘柄を株数ではなく<b>金額ベース</b>で指値注文と利確・損切り注文を同時に行うだけ。<br>
         あとは寝て待て。<br>
-        バックテストの結果、1銘柄10万円ずつ買うだけで5年後300万です。<br>
-        <span class="warn">（売買禁止！商材用に監視中。改善点あったら報告おねおね）</span>
+        バックテストの結果、1銘柄10万円ずつ買うだけで5年後300万です。
       </p>
       <button class="modal-ok-btn" onclick="closeModal()">OK</button>
     </div>
@@ -200,7 +203,7 @@ function render(data) {
         <div class="rows">
           <div><span class="label">指値買い</span><span class="value entry-price">${fmtYen(c.entry)}</span><span class="shares">10万円で${sharesFor100k(c.entry)}株</span></div>
           <div><span class="label">現在値</span><span class="value">${fmtYen(c.last_price)}</span></div>
-          <div><span class="label">損切り/利確</span><span class="value">${fmtYen(c.sl)} / ${fmtYen(c.tp)}</span></div>
+          <div><span class="label">損切り/利確</span><span class="value sl-red">${fmtYen(c.sl)}</span> / <span class="value tp-green">${fmtYen(c.tp)}</span></div>
         </div>
       </div>
     `).join('');
