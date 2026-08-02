@@ -75,6 +75,7 @@
   .rows.rows-stack { grid-template-columns: 1fr; row-gap: 10px; }
   .rows-stack .value { white-space: nowrap; }
   .rows div { display: flex; flex-direction: column; }
+  .value-line { white-space: nowrap; }
   .rows .label { color: var(--text-muted); margin-bottom: 2px; }
   .rows .value { font-variant-numeric: tabular-nums; font-weight: 600; }
   .value.profit { color: var(--profit); }
@@ -215,7 +216,7 @@ function render(data) {
         </div>
         <div class="rows rows-2col">
           <div><span class="label">指値</span><span class="value entry-price">${fmtYen(c.entry)}</span><span class="shares">10万円で${sharesFor100k(c.entry)}株</span></div>
-          <div><span class="label">利確/損切り</span><span class="value tp-green">${fmtYen(c.tp)}</span><span class="value">&nbsp;/&nbsp;</span><span class="value sl-red">${fmtYen(c.sl)}</span></div>
+          <div><span class="label">利確/損切り</span><span class="value-line"><span class="value tp-green">${fmtYen(c.tp)}</span> / <span class="value sl-red">${fmtYen(c.sl)}</span></span></div>
         </div>
       </div>
     `).join('');
