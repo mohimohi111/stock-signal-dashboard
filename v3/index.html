@@ -138,7 +138,7 @@
         ルールは簡単！<br>
         毎日ディスコードに通知される銘柄を株数ではなく<b>金額ベース</b>で指値注文を出すだけ。<br>
         <b>暴落型</b>は利確・損切りとも固定なので、注文したらあとは寝て待て。<br>
-        <b>上昇型</b>は固定の利確ラインがありません。損切りだけ置いて、新高値のたび「📐指値変更」通知の通りに損切りラインを引き上げてください。<br>
+        <b>上昇型</b>・<b>相対強さ型</b>は固定の利確ラインがありません。損切りだけ置いて、新高値のたび「📐指値変更」通知の通りに損切りラインを引き上げてください。<br>
         バックテストの結果、1銘柄10万円ずつ買うだけで10年で純利益2000万です。
       </p>
       <img src="backtest-stats.png" alt="バックテスト結果">
@@ -224,12 +224,12 @@ function render(data) {
         </div>
         <div class="rows rows-2col">
           <div><span class="label">指値</span><span class="value entry-price">${fmtYen(c.entry)}</span><span class="shares">10万円で${sharesFor100k(c.entry)}株</span></div>
-          ${c.strategy === 'uptrend'
+          ${(c.strategy === 'uptrend' || c.strategy === 'relative_strength')
             ? `<div><span class="label">損切り(起点)</span><span class="value sl-red">${fmtYen(c.sl)}</span></div>`
             : `<div><span class="label">利確/損切り</span><span class="value-line"><span class="value tp-green">${fmtYen(c.tp)}</span> / <span class="value sl-red">${fmtYen(c.sl)}</span></span></div>`
           }
         </div>
-        ${c.strategy === 'uptrend' ? `<div class="trailing-note">参考: 現在の高値 ¥${fmtYen(c.tp)}(固定の利確ラインではありません。エントリー後は新高値のたび損切りラインが切り上がります)</div>` : ''}
+        ${(c.strategy === 'uptrend' || c.strategy === 'relative_strength') ? `<div class="trailing-note">参考: 現在の高値 ¥${fmtYen(c.tp)}(固定の利確ラインではありません。エントリー後は新高値のたび損切りラインが切り上がります)</div>` : ''}
       </div>
     `).join('');
 
@@ -251,12 +251,12 @@ function render(data) {
         </div>
         <div class="rows rows-2col">
           <div><span class="label">建値</span><span class="value">${fmtYen(c.entry)}</span><span class="shares">10万円で${sharesFor100k(c.entry)}株</span></div>
-          ${c.strategy === 'uptrend'
+          ${(c.strategy === 'uptrend' || c.strategy === 'relative_strength')
             ? `<div><span class="label">損切り(トレーリング中)</span><span class="value sl-red">${fmtYen(c.sl)}</span><span class="shares">あと${fmtYen(Math.abs(c.gap_sl_yen))}(${Math.abs(c.gap_sl_pct).toFixed(1)}%)</span></div>`
             : `<div><span class="label">利確まで / 損切りまで</span><span class="value-line"><span class="value tp-green">${fmtYen(Math.abs(c.gap_tp_yen))}(${Math.abs(c.gap_tp_pct).toFixed(1)}%)</span> / <span class="value sl-red">${fmtYen(Math.abs(c.gap_sl_yen))}(${Math.abs(c.gap_sl_pct).toFixed(1)}%)</span></span></div>`
           }
         </div>
-        ${c.strategy === 'uptrend' ? `<div class="trailing-note">参考: 現在の高値 ¥${fmtYen(c.tp)}(固定の利確ラインではありません。新高値のたび損切りラインが切り上がります)</div>` : ''}
+        ${(c.strategy === 'uptrend' || c.strategy === 'relative_strength') ? `<div class="trailing-note">参考: 現在の高値 ¥${fmtYen(c.tp)}(固定の利確ラインではありません。新高値のたび損切りラインが切り上がります)</div>` : ''}
       </div>`;
     }).join('');
 
