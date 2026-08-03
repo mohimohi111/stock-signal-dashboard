@@ -97,6 +97,7 @@
   section { margin-bottom: 26px; }
   section h2 { font-size: 13px; color: var(--text-secondary); margin: 0 0 8px; display: flex; align-items: center; gap: 6px; }
   section h2 .count { font-size: 11px; color: var(--text-muted); font-weight: 400; }
+  section h2 .chart-subtitle { font-size: 11px; color: var(--text-muted); font-weight: 400; }
   .chart-wrap { position: relative; background: var(--surface-2); border: 1px solid var(--border); border-radius: 12px; padding: 12px; }
   svg { display: block; width: 100%; height: auto; overflow: visible; }
   .axis-label { fill: var(--text-muted); font-size: 10px; }
@@ -164,7 +165,7 @@
   </section>
 
   <section>
-    <h2>累計損益</h2>
+    <h2>累計損益<span class="chart-subtitle">(1トレード一律10万円投資の場合)</span></h2>
     <div class="chart-wrap">
       <svg id="equityChart" viewBox="0 0 560 180"></svg>
       <div class="tooltip" id="equityTooltip"></div>
@@ -290,21 +291,21 @@ function renderChart(curve) {
     svg.innerHTML = '<text class="axis-label" x="280" y="90" text-anchor="middle">まだ決済履歴がありません</text>';
     return;
   }
-  const W = 560, H = 180, PAD_L = 40, PAD_R = 10, PAD_T = 10, PAD_B = 22;
+  const W = 560, H = 180, PAD_L = 56, PAD_R = 10, PAD_T = 10, PAD_B = 22;
   const n = curve.length;
-  const values = curve.map(d => d.cum_pnl_pct);
+  const values = curve.map(d => d.cum_pnl_yen);
   const minV = Math.min(0, ...values), maxV = Math.max(0, ...values);
   const range = (maxV - minV) || 1;
   const x = i => n === 1 ? (PAD_L + (W - PAD_L - PAD_R) / 2) : PAD_L + (i / (n - 1)) * (W - PAD_L - PAD_R);
   const y = v => H - PAD_B - ((v - minV) / range) * (H - PAD_T - PAD_B);
 
-  const path = 'M ' + curve.map((d, i) => `${x(i).toFixed(1)} ${y(d.cum_pnl_pct).toFixed(1)}`).join(' L ');
+  const path = 'M ' + curve.map((d, i) => `${x(i).toFixed(1)} ${y(d.cum_pnl_yen).toFixed(1)}`).join(' L ');
   const area = path + ` L ${x(n - 1).toFixed(1)} ${y(0).toFixed(1)} L ${x(0).toFixed(1)} ${y(0).toFixed(1)} Z`;
 
   const gridVals = [minV, 0, maxV].filter((v, i, a) => a.indexOf(v) === i);
   const grid = gridVals.map(v => `
     <line class="gridline" x1="${PAD_L}" x2="${W - PAD_R}" y1="${y(v).toFixed(1)}" y2="${y(v).toFixed(1)}" />
-    <text class="axis-label" x="${PAD_L - 6}" y="${(y(v) + 3).toFixed(1)}" text-anchor="end">${v.toFixed(0)}%</text>
+    <text class="axis-label" x="${PAD_L - 6}" y="${(y(v) + 3).toFixed(1)}" text-anchor="end">${fmtYen(v)}</text>
   `).join('');
 
   const step = Math.max(1, Math.floor(n / 5));
@@ -324,7 +325,7 @@ function renderChart(curve) {
     tooltip.style.opacity = 1;
     tooltip.style.left = (e.clientX - rect.left) + 'px';
     tooltip.style.top = (e.clientY - rect.top) + 'px';
-    tooltip.textContent = `${d.date}  累計${fmtPct(d.cum_pnl_pct)}`;
+    tooltip.textContent = `${d.date}  累計${fmtYen(d.cum_pnl_yen)}`;
   };
   svg.onmouseleave = () => { tooltip.style.opacity = 0; };
 }
