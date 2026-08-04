@@ -29,36 +29,3 @@ self.addEventListener("fetch", (event) => {
       .catch(() => caches.match(event.request))
   );
 });
-
-// scan.pyからのWeb Pushを受け取って通知表示する
-self.addEventListener("push", (event) => {
-  let payload = { title: "レッツ脳筋", body: "更新があります", url: "./" };
-  try {
-    if (event.data) payload = { ...payload, ...event.data.json() };
-  } catch (e) {
-    // JSONでなければ本文だけ使う
-    if (event.data) payload.body = event.data.text();
-  }
-  event.waitUntil(
-    self.registration.showNotification(payload.title, {
-      body: payload.body,
-      icon: "./icon-192.png",
-      badge: "./icon-192.png",
-      data: { url: payload.url || "./" },
-    })
-  );
-});
-
-// 通知タップでアプリを開く(既に開いていればそのタブにフォーカス)
-self.addEventListener("notificationclick", (event) => {
-  event.notification.close();
-  const targetUrl = event.notification.data && event.notification.data.url ? event.notification.data.url : "./";
-  event.waitUntil(
-    clients.matchAll({ type: "window", includeUncontrolled: true }).then((list) => {
-      for (const c of list) {
-        if ("focus" in c) return c.focus();
-      }
-      if (clients.openWindow) return clients.openWindow(targetUrl);
-    })
-  );
-});

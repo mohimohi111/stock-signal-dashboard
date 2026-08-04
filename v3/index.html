@@ -65,11 +65,6 @@
     background: var(--surface-2); border: 1px solid var(--border); border-radius: 12px;
     padding: 14px 16px; margin-bottom: 14px; font-size: 13px; line-height: 1.7; color: var(--text-secondary);
   }
-  .push-box textarea {
-    width: 100%; height: 70px; margin: 10px 0; font-size: 11px; font-family: monospace;
-    background: var(--surface-1); color: var(--text-primary); border: 1px solid var(--border);
-    border-radius: 8px; padding: 8px; resize: vertical;
-  }
   .card {
     background: var(--surface-2); border: 1px solid var(--border); border-radius: 12px;
     padding: 14px 16px; margin-bottom: 10px;
@@ -164,12 +159,10 @@
     <h1>📈 レッツ脳筋</h1>
     <div style="display:flex; gap:6px;">
       <button class="refresh-btn" id="installBtn" onclick="installApp()" style="display:none;">📲 インストール</button>
-      <button class="refresh-btn" id="pushBtn" onclick="setupPush()">🔔 通知設定</button>
       <button class="refresh-btn" onclick="load()">更新</button>
     </div>
   </header>
   <div class="updated" id="updated">読み込み中...</div>
-  <div id="pushSetupBox" style="display:none;"></div>
   <div id="installHintBox" style="display:none;"></div>
   <div id="retracted"></div>
 
@@ -206,64 +199,6 @@ function closeModal() {
 <script>
 function fmtYen(n) { return '¥' + Math.round(n).toLocaleString('ja-JP'); }
 function fmtPct(n) { return (n >= 0 ? '+' : '') + n.toFixed(1) + '%'; }
-
-// VAPID公開鍵(公開して問題ない鍵)。scan.py側の秘密鍵とペア
-const VAPID_PUBLIC_KEY = "BOMTjvqSUjdwys3DdH5t396qtXr42NIvcAdmjECRri7w_wHlhCtYMFpmUUvPCLzLJbbvQ7YlCB5lrGnGx3SfKSM";
-
-function urlBase64ToUint8Array(base64String) {
-  const padding = "=".repeat((4 - (base64String.length % 4)) % 4);
-  const base64 = (base64String + padding).replace(/-/g, "+").replace(/_/g, "/");
-  const raw = atob(base64);
-  return Uint8Array.from([...raw].map((c) => c.charCodeAt(0)));
-}
-
-async function setupPush() {
-  const box = document.getElementById("pushSetupBox");
-  if (!("serviceWorker" in navigator) || !("PushManager" in window)) {
-    box.style.display = "block";
-    box.innerHTML = '<div class="push-box">このブラウザはプッシュ通知に対応していません(iPhoneはホーム画面に追加してから開いてください)。</div>';
-    return;
-  }
-  try {
-    const perm = await Notification.requestPermission();
-    if (perm !== "granted") {
-      box.style.display = "block";
-      box.innerHTML = '<div class="push-box">通知が許可されませんでした。ブラウザの設定から許可してください。</div>';
-      return;
-    }
-    const reg = await navigator.serviceWorker.ready;
-    let sub = await reg.pushManager.getSubscription();
-    // sub.options.applicationServerKeyはブラウザによって取得できないことがあるため、
-    // 使った鍵をlocalStorageに保存して比較する(鍵が変わった時だけ作り直す)
-    const usedKey = localStorage.getItem("vapidKeyUsed");
-    if (sub && usedKey !== VAPID_PUBLIC_KEY) {
-      await sub.unsubscribe();
-      sub = null;
-    }
-    if (!sub) {
-      sub = await reg.pushManager.subscribe({
-        userVisibleOnly: true,
-        applicationServerKey: urlBase64ToUint8Array(VAPID_PUBLIC_KEY),
-      });
-    }
-    localStorage.setItem("vapidKeyUsed", VAPID_PUBLIC_KEY);
-    const subJson = JSON.stringify(sub.toJSON());
-    box.style.display = "block";
-    box.innerHTML = `
-      <div class="push-box">
-        <b>通知が有効になりました。</b><br>
-        あと1手順: 下のテキストをコピーして、GitHubの stock-signal-scanner リポジトリの
-        Settings → Secrets and variables → Actions → <code>PUSH_SUBSCRIPTION_JSON</code> に登録してください。<br>
-        <b>あなたが最初の1人目</b>なら、コピーした内容を <code>[ ]</code> で囲んで(例: <code>[コピーした内容]</code>)そのまま新規シークレットとして保存。<br>
-        <b>2人目以降</b>は、既存のシークレットの配列の中に <code>,</code> 区切りでコピーした内容を追記して保存し直してください(自動では追加されません)。
-        <textarea readonly onclick="this.select()">${subJson}</textarea>
-        <button class="refresh-btn" onclick="navigator.clipboard.writeText(document.querySelector('#pushSetupBox textarea').value); this.textContent='コピーしました'">コピー</button>
-      </div>`;
-  } catch (e) {
-    box.style.display = "block";
-    box.innerHTML = `<div class="push-box">エラー: ${e.message}</div>`;
-  }
-}
 
 function renderNewsCard(e) {
   const tag = e.strategy_label ? `<span class="strategy-tag">${e.strategy_label}</span>` : '';
