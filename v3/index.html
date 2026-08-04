@@ -136,7 +136,7 @@
       <h2>ご利用にあたって</h2>
       <p>
         ルールは簡単！<br>
-        毎日ディスコードに通知される銘柄を株数ではなく<b>金額ベース</b>で指値注文を出すだけ。<br>
+        平日10:30・15:00に更新される、上の<b>🆕新着</b>ボードに出てくる銘柄を、株数ではなく<b>金額ベース</b>で指値注文を出すだけ。<br>
         <b>暴落型</b>は利確・損切りとも固定なので、注文したらあとは寝て待て。<br>
         <b>上昇型</b>・<b>相対強さ型</b>は固定の利確ラインがありません。損切りだけ置いて、新高値のたび「📐指値変更」通知の通りに損切りラインを引き上げてください。<br>
         バックテストの結果、1銘柄10万円ずつ買うだけで10年で純利益2788万です。
@@ -155,8 +155,8 @@
   <div id="retracted"></div>
 
   <section>
-    <h2>監視中 <span class="count" id="watchingCount"></span></h2>
-    <div id="watchingList"></div>
+    <h2>🆕 新着 <span class="count" id="whatsNewCount"></span></h2>
+    <div id="whatsNewList"></div>
   </section>
 
   <section>
@@ -187,6 +187,70 @@ function closeModal() {
 <script>
 function fmtYen(n) { return '¥' + Math.round(n).toLocaleString('ja-JP'); }
 function fmtPct(n) { return (n >= 0 ? '+' : '') + n.toFixed(1) + '%'; }
+
+function renderNewsCard(e) {
+  const tag = e.strategy_label ? `<span class="strategy-tag">${e.strategy_label}</span>` : '';
+  const title = `<span>${tag}${e.name}(${e.code || ''})</span>`;
+  let icon = '', cls = '', body = '';
+  switch (e.type) {
+    case 'new_watching':
+      icon = '🆕'; cls = '';
+      body = `<div class="rows rows-2col">
+        <div><span class="label">指値</span><span class="value entry-price">${fmtYen(e.entry)}</span></div>
+        <div><span class="label">損切り</span><span class="value sl-red">${fmtYen(e.sl)}</span></div>
+      </div>`;
+      break;
+    case 'level_up_watching':
+      icon = '📐'; cls = '';
+      body = `<div class="rows rows-2col">
+        <div><span class="label">指値</span><span class="value entry-price">${fmtYen(e.prev_entry)} → ${fmtYen(e.entry)}</span></div>
+        <div><span class="label">目標/利確</span><span class="value tp-green">${fmtYen(e.prev_tp)} → ${fmtYen(e.tp)}</span></div>
+      </div>`;
+      break;
+    case 'level_up_entered':
+      icon = '📐'; cls = '';
+      body = `<div class="rows rows-2col">
+        <div><span class="label">損切り</span><span class="value sl-red">${fmtYen(e.prev_sl)} → ${fmtYen(e.sl)}</span></div>
+        <div><span class="label">参考:現在の高値</span><span class="value tp-green">${fmtYen(e.tp)}</span></div>
+      </div>`;
+      break;
+    case 'entered':
+      icon = '🟦'; cls = '';
+      body = `<div class="rows rows-2col">
+        <div><span class="label">建値</span><span class="value">${fmtYen(e.entry)}</span></div>
+        <div><span class="label">損切り</span><span class="value sl-red">${fmtYen(e.sl)}</span></div>
+      </div>`;
+      break;
+    case 'closed_win':
+      icon = '🔵'; cls = 'profit';
+      body = `<div class="rows rows-2col">
+        <div><span class="label">決済値</span><span class="value profit">${fmtYen(e.exit_price)}</span></div>
+        <div><span class="label">損益</span><span class="value profit">${fmtPct(e.pnl_pct)}</span></div>
+      </div>`;
+      break;
+    case 'closed_loss':
+      icon = '🔴'; cls = 'loss';
+      body = `<div class="rows rows-2col">
+        <div><span class="label">決済値</span><span class="value loss">${fmtYen(e.exit_price)}</span></div>
+        <div><span class="label">損益</span><span class="value loss">${fmtPct(e.pnl_pct)}</span></div>
+      </div>`;
+      break;
+    case 'retracted':
+      icon = '⚠️'; cls = 'loss';
+      body = `<div class="empty" style="padding:4px 0;text-align:left;">東証監理・整理銘柄に指定されたため対象外になりました。エントリーは控えてください。</div>`;
+      break;
+    default:
+      return '';
+  }
+  return `
+    <div class="card ${cls}">
+      <div class="card-title">
+        <span>${icon} ${title}</span>
+        <span class="badge">${e.date || ''}</span>
+      </div>
+      ${body}
+    </div>`;
+}
 function sharesFor100k(entry) { return Math.floor(100000 / entry); }
 
 async function load() {
@@ -208,30 +272,12 @@ function render(data) {
     `<div class="retracted-banner">⚠️ ${r.name}: 東証監理・整理銘柄に指定されたため対象外になりました</div>`
   ).join('');
 
-  // 監視中(色なし)
-  const watching = (data.watching || []).slice().sort((a, b) => Math.abs(a.gap_pct) - Math.abs(b.gap_pct));
-  document.getElementById('watchingCount').textContent = watching.length ? `(${watching.length})` : '';
-  document.getElementById('watchingList').innerHTML = watching.length === 0
-    ? '<div class="empty">現在、監視中の銘柄はありません。</div>'
-    : watching.map(c => `
-      <div class="card">
-        <div class="card-title">
-          <span><span class="strategy-tag">${c.strategy_label || ''}</span>${c.name}(${c.code})</span>
-          <span class="badge loss">あと${fmtYen(Math.abs(c.gap_yen))}(${Math.abs(c.gap_pct).toFixed(1)}%)</span>
-        </div>
-        <div class="rows rows-current">
-          <div><span class="label">現在値</span><span class="value">${fmtYen(c.last_price)}</span></div>
-        </div>
-        <div class="rows rows-2col">
-          <div><span class="label">指値</span><span class="value entry-price">${fmtYen(c.entry)}</span><span class="shares">10万円で${sharesFor100k(c.entry)}株</span></div>
-          ${(c.strategy === 'uptrend' || c.strategy === 'relative_strength')
-            ? `<div><span class="label">損切り(起点)</span><span class="value sl-red">${fmtYen(c.sl)}</span></div>`
-            : `<div><span class="label">利確/損切り</span><span class="value-line"><span class="value tp-green">${fmtYen(c.tp)}</span> / <span class="value sl-red">${fmtYen(c.sl)}</span></span></div>`
-          }
-        </div>
-        ${(c.strategy === 'uptrend' || c.strategy === 'relative_strength') ? `<div class="trailing-note">参考: 現在の高値 ¥${fmtYen(c.tp)}(固定の利確ラインではありません。エントリー後は新高値のたび損切りラインが切り上がります)</div>` : ''}
-      </div>
-    `).join('');
+  // 新着ボード(その日の10:30更新で入れ替え、15:00更新で追加。新しい順はサーバー側で整列済み)
+  const whatsNew = data.whats_new || [];
+  document.getElementById('whatsNewCount').textContent = whatsNew.length ? `(${whatsNew.length})` : '';
+  document.getElementById('whatsNewList').innerHTML = whatsNew.length === 0
+    ? '<div class="empty">新着はありません。</div>'
+    : whatsNew.map(renderNewsCard).join('');
 
   // エントリー中(含み損益で色分け: 青=利益, 赤=損失)
   const entered = data.entered || [];
@@ -248,6 +294,7 @@ function render(data) {
         </div>
         <div class="rows rows-current">
           <div><span class="label">現在値</span><span class="value ${cls}">${fmtYen(c.last_price)}</span></div>
+          <div><span class="label">エントリー日</span><span class="value">${c.entered_date || '-'}</span></div>
         </div>
         <div class="rows rows-2col">
           <div><span class="label">建値</span><span class="value">${fmtYen(c.entry)}</span><span class="shares">10万円で${sharesFor100k(c.entry)}株</span></div>
