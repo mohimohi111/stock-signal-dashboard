@@ -217,6 +217,13 @@ function urlBase64ToUint8Array(base64String) {
   return Uint8Array.from([...raw].map((c) => c.charCodeAt(0)));
 }
 
+function arrayBuffersEqual(a, b) {
+  const x = new Uint8Array(a), y = new Uint8Array(b);
+  if (x.length !== y.length) return false;
+  for (let i = 0; i < x.length; i++) if (x[i] !== y[i]) return false;
+  return true;
+}
+
 async function setupPush() {
   const box = document.getElementById("pushSetupBox");
   if (!("serviceWorker" in navigator) || !("PushManager" in window)) {
@@ -232,15 +239,21 @@ async function setupPush() {
       return;
     }
     const reg = await navigator.serviceWorker.ready;
-    const existing = await reg.pushManager.getSubscription();
-    if (existing) {
-      // 鍵(VAPID_PUBLIC_KEY)が変わっている可能性があるため、古い購読は必ず破棄してから作り直す
-      await existing.unsubscribe();
+    let sub = await reg.pushManager.getSubscription();
+    const wantedKey = urlBase64ToUint8Array(VAPID_PUBLIC_KEY);
+    const sameKey = sub && sub.options && sub.options.applicationServerKey &&
+      arrayBuffersEqual(sub.options.applicationServerKey, wantedKey.buffer);
+    if (sub && !sameKey) {
+      // 公開鍵(VAPID_PUBLIC_KEY)が変わっている場合のみ、古い購読を破棄して作り直す
+      await sub.unsubscribe();
+      sub = null;
     }
-    const sub = await reg.pushManager.subscribe({
-      userVisibleOnly: true,
-      applicationServerKey: urlBase64ToUint8Array(VAPID_PUBLIC_KEY),
-    });
+    if (!sub) {
+      sub = await reg.pushManager.subscribe({
+        userVisibleOnly: true,
+        applicationServerKey: wantedKey,
+      });
+    }
     const subJson = JSON.stringify(sub.toJSON());
     box.style.display = "block";
     box.innerHTML = `
