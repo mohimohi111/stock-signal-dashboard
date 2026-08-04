@@ -239,8 +239,9 @@ async function setupPush() {
       <div class="push-box">
         <b>通知が有効になりました。</b><br>
         あと1手順: 下のテキストをコピーして、GitHubの stock-signal-scanner リポジトリの
-        Settings → Secrets and variables → Actions で <code>PUSH_SUBSCRIPTION_JSON</code>
-        という名前のシークレットとして登録してください(最初の1回だけでOK)。
+        Settings → Secrets and variables → Actions → <code>PUSH_SUBSCRIPTION_JSON</code> に登録してください。<br>
+        <b>あなたが最初の1人目</b>なら、コピーした内容を <code>[ ]</code> で囲んで(例: <code>[コピーした内容]</code>)そのまま新規シークレットとして保存。<br>
+        <b>2人目以降</b>は、既存のシークレットの配列の中に <code>,</code> 区切りでコピーした内容を追記して保存し直してください(自動では追加されません)。
         <textarea readonly onclick="this.select()">${subJson}</textarea>
         <button class="refresh-btn" onclick="navigator.clipboard.writeText(document.querySelector('#pushSetupBox textarea').value); this.textContent='コピーしました'">コピー</button>
       </div>`;
