@@ -208,7 +208,7 @@ function fmtYen(n) { return '¥' + Math.round(n).toLocaleString('ja-JP'); }
 function fmtPct(n) { return (n >= 0 ? '+' : '') + n.toFixed(1) + '%'; }
 
 // VAPID公開鍵(公開して問題ない鍵)。scan.py側の秘密鍵とペア
-const VAPID_PUBLIC_KEY = "BPqUc1FoHHPtMPFWg7tPL9stKhqGsWPGrHIWfLXJ7NsrYVHy4k25IAT7e6ZfuLmpUmKBEuwmqQPu4e47lS2oZD8";
+const VAPID_PUBLIC_KEY = "BBpuh5MMFcaTYTEt6hszhSTY9ODkPRIQ5W1vuhxoNHvO1lH-MLq_06blVKk_Sbfzg3ci5etzNbBoqQQIwXh7eIc";
 
 function urlBase64ToUint8Array(base64String) {
   const padding = "=".repeat((4 - (base64String.length % 4)) % 4);
