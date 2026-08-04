@@ -57,6 +57,15 @@
   }
   .empty { text-align: center; color: var(--text-muted); padding: 24px 20px; font-size: 13px; line-height: 1.8; }
   .trailing-note { font-size: 11px; color: var(--text-muted); margin-top: 8px; line-height: 1.5; }
+  .push-box {
+    background: var(--surface-2); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 14px; font-size: 13px; line-height: 1.7; color: var(--text-secondary);
+  }
+  .push-box textarea {
+    width: 100%; height: 70px; margin: 10px 0; font-size: 11px; font-family: monospace;
+    background: var(--surface-1); color: var(--text-primary); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px; resize: vertical;
+  }
   .card {
     background: var(--surface-2); border: 1px solid var(--border); border-radius: 12px;
     padding: 14px 16px; margin-bottom: 10px;
@@ -149,9 +158,13 @@
   <div id="mainContent">
   <header>
     <h1>📈 レッツ脳筋</h1>
-    <button class="refresh-btn" onclick="load()">更新</button>
+    <div style="display:flex; gap:6px;">
+      <button class="refresh-btn" id="pushBtn" onclick="setupPush()">🔔 通知設定</button>
+      <button class="refresh-btn" onclick="load()">更新</button>
+    </div>
   </header>
   <div class="updated" id="updated">読み込み中...</div>
+  <div id="pushSetupBox" style="display:none;"></div>
   <div id="retracted"></div>
 
   <section>
@@ -187,6 +200,55 @@ function closeModal() {
 <script>
 function fmtYen(n) { return '¥' + Math.round(n).toLocaleString('ja-JP'); }
 function fmtPct(n) { return (n >= 0 ? '+' : '') + n.toFixed(1) + '%'; }
+
+// VAPID公開鍵(公開して問題ない鍵)。scan.py側の秘密鍵とペア
+const VAPID_PUBLIC_KEY = "BPqUc1FoHHPtMPFWg7tPL9stKhqGsWPGrHIWfLXJ7NsrYVHy4k25IAT7e6ZfuLmpUmKBEuwmqQPu4e47lS2oZD8";
+
+function urlBase64ToUint8Array(base64String) {
+  const padding = "=".repeat((4 - (base64String.length % 4)) % 4);
+  const base64 = (base64String + padding).replace(/-/g, "+").replace(/_/g, "/");
+  const raw = atob(base64);
+  return Uint8Array.from([...raw].map((c) => c.charCodeAt(0)));
+}
+
+async function setupPush() {
+  const box = document.getElementById("pushSetupBox");
+  if (!("serviceWorker" in navigator) || !("PushManager" in window)) {
+    box.style.display = "block";
+    box.innerHTML = '<div class="push-box">このブラウザはプッシュ通知に対応していません(iPhoneはホーム画面に追加してから開いてください)。</div>';
+    return;
+  }
+  try {
+    const perm = await Notification.requestPermission();
+    if (perm !== "granted") {
+      box.style.display = "block";
+      box.innerHTML = '<div class="push-box">通知が許可されませんでした。ブラウザの設定から許可してください。</div>';
+      return;
+    }
+    const reg = await navigator.serviceWorker.ready;
+    let sub = await reg.pushManager.getSubscription();
+    if (!sub) {
+      sub = await reg.pushManager.subscribe({
+        userVisibleOnly: true,
+        applicationServerKey: urlBase64ToUint8Array(VAPID_PUBLIC_KEY),
+      });
+    }
+    const subJson = JSON.stringify(sub.toJSON());
+    box.style.display = "block";
+    box.innerHTML = `
+      <div class="push-box">
+        <b>通知が有効になりました。</b><br>
+        あと1手順: 下のテキストをコピーして、GitHubの stock-signal-scanner リポジトリの
+        Settings → Secrets and variables → Actions で <code>PUSH_SUBSCRIPTION_JSON</code>
+        という名前のシークレットとして登録してください(最初の1回だけでOK)。
+        <textarea readonly onclick="this.select()">${subJson}</textarea>
+        <button class="refresh-btn" onclick="navigator.clipboard.writeText(document.querySelector('#pushSetupBox textarea').value); this.textContent='コピーしました'">コピー</button>
+      </div>`;
+  } catch (e) {
+    box.style.display = "block";
+    box.innerHTML = `<div class="push-box">エラー: ${e.message}</div>`;
+  }
+}
 
 function renderNewsCard(e) {
   const tag = e.strategy_label ? `<span class="strategy-tag">${e.strategy_label}</span>` : '';
