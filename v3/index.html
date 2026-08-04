@@ -232,13 +232,15 @@ async function setupPush() {
       return;
     }
     const reg = await navigator.serviceWorker.ready;
-    let sub = await reg.pushManager.getSubscription();
-    if (!sub) {
-      sub = await reg.pushManager.subscribe({
-        userVisibleOnly: true,
-        applicationServerKey: urlBase64ToUint8Array(VAPID_PUBLIC_KEY),
-      });
+    const existing = await reg.pushManager.getSubscription();
+    if (existing) {
+      // 鍵(VAPID_PUBLIC_KEY)が変わっている可能性があるため、古い購読は必ず破棄してから作り直す
+      await existing.unsubscribe();
     }
+    const sub = await reg.pushManager.subscribe({
+      userVisibleOnly: true,
+      applicationServerKey: urlBase64ToUint8Array(VAPID_PUBLIC_KEY),
+    });
     const subJson = JSON.stringify(sub.toJSON());
     box.style.display = "block";
     box.innerHTML = `
