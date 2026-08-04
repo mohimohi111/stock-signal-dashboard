@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-04 17:01 JST",
+  "updated": "2026-08-04 17:30 JST",
   "watching": [
     {
       "code": "4043",
@@ -2035,66 +2035,5 @@
       "cum_pnl_yen": -10331.930808789155
     }
   ],
-  "whats_new": [
-    {
-      "date": "2026-08-04",
-      "type": "level_up_watching",
-      "strategy": "relative_strength",
-      "strategy_label": "相対強さ型",
-      "code": "7272",
-      "name": "ヤマハ発動機",
-      "prev_entry": 1274.0,
-      "entry": 1341.5,
-      "prev_tp": 1415.0,
-      "tp": 1550.0
-    },
-    {
-      "date": "2026-08-04",
-      "type": "new_watching",
-      "strategy": "relative_strength",
-      "strategy_label": "相対強さ型",
-      "code": "2503",
-      "name": "キリンホールディングス",
-      "entry": 2702.25,
-      "tp": 3161.0,
-      "sl": 2243.5,
-      "span_pct": 0.4089592155114776
-    },
-    {
-      "date": "2026-08-04",
-      "type": "new_watching",
-      "strategy": "relative_strength",
-      "strategy_label": "相対強さ型",
-      "code": "7282",
-      "name": "豊田合成",
-      "entry": 4759.5,
-      "tp": 5720.0,
-      "sl": 3799.0,
-      "span_pct": 0.5056593840484338
-    },
-    {
-      "date": "2026-08-04",
-      "type": "new_watching",
-      "strategy": "uptrend",
-      "strategy_label": "上昇型",
-      "code": "9506",
-      "name": "東北電力",
-      "entry": 1132.75,
-      "tp": 1212.5,
-      "sl": 1053.0,
-      "span_pct": 0.15147198480531815
-    },
-    {
-      "date": "2026-08-04",
-      "type": "new_watching",
-      "strategy": "relative_strength",
-      "strategy_label": "相対強さ型",
-      "code": "9506",
-      "name": "東北電力",
-      "entry": 1132.75,
-      "tp": 1212.5,
-      "sl": 1053.0,
-      "span_pct": 0.15147198480531815
-    }
-  ]
+  "whats_new": []
 }
