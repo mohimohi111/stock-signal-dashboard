@@ -2616,18 +2616,6 @@
     "pnl_pct": 14.683153013910355
   },
   {
-    "code": "9110",
-    "name": "NSユナイテッド海運",
-    "win": true,
-    "strategy": "uptrend",
-    "strategy_label": "上昇型",
-    "entry": 4305.0,
-    "exit_price": 4602.0,
-    "entered_date": "2023-03-31",
-    "exit_date": "2023-04-03",
-    "pnl_pct": 6.898954703832752
-  },
-  {
     "code": "5411",
     "name": "JFEホールディングス",
     "win": true,

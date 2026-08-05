@@ -828,18 +828,6 @@
     "pnl_pct": 9.432571849668387
   },
   {
-    "code": "4722",
-    "name": "フューチャー",
-    "win": false,
-    "strategy": "uptrend",
-    "strategy_label": "上昇型",
-    "entry": 999.5,
-    "exit_price": 917.5,
-    "entered_date": "2021-04-21",
-    "exit_date": "2021-05-18",
-    "pnl_pct": -8.204102051025512
-  },
-  {
     "code": "7988",
     "name": "ニフコ",
     "win": true,
@@ -1464,18 +1452,6 @@
     "pnl_pct": 9.793814432989691
   },
   {
-    "code": "2371",
-    "name": "カカクコム",
-    "win": true,
-    "strategy": "uptrend",
-    "strategy_label": "上昇型",
-    "entry": 3285.0,
-    "exit_price": 3643.75,
-    "entered_date": "2021-03-08",
-    "exit_date": "2021-03-09",
-    "pnl_pct": 10.920852359208522
-  },
-  {
     "code": "5706",
     "name": "三井金属鉱業",
     "win": true,
@@ -1498,18 +1474,6 @@
     "entered_date": "2021-02-26",
     "exit_date": "2021-03-01",
     "pnl_pct": 10.919474585950885
-  },
-  {
-    "code": "4626",
-    "name": "太陽ホールディングス",
-    "win": true,
-    "strategy": "uptrend",
-    "strategy_label": "上昇型",
-    "entry": 1420.0,
-    "exit_price": 1634.5,
-    "entered_date": "2021-02-26",
-    "exit_date": "2021-03-01",
-    "pnl_pct": 15.1056338028169
   },
   {
     "code": "6845",

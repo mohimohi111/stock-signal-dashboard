@@ -708,18 +708,6 @@
     "pnl_pct": 12.463297790140627
   },
   {
-    "code": "2371",
-    "name": "カカクコム",
-    "win": true,
-    "strategy": "crash",
-    "strategy_label": "暴落型",
-    "entry": 1726.0,
-    "exit_price": 2937.0,
-    "entered_date": "2020-04-03",
-    "exit_date": "2020-07-09",
-    "pnl_pct": 70.16222479721901
-  },
-  {
     "code": "7832",
     "name": "バンダイナムコホールディングス",
     "win": false,
@@ -1200,18 +1188,6 @@
     "pnl_pct": -9.969788519637463
   },
   {
-    "code": "4626",
-    "name": "太陽ホールディングス",
-    "win": false,
-    "strategy": "crash",
-    "strategy_label": "暴落型",
-    "entry": 917.0,
-    "exit_price": 820.0,
-    "entered_date": "2020-03-10",
-    "exit_date": "2020-03-13",
-    "pnl_pct": -10.577971646673937
-  },
-  {
     "code": "4812",
     "name": "電通総研",
     "win": false,
@@ -1618,18 +1594,6 @@
     "entered_date": "2020-03-02",
     "exit_date": "2020-03-03",
     "pnl_pct": 7.5347984635065135
-  },
-  {
-    "code": "4626",
-    "name": "太陽ホールディングス",
-    "win": true,
-    "strategy": "relative_strength",
-    "strategy_label": "相対強さ型",
-    "entry": 1134.375,
-    "exit_price": 1301.0625,
-    "entered_date": "2020-03-02",
-    "exit_date": "2020-03-03",
-    "pnl_pct": 14.694214876033056
   },
   {
     "code": "3360",

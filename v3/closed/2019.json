@@ -216,18 +216,6 @@
     "pnl_pct": 83.74867279679586
   },
   {
-    "code": "2371",
-    "name": "カカクコム",
-    "win": true,
-    "strategy": "uptrend",
-    "strategy_label": "上昇型",
-    "entry": 2408.0,
-    "exit_price": 2705.3,
-    "entered_date": "2019-10-17",
-    "exit_date": "2019-10-18",
-    "pnl_pct": 12.346345514950173
-  },
-  {
     "code": "9418",
     "name": "USEN-NEXT HOLDINGS",
     "win": true,
@@ -622,18 +610,6 @@
     "entered_date": "2019-07-01",
     "exit_date": "2019-08-05",
     "pnl_pct": 10.814094775212636
-  },
-  {
-    "code": "4722",
-    "name": "フューチャー",
-    "win": false,
-    "strategy": "uptrend",
-    "strategy_label": "上昇型",
-    "entry": 979.75,
-    "exit_price": 872.5,
-    "entered_date": "2019-07-31",
-    "exit_date": "2019-08-05",
-    "pnl_pct": -10.946670068895125
   },
   {
     "code": "7459",
@@ -1666,18 +1642,6 @@
     "entered_date": "2019-02-07",
     "exit_date": "2019-02-08",
     "pnl_pct": 62.875282816152655
-  },
-  {
-    "code": "9110",
-    "name": "NSユナイテッド海運",
-    "win": true,
-    "strategy": "relative_strength",
-    "strategy_label": "相対強さ型",
-    "entry": 2835.5,
-    "exit_price": 3254.850000000001,
-    "entered_date": "2019-02-07",
-    "exit_date": "2019-02-08",
-    "pnl_pct": 14.789278786810101
   },
   {
     "code": "3465",

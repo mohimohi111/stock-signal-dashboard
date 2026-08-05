@@ -1152,18 +1152,6 @@
     "pnl_pct": 14.629946357872441
   },
   {
-    "code": "2371",
-    "name": "カカクコム",
-    "win": true,
-    "strategy": "relative_strength",
-    "strategy_label": "相対強さ型",
-    "entry": 2274.0,
-    "exit_price": 2637.6,
-    "entered_date": "2018-10-26",
-    "exit_date": "2018-10-29",
-    "pnl_pct": 15.989445910290234
-  },
-  {
     "code": "3360",
     "name": "シップヘルスケアホールディングス",
     "win": true,
@@ -1558,18 +1546,6 @@
     "entered_date": "2018-10-16",
     "exit_date": "2018-10-17",
     "pnl_pct": 41.64524421593836
-  },
-  {
-    "code": "4722",
-    "name": "フューチャー",
-    "win": true,
-    "strategy": "uptrend",
-    "strategy_label": "上昇型",
-    "entry": 860.5,
-    "exit_price": 963.9500000000002,
-    "entered_date": "2018-10-16",
-    "exit_date": "2018-10-17",
-    "pnl_pct": 12.022080185938414
   },
   {
     "code": "4503",
@@ -2362,18 +2338,6 @@
     "entered_date": "2018-08-08",
     "exit_date": "2018-08-09",
     "pnl_pct": 13.813868613138695
-  },
-  {
-    "code": "2371",
-    "name": "カカクコム",
-    "win": true,
-    "strategy": "uptrend",
-    "strategy_label": "上昇型",
-    "entry": 2274.0,
-    "exit_price": 2637.6,
-    "entered_date": "2018-08-08",
-    "exit_date": "2018-08-09",
-    "pnl_pct": 15.989445910290234
   },
   {
     "code": "4967",
@@ -4788,18 +4752,6 @@
     "pnl_pct": 17.599193006052456
   },
   {
-    "code": "4626",
-    "name": "太陽ホールディングス",
-    "win": true,
-    "strategy": "uptrend",
-    "strategy_label": "上昇型",
-    "entry": 1164.375,
-    "exit_price": 1410.0,
-    "entered_date": "2018-03-02",
-    "exit_date": "2018-03-05",
-    "pnl_pct": 21.09500805152979
-  },
-  {
     "code": "5929",
     "name": "三和ホールディングス",
     "win": true,
@@ -5724,18 +5676,6 @@
     "pnl_pct": 10.96136567834681
   },
   {
-    "code": "4722",
-    "name": "フューチャー",
-    "win": true,
-    "strategy": "uptrend",
-    "strategy_label": "上昇型",
-    "entry": 559.5,
-    "exit_price": 639.9000000000001,
-    "entered_date": "2018-02-06",
-    "exit_date": "2018-02-07",
-    "pnl_pct": 14.369973190348542
-  },
-  {
     "code": "4980",
     "name": "デクセリアルズ",
     "win": true,
@@ -6106,18 +6046,6 @@
     "entered_date": "2018-01-26",
     "exit_date": "2018-01-29",
     "pnl_pct": 8.742296279388267
-  },
-  {
-    "code": "9110",
-    "name": "NSユナイテッド海運",
-    "win": true,
-    "strategy": "uptrend",
-    "strategy_label": "上昇型",
-    "entry": 2683.5,
-    "exit_price": 2868.0,
-    "entered_date": "2018-01-25",
-    "exit_date": "2018-01-26",
-    "pnl_pct": 6.875349357182784
   },
   {
     "code": "3405",

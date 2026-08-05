@@ -504,18 +504,6 @@
     "pnl_pct": 12.501852309212147
   },
   {
-    "code": "2371",
-    "name": "カカクコム",
-    "win": true,
-    "strategy": "relative_strength",
-    "strategy_label": "相対強さ型",
-    "entry": 2410.75,
-    "exit_price": 2620.7999999999997,
-    "entered_date": "2024-10-23",
-    "exit_date": "2024-10-24",
-    "pnl_pct": 8.713056102872539
-  },
-  {
     "code": "3038",
     "name": "神戸物産",
     "win": true,
@@ -526,18 +514,6 @@
     "entered_date": "2024-10-23",
     "exit_date": "2024-10-24",
     "pnl_pct": 8.66295264623955
-  },
-  {
-    "code": "2371",
-    "name": "カカクコム",
-    "win": true,
-    "strategy": "uptrend",
-    "strategy_label": "上昇型",
-    "entry": 2410.75,
-    "exit_price": 2620.7999999999997,
-    "entered_date": "2024-10-22",
-    "exit_date": "2024-10-23",
-    "pnl_pct": 8.713056102872539
   },
   {
     "code": "5423",
@@ -1414,18 +1390,6 @@
     "entered_date": "2024-08-06",
     "exit_date": "2024-08-07",
     "pnl_pct": 16.825088910442936
-  },
-  {
-    "code": "9110",
-    "name": "NSユナイテッド海運",
-    "win": true,
-    "strategy": "relative_strength",
-    "strategy_label": "相対強さ型",
-    "entry": 4480.0,
-    "exit_price": 5409.499999999999,
-    "entered_date": "2024-08-06",
-    "exit_date": "2024-08-07",
-    "pnl_pct": 20.747767857142836
   },
   {
     "code": "9119",
@@ -3036,18 +3000,6 @@
     "pnl_pct": 10.46376811594203
   },
   {
-    "code": "4626",
-    "name": "太陽ホールディングス",
-    "win": false,
-    "strategy": "uptrend",
-    "strategy_label": "上昇型",
-    "entry": 1596.0,
-    "exit_price": 1472.0,
-    "entered_date": "2024-04-16",
-    "exit_date": "2024-05-01",
-    "pnl_pct": -7.769423558897243
-  },
-  {
     "code": "4768",
     "name": "大塚商会",
     "win": false,
@@ -3466,18 +3418,6 @@
     "entered_date": "2023-10-19",
     "exit_date": "2024-04-02",
     "pnl_pct": -8.449736661323563
-  },
-  {
-    "code": "9110",
-    "name": "NSユナイテッド海運",
-    "win": true,
-    "strategy": "uptrend",
-    "strategy_label": "上昇型",
-    "entry": 4480.0,
-    "exit_price": 5409.499999999999,
-    "entered_date": "2024-04-01",
-    "exit_date": "2024-04-02",
-    "pnl_pct": 20.747767857142836
   },
   {
     "code": "1518",

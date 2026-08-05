@@ -1848,18 +1848,6 @@
     "pnl_pct": -10.9229466553768
   },
   {
-    "code": "4722",
-    "name": "フューチャー",
-    "win": true,
-    "strategy": "uptrend",
-    "strategy_label": "上昇型",
-    "entry": 418.25,
-    "exit_price": 470.625,
-    "entered_date": "2017-04-06",
-    "exit_date": "2017-07-07",
-    "pnl_pct": 12.522414823670053
-  },
-  {
     "code": "2127",
     "name": "日本M&Aセンターホールディングス",
     "win": true,
