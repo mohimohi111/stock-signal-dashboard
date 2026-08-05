@@ -142,7 +142,7 @@
   .modal-box h2 { font-size: 16px; margin: 0 0 14px; }
   .modal-box p { font-size: 13px; line-height: 1.9; color: var(--text-secondary); margin: 0 0 18px; }
   .modal-box img { max-width: 100%; border-radius: 10px; border: 1px solid var(--border); display: block; margin: 0 0 18px; }
-  .modal-box .warn { color: var(--loss); font-weight: 700; }
+  .modal-box .warn { color: var(--loss); font-weight: 700; text-align: center; }
   .modal-ok-btn {
     display: block; width: 100%; background: var(--profit); color: white; border: none;
     border-radius: 10px; padding: 12px; font-size: 15px; font-weight: 600;
@@ -187,7 +187,8 @@
         上の<b>🆕新着</b>ボードに出てくる銘柄を、株数ではなく<b>金額ベース</b>で指値注文を出すだけ。<br>
         <b>暴落型</b>は利確・損切りとも固定なので、注文したら寝てるだけ。<br>
         <b>上昇型</b>・<b>相対強さ型</b>は固定の利確ラインがありません。損切りだけ置いて、新高値のたび「📐指値変更」通知の通りに損切りラインを引き上げてください。<br>
-        仮に1銘柄10万円ずつ買った場合でバックテストすると、10年で純利益3566万です。
+        仮に1銘柄10万円ずつ買った場合でバックテストすると、10年で純利益3566万です。<br>
+        詳細は決済済みに10年分載せてます。
       </p>
       <img src="backtest-stats.png" alt="バックテスト結果">
       <button class="modal-ok-btn" onclick="closeModal()">OK</button>
