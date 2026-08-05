@@ -104,6 +104,18 @@
   }
   section { margin-bottom: 26px; }
   section h2 { font-size: 13px; color: var(--text-secondary); margin: 0 0 8px; display: flex; align-items: center; gap: 6px; }
+  .year-group { margin-bottom: 10px; }
+  .year-group summary {
+    cursor: pointer; list-style: none; user-select: none;
+    background: var(--surface-2); border: 1px solid var(--border); border-radius: 12px;
+    padding: 12px 14px; display: flex; justify-content: space-between; align-items: center;
+    font-size: 14px; font-weight: 700;
+  }
+  .year-group summary::-webkit-details-marker { display: none; }
+  .year-group summary .arrow { transition: transform 0.15s; color: var(--text-muted); font-size: 11px; }
+  .year-group[open] summary .arrow { transform: rotate(90deg); }
+  .year-group summary .year-total { font-variant-numeric: tabular-nums; }
+  .year-group .year-body { padding-top: 10px; }
   section h2 .count { font-size: 11px; color: var(--text-muted); font-weight: 400; }
   section h2 .chart-subtitle { font-size: 11px; color: var(--text-muted); font-weight: 400; }
   .chart-wrap { position: relative; background: var(--surface-2); border: 1px solid var(--border); border-radius: 12px; padding: 12px; }
@@ -322,15 +334,26 @@ function render(data) {
       </div>`;
     }).join('');
 
-  // 決済済み(実現損益で色分け)
+  // 決済済み(年ごとにグループ化。各年の合計損益を見出しに表示し、クリックで開閉)
   const closed = data.closed || [];
   document.getElementById('closedCount').textContent = closed.length ? `(${closed.length})` : '';
+  const byYear = {};
+  for (const c of closed) {
+    const year = (c.exit_date || '').slice(0, 4) || '不明';
+    (byYear[year] = byYear[year] || []).push(c);
+  }
+  const years = Object.keys(byYear).sort((a, b) => b.localeCompare(a));
   document.getElementById('closedList').innerHTML = closed.length === 0
     ? '<div class="empty">まだ決済済みの銘柄はありません。</div>'
-    : closed.map(c => {
-      const cls = c.win ? 'profit' : 'loss';
-      const pnlYen = sharesFor100k(c.entry) * (c.exit_price - c.entry);
-      return `
+    : years.map((year, idx) => {
+      const items = byYear[year].slice().sort((a, b) => (b.exit_date || '').localeCompare(a.exit_date || ''));
+      let totalYen = 0, wins = 0, losses = 0;
+      const cards = items.map(c => {
+        const cls = c.win ? 'profit' : 'loss';
+        const pnlYen = sharesFor100k(c.entry) * (c.exit_price - c.entry);
+        totalYen += pnlYen;
+        c.win ? wins++ : losses++;
+        return `
       <div class="card ${cls}">
         <div class="card-title">
           <span><span class="strategy-tag">${c.strategy_label || ''}</span>${c.name}(${c.code})</span>
@@ -342,6 +365,16 @@ function render(data) {
           <div><span class="label">決済日</span><span class="value">${c.exit_date || '-'}</span></div>
         </div>
       </div>`;
+      }).join('');
+      const totalCls = totalYen >= 0 ? 'profit' : 'loss';
+      return `
+      <details class="year-group"${idx === 0 ? ' open' : ''}>
+        <summary>
+          <span><span class="arrow">▶</span> ${year}年(${wins}勝${losses}敗)</span>
+          <span class="year-total value ${totalCls}">${fmtYenSigned(totalYen)}</span>
+        </summary>
+        <div class="year-body">${cards}</div>
+      </details>`;
     }).join('');
 
   renderChart(data.equity_curve || []);
