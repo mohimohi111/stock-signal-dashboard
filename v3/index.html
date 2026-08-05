@@ -200,6 +200,7 @@ function closeModal() {
 </script>
 <script>
 function fmtYen(n) { return '¥' + Math.round(n).toLocaleString('ja-JP'); }
+function fmtYenSigned(n) { return (n >= 0 ? '+' : '-') + '¥' + Math.round(Math.abs(n)).toLocaleString('ja-JP'); }
 function fmtPct(n) { return (n >= 0 ? '+' : '') + n.toFixed(1) + '%'; }
 
 function renderNewsCard(e) {
@@ -239,14 +240,14 @@ function renderNewsCard(e) {
       icon = '🔵'; cls = 'profit';
       body = `<div class="rows rows-2col">
         <div><span class="label">決済値</span><span class="value profit">${fmtYen(e.exit_price)}</span></div>
-        <div><span class="label">損益</span><span class="value profit">${fmtPct(e.pnl_pct)}</span></div>
+        <div><span class="label">損益(10万円分)</span><span class="value profit">${fmtYenSigned(sharesFor100k(e.entry) * (e.exit_price - e.entry))}</span></div>
       </div>`;
       break;
     case 'closed_loss':
       icon = '🔴'; cls = 'loss';
       body = `<div class="rows rows-2col">
         <div><span class="label">決済値</span><span class="value loss">${fmtYen(e.exit_price)}</span></div>
-        <div><span class="label">損益</span><span class="value loss">${fmtPct(e.pnl_pct)}</span></div>
+        <div><span class="label">損益(10万円分)</span><span class="value loss">${fmtYenSigned(sharesFor100k(e.entry) * (e.exit_price - e.entry))}</span></div>
       </div>`;
       break;
     case 'retracted':
@@ -328,11 +329,12 @@ function render(data) {
     ? '<div class="empty">まだ決済済みの銘柄はありません。</div>'
     : closed.map(c => {
       const cls = c.win ? 'profit' : 'loss';
+      const pnlYen = sharesFor100k(c.entry) * (c.exit_price - c.entry);
       return `
       <div class="card ${cls}">
         <div class="card-title">
           <span><span class="strategy-tag">${c.strategy_label || ''}</span>${c.name}(${c.code})</span>
-          <span class="badge ${cls}">${fmtPct(c.pnl_pct)}</span>
+          <span class="badge ${cls}">${fmtYenSigned(pnlYen)}</span>
         </div>
         <div class="rows">
           <div><span class="label">建値</span><span class="value">${fmtYen(c.entry)}</span></div>
