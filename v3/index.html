@@ -143,6 +143,27 @@
   .modal-box p { font-size: 13px; line-height: 1.9; color: var(--text-secondary); margin: 0 0 18px; }
   .modal-box img { max-width: 100%; border-radius: 10px; border: 1px solid var(--border); display: block; margin: 0 0 18px; }
   .modal-box .warn { color: var(--loss); font-weight: 700; text-align: center; margin-top: 12px; }
+  .howto { margin-bottom: 18px; }
+  .howto-step { display: flex; align-items: flex-start; gap: 10px; font-size: 13px; line-height: 1.6; color: var(--text-secondary); margin-bottom: 10px; }
+  .step-num {
+    flex-shrink: 0; width: 20px; height: 20px; border-radius: 50%; margin-top: 1px;
+    background: var(--profit); color: #fff; font-size: 11px; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .strategy-list { margin-bottom: 18px; }
+  .strategy-item {
+    background: var(--surface-2); border: 1px solid var(--border); border-radius: 10px;
+    padding: 10px 12px; margin-bottom: 8px;
+  }
+  .strategy-item-title { font-weight: 700; font-size: 13px; margin-bottom: 4px; }
+  .strategy-item-desc { color: var(--text-secondary); font-size: 12px; line-height: 1.6; }
+  .stat-highlight {
+    background: color-mix(in srgb, var(--profit) 10%, var(--surface-2));
+    border: 1px solid var(--profit); border-radius: 10px;
+    padding: 12px 14px; text-align: center; font-size: 13px; margin-bottom: 18px; line-height: 1.6;
+  }
+  .stat-highlight strong { color: var(--profit); font-size: 17px; }
+  .stat-sub { display: block; font-size: 11px; color: var(--text-muted); margin-top: 4px; }
   .modal-ok-btn {
     display: block; width: 100%; background: var(--profit); color: white; border: none;
     border-radius: 10px; padding: 12px; font-size: 15px; font-weight: 600;
@@ -181,15 +202,27 @@
       <h2>ご利用にあたって</h2>
       <p class="warn">※ 森の許可なしに他人に教えないでね！</p>
       <video src="dance.mp4?v=2" autoplay loop muted playsinline style="display:block; max-width:180px; margin:0 auto 14px; border-radius:10px;"></video>
-      <p>
-        ルールは簡単！<br>
-        独自のアルゴリズムで抽出され15:45(大引け後)に更新。<br>
-        上の<b>🆕新着</b>ボードに出てくる銘柄を、株数ではなく<b>金額ベース</b>で指値注文を出すだけ。<br>
-        <b>暴落型</b>は利確・損切りとも固定なので、注文したら寝てるだけ。<br>
-        <b>上昇型</b>・<b>相対強さ型</b>は固定の利確ラインがありません。損切りだけ置いて、新高値のたび「📐指値変更」通知の通りに損切りラインを引き上げてください。<br>
-        仮に1銘柄10万円ずつ買った場合でバックテストすると、10年で純利益3566万です。<br>
-        詳細は次のページ下部にある決済済みに10年分の記録あります。
-      </p>
+      <div class="howto">
+        <div class="howto-step"><span class="step-num">1</span><span>独自のアルゴリズムが平日<b>15:45(大引け後)</b>に自動で銘柄を抽出。上の<b>🆕新着</b>ボードをチェック。</span></div>
+        <div class="howto-step"><span class="step-num">2</span><span>出てきた銘柄を、株数ではなく<b>金額ベース</b>で指値注文するだけ。</span></div>
+        <div class="howto-step"><span class="step-num">3</span><span>あとは下の3タイプごとのルールに沿って待つだけ。</span></div>
+      </div>
+
+      <div class="strategy-list">
+        <div class="strategy-item">
+          <div class="strategy-item-title">🔴 暴落型</div>
+          <div class="strategy-item-desc">利確・損切りとも<b>固定</b>。注文したらあとは寝てるだけ。</div>
+        </div>
+        <div class="strategy-item">
+          <div class="strategy-item-title">🔵 上昇型 ・ 🟢 相対強さ型</div>
+          <div class="strategy-item-desc">固定の利確ラインは<b>なし</b>。損切りだけ置いて、新高値が出るたび「📐指値変更」通知の通りに損切りラインを引き上げる。</div>
+        </div>
+      </div>
+
+      <div class="stat-highlight">
+        仮に1銘柄10万円ずつ買った場合、10年間のバックテストで純利益<br><strong>3,566万円</strong>
+        <span class="stat-sub">詳細は次のページ下部「決済済み」に10年分の記録あり</span>
+      </div>
       <img src="backtest-stats.png" alt="バックテスト結果">
       <button class="modal-ok-btn" onclick="closeModal()">OK</button>
     </div>
