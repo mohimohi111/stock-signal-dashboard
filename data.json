@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-05 15:05 JST",
+  "updated": "2026-08-05 15:18 JST",
   "watching": [
     {
       "code": "4043",
@@ -2096,23 +2096,3134 @@
       "entered_date": "2026-02-17",
       "exit_date": "2026-08-03",
       "pnl_pct": -10.331930808789155
+    },
+    {
+      "code": "7740",
+      "name": "タムロン",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 1185.5,
+      "exit_price": 1412.1000000000001,
+      "entered_date": "2026-07-07",
+      "exit_date": "2026-07-31",
+      "pnl_pct": 19.114297764656275
+    },
+    {
+      "code": "1803",
+      "name": "清水建設",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 2301.5,
+      "exit_price": 3595.2499999999986,
+      "entered_date": "2026-07-30",
+      "exit_date": "2026-07-31",
+      "pnl_pct": 56.21333912665647
+    },
+    {
+      "code": "6383",
+      "name": "ダイフク",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 5820.5,
+      "exit_price": 7757.200000000001,
+      "entered_date": "2026-07-29",
+      "exit_date": "2026-07-30",
+      "pnl_pct": 33.273773730779155
+    },
+    {
+      "code": "8035",
+      "name": "東京エレクトロン",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 51420.0,
+      "exit_price": 80924.99999999996,
+      "entered_date": "2026-07-29",
+      "exit_date": "2026-07-30",
+      "pnl_pct": 57.38039673278872
+    },
+    {
+      "code": "4004",
+      "name": "レゾナック・ホールディングス",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 11885.5,
+      "exit_price": 20474.999999999964,
+      "entered_date": "2026-07-29",
+      "exit_date": "2026-07-30",
+      "pnl_pct": 72.26873080644452
+    },
+    {
+      "code": "8697",
+      "name": "日本取引所グループ",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 2107.75,
+      "exit_price": 2338.2,
+      "entered_date": "2026-07-09",
+      "exit_date": "2026-07-29",
+      "pnl_pct": 10.933459850551527
+    },
+    {
+      "code": "9962",
+      "name": "ミスミグループ本社",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 3734.5,
+      "exit_price": 4081.2500000000005,
+      "entered_date": "2026-07-27",
+      "exit_date": "2026-07-28",
+      "pnl_pct": 9.285044852055162
+    },
+    {
+      "code": "4021",
+      "name": "日産化学",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 7693.5,
+      "exit_price": 8684.0,
+      "entered_date": "2026-07-24",
+      "exit_date": "2026-07-27",
+      "pnl_pct": 12.87450445180997
+    },
+    {
+      "code": "5802",
+      "name": "住友電気工業",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 2217.25,
+      "exit_price": 3682.1999999999953,
+      "entered_date": "2026-07-17",
+      "exit_date": "2026-07-21",
+      "pnl_pct": 66.0705829293041
+    },
+    {
+      "code": "5706",
+      "name": "三井金属鉱業",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 31103.0,
+      "exit_price": 57676.80000000015,
+      "entered_date": "2026-07-17",
+      "exit_date": "2026-07-21",
+      "pnl_pct": 85.43806063723804
+    },
+    {
+      "code": "5301",
+      "name": "東海カーボン",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 1595.0,
+      "exit_price": 1851.6499999999999,
+      "entered_date": "2026-07-17",
+      "exit_date": "2026-07-21",
+      "pnl_pct": 16.090909090909083
+    },
+    {
+      "code": "5805",
+      "name": "SWCC",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 11154.0,
+      "exit_price": 19439.799999999963,
+      "entered_date": "2026-07-14",
+      "exit_date": "2026-07-15",
+      "pnl_pct": 74.28545813161165
+    },
+    {
+      "code": "8439",
+      "name": "東京センチュリー",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 2360.75,
+      "exit_price": 2610.0,
+      "entered_date": "2026-06-01",
+      "exit_date": "2026-07-14",
+      "pnl_pct": 10.558085354230647
+    },
+    {
+      "code": "5332",
+      "name": "TOTO",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 7820.0,
+      "exit_price": 9210.0,
+      "entered_date": "2026-07-13",
+      "exit_date": "2026-07-14",
+      "pnl_pct": 17.774936061381077
+    },
+    {
+      "code": "7741",
+      "name": "HOYA",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 24915.0,
+      "exit_price": 30116.5,
+      "entered_date": "2026-07-08",
+      "exit_date": "2026-07-09",
+      "pnl_pct": 20.876981737908874
+    },
+    {
+      "code": "4042",
+      "name": "東ソー",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 2787.5,
+      "exit_price": 2986.7999999999997,
+      "entered_date": "2026-07-07",
+      "exit_date": "2026-07-08",
+      "pnl_pct": 7.149775784753354
+    },
+    {
+      "code": "8601",
+      "name": "大和証券グループ本社",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 1541.75,
+      "exit_price": 1746.2499999999998,
+      "entered_date": "2026-03-05",
+      "exit_date": "2026-07-07",
+      "pnl_pct": 13.264147883898167
+    },
+    {
+      "code": "3132",
+      "name": "マクニカホールディングス",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 3066.0,
+      "exit_price": 3512.7000000000007,
+      "entered_date": "2026-07-03",
+      "exit_date": "2026-07-06",
+      "pnl_pct": 14.569471624266153
+    },
+    {
+      "code": "5714",
+      "name": "DOWAホールディングス",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 8588.5,
+      "exit_price": 12232.350000000004,
+      "entered_date": "2026-06-29",
+      "exit_date": "2026-06-30",
+      "pnl_pct": 42.4270827269023
+    },
+    {
+      "code": "5201",
+      "name": "AGC",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 7145.5,
+      "exit_price": 8067.6,
+      "entered_date": "2026-06-24",
+      "exit_date": "2026-06-25",
+      "pnl_pct": 12.904625288643206
+    },
+    {
+      "code": "4063",
+      "name": "信越化学工業",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 7056.0,
+      "exit_price": 7727.499999999999,
+      "entered_date": "2026-06-24",
+      "exit_date": "2026-06-25",
+      "pnl_pct": 9.51672335600907
+    },
+    {
+      "code": "4043",
+      "name": "トクヤマ",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 4851.0,
+      "exit_price": 5704.3,
+      "entered_date": "2026-06-24",
+      "exit_date": "2026-06-25",
+      "pnl_pct": 17.590187590187593
+    },
+    {
+      "code": "9449",
+      "name": "GMOインターネットグループ",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 3211.25,
+      "exit_price": 3513.0,
+      "entered_date": "2026-06-15",
+      "exit_date": "2026-06-22",
+      "pnl_pct": 9.3966523939276
+    },
+    {
+      "code": "5020",
+      "name": "ENEOSホールディングス",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 1193.25,
+      "exit_price": 1542.9,
+      "entered_date": "2026-06-19",
+      "exit_date": "2026-06-22",
+      "pnl_pct": 29.302325581395355
+    },
+    {
+      "code": "7459",
+      "name": "メディパルホールディングス",
+      "win": false,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 2821.75,
+      "exit_price": 2573.5,
+      "entered_date": "2026-03-23",
+      "exit_date": "2026-06-18",
+      "pnl_pct": -8.797731903960308
+    },
+    {
+      "code": "2760",
+      "name": "東京エレクトロン デバイス",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 3992.5,
+      "exit_price": 4362.5,
+      "entered_date": "2026-06-12",
+      "exit_date": "2026-06-15",
+      "pnl_pct": 9.267376330619912
+    },
+    {
+      "code": "6368",
+      "name": "オルガノ",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 14062.5,
+      "exit_price": 19950.000000000007,
+      "entered_date": "2026-06-11",
+      "exit_date": "2026-06-12",
+      "pnl_pct": 41.86666666666672
+    },
+    {
+      "code": "8058",
+      "name": "三菱商事",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 4559.5,
+      "exit_price": 5903.300000000001,
+      "entered_date": "2026-06-11",
+      "exit_date": "2026-06-12",
+      "pnl_pct": 29.472529882662595
+    },
+    {
+      "code": "8031",
+      "name": "三井物産",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 4770.25,
+      "exit_price": 6590.650000000002,
+      "entered_date": "2026-06-11",
+      "exit_date": "2026-06-12",
+      "pnl_pct": 38.161521932812796
+    },
+    {
+      "code": "8088",
+      "name": "岩谷産業",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 1844.25,
+      "exit_price": 2112.6,
+      "entered_date": "2026-06-10",
+      "exit_date": "2026-06-11",
+      "pnl_pct": 14.550630337535578
+    },
+    {
+      "code": "7911",
+      "name": "TOPPANホールディングス",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 3975.5,
+      "exit_price": 5866.700000000003,
+      "entered_date": "2026-06-10",
+      "exit_date": "2026-06-11",
+      "pnl_pct": 47.571374669852915
+    },
+    {
+      "code": "5214",
+      "name": "日本電気硝子",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 5930.5,
+      "exit_price": 8361.6,
+      "entered_date": "2026-06-10",
+      "exit_date": "2026-06-11",
+      "pnl_pct": 40.993170896214494
+    },
+    {
+      "code": "2327",
+      "name": "日鉄ソリューションズ",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 3280.0,
+      "exit_price": 4572.000000000001,
+      "entered_date": "2026-06-09",
+      "exit_date": "2026-06-10",
+      "pnl_pct": 39.39024390243905
+    },
+    {
+      "code": "7944",
+      "name": "ローランド",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 4295.0,
+      "exit_price": 4674.0,
+      "entered_date": "2026-06-08",
+      "exit_date": "2026-06-09",
+      "pnl_pct": 8.824214202561118
+    },
+    {
+      "code": "6707",
+      "name": "サンケン電気",
+      "win": false,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 9266.5,
+      "exit_price": 8253.0,
+      "entered_date": "2026-05-27",
+      "exit_date": "2026-06-09",
+      "pnl_pct": -10.937247072789079
+    },
+    {
+      "code": "2264",
+      "name": "森永乳業",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 1093.5,
+      "exit_price": 1323.125,
+      "entered_date": "2026-05-13",
+      "exit_date": "2026-06-09",
+      "pnl_pct": 20.999085505258343
+    },
+    {
+      "code": "8309",
+      "name": "三井住友トラスト・ホールディングス",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 1301.375,
+      "exit_price": 1495.9750000000001,
+      "entered_date": "2026-03-06",
+      "exit_date": "2026-06-09",
+      "pnl_pct": 14.95341465757373
+    },
+    {
+      "code": "5711",
+      "name": "三菱マテリアル",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 4575.0,
+      "exit_price": 6048.0,
+      "entered_date": "2026-06-08",
+      "exit_date": "2026-06-09",
+      "pnl_pct": 32.196721311475414
+    },
+    {
+      "code": "5803",
+      "name": "フジクラ",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 4559.666687011719,
+      "exit_price": 7889.116937255846,
+      "entered_date": "2026-06-05",
+      "exit_date": "2026-06-08",
+      "pnl_pct": 73.01959723784454
+    },
+    {
+      "code": "2802",
+      "name": "味の素",
+      "win": false,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 5308.0,
+      "exit_price": 4877.0,
+      "entered_date": "2026-06-01",
+      "exit_date": "2026-06-08",
+      "pnl_pct": -8.119819140919367
+    },
+    {
+      "code": "2702",
+      "name": "日本マクドナルドホールディングス",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 7535.0,
+      "exit_price": 8491.5,
+      "entered_date": "2026-06-03",
+      "exit_date": "2026-06-04",
+      "pnl_pct": 12.69409422694094
+    },
+    {
+      "code": "8850",
+      "name": "スターツコーポレーション",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 4395.0,
+      "exit_price": 5331.999999999999,
+      "entered_date": "2026-06-02",
+      "exit_date": "2026-06-03",
+      "pnl_pct": 21.319681456200207
+    },
+    {
+      "code": "1719",
+      "name": "安藤・間",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 1710.5,
+      "exit_price": 2244.4500000000003,
+      "entered_date": "2026-06-02",
+      "exit_date": "2026-06-03",
+      "pnl_pct": 31.216018707980137
+    },
+    {
+      "code": "7004",
+      "name": "カナデビア",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 1309.0,
+      "exit_price": 1489.0500000000002,
+      "entered_date": "2026-06-02",
+      "exit_date": "2026-06-03",
+      "pnl_pct": 13.754774637127593
+    },
+    {
+      "code": "6367",
+      "name": "ダイキン工業",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 22482.5,
+      "exit_price": 25737.75,
+      "entered_date": "2026-06-02",
+      "exit_date": "2026-06-03",
+      "pnl_pct": 14.479039252752141
+    },
+    {
+      "code": "2768",
+      "name": "双日",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 5208.0,
+      "exit_price": 7107.750000000002,
+      "entered_date": "2026-06-01",
+      "exit_date": "2026-06-02",
+      "pnl_pct": 36.477534562212014
+    },
+    {
+      "code": "1928",
+      "name": "積水ハウス",
+      "win": false,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 3541.0,
+      "exit_price": 3250.0,
+      "entered_date": "2026-03-19",
+      "exit_date": "2026-06-02",
+      "pnl_pct": -8.218017509178198
+    },
+    {
+      "code": "4403",
+      "name": "日油",
+      "win": false,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 3056.25,
+      "exit_price": 2738.5,
+      "entered_date": "2026-01-07",
+      "exit_date": "2026-06-01",
+      "pnl_pct": -10.39672801635992
+    },
+    {
+      "code": "4681",
+      "name": "リゾートトラスト",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 1654.5,
+      "exit_price": 2037.7499999999998,
+      "entered_date": "2026-05-27",
+      "exit_date": "2026-05-28",
+      "pnl_pct": 23.16409791477788
+    },
+    {
+      "code": "9735",
+      "name": "セコム",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 5962.0,
+      "exit_price": 6592.8,
+      "entered_date": "2026-03-03",
+      "exit_date": "2026-05-27",
+      "pnl_pct": 10.580342167058038
+    },
+    {
+      "code": "1605",
+      "name": "INPEX",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 3707.5,
+      "exit_price": 4920.0,
+      "entered_date": "2026-05-25",
+      "exit_date": "2026-05-26",
+      "pnl_pct": 32.70397842211733
+    },
+    {
+      "code": "3861",
+      "name": "王子ホールディングス",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 787.8000183105469,
+      "exit_price": 965.085040283203,
+      "entered_date": "2026-05-22",
+      "exit_date": "2026-05-25",
+      "pnl_pct": 22.503810339183225
+    },
+    {
+      "code": "3231",
+      "name": "野村不動産ホールディングス",
+      "win": false,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 1052.75,
+      "exit_price": 939.5,
+      "entered_date": "2026-03-19",
+      "exit_date": "2026-05-21",
+      "pnl_pct": -10.757539776775113
+    },
+    {
+      "code": "7912",
+      "name": "大日本印刷",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 2734.25,
+      "exit_price": 3252.75,
+      "entered_date": "2026-05-20",
+      "exit_date": "2026-05-21",
+      "pnl_pct": 18.963152601261772
+    },
+    {
+      "code": "5929",
+      "name": "三和ホールディングス",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 3404.5,
+      "exit_price": 5318.049999999998,
+      "entered_date": "2026-05-18",
+      "exit_date": "2026-05-19",
+      "pnl_pct": 56.20649140842997
+    },
+    {
+      "code": "5471",
+      "name": "大同特殊鋼",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 1786.25,
+      "exit_price": 2369.0,
+      "entered_date": "2026-05-18",
+      "exit_date": "2026-05-19",
+      "pnl_pct": 32.624212736179146
+    },
+    {
+      "code": "3288",
+      "name": "オープンハウスグループ",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 8785.0,
+      "exit_price": 11560.0,
+      "entered_date": "2026-05-18",
+      "exit_date": "2026-05-19",
+      "pnl_pct": 31.587933978372224
+    },
+    {
+      "code": "9503",
+      "name": "関西電力",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 2294.0,
+      "exit_price": 2819.2000000000003,
+      "entered_date": "2026-05-18",
+      "exit_date": "2026-05-19",
+      "pnl_pct": 22.894507410636457
+    },
+    {
+      "code": "8802",
+      "name": "三菱地所",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 4027.5,
+      "exit_price": 5296.0,
+      "entered_date": "2026-05-18",
+      "exit_date": "2026-05-19",
+      "pnl_pct": 31.495965238982
+    },
+    {
+      "code": "8252",
+      "name": "丸井グループ",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 2839.5,
+      "exit_price": 3352.4,
+      "entered_date": "2026-05-18",
+      "exit_date": "2026-05-19",
+      "pnl_pct": 18.06303926747667
+    },
+    {
+      "code": "1801",
+      "name": "大成建設",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 14452.5,
+      "exit_price": 20562.500000000007,
+      "entered_date": "2026-05-18",
+      "exit_date": "2026-05-19",
+      "pnl_pct": 42.276422764227696
+    },
+    {
+      "code": "7994",
+      "name": "オカムラ",
+      "win": false,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 2531.5,
+      "exit_price": 2302.0,
+      "entered_date": "2026-03-23",
+      "exit_date": "2026-05-18",
+      "pnl_pct": -9.065771281848706
+    },
+    {
+      "code": "1662",
+      "name": "石油資源開発",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 1928.0,
+      "exit_price": 2799.9000000000005,
+      "entered_date": "2026-05-15",
+      "exit_date": "2026-05-18",
+      "pnl_pct": 45.2230290456432
+    },
+    {
+      "code": "7013",
+      "name": "IHI",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 2639.0,
+      "exit_price": 4697.999999999991,
+      "entered_date": "2026-05-15",
+      "exit_date": "2026-05-18",
+      "pnl_pct": 78.02197802197767
+    },
+    {
+      "code": "4502",
+      "name": "武田薬品工業",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 5111.5,
+      "exit_price": 5866.0,
+      "entered_date": "2026-05-14",
+      "exit_date": "2026-05-15",
+      "pnl_pct": 14.76083341484887
+    },
+    {
+      "code": "2269",
+      "name": "明治ホールディングス",
+      "win": false,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 3808.5,
+      "exit_price": 3540.0,
+      "entered_date": "2026-04-20",
+      "exit_date": "2026-05-14",
+      "pnl_pct": -7.0500196927924375
+    },
+    {
+      "code": "6417",
+      "name": "SANKYO",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 1815.2000122070312,
+      "exit_price": 3056.99013061523,
+      "entered_date": "2026-05-12",
+      "exit_date": "2026-05-13",
+      "pnl_pct": 68.41064951836103
+    },
+    {
+      "code": "2871",
+      "name": "ニチレイ",
+      "win": false,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 1981.75,
+      "exit_price": 1806.5,
+      "entered_date": "2026-03-23",
+      "exit_date": "2026-05-13",
+      "pnl_pct": -8.843194146587612
+    },
+    {
+      "code": "6806",
+      "name": "ヒロセ電機",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 21882.5,
+      "exit_price": 24662.5,
+      "entered_date": "2026-03-18",
+      "exit_date": "2026-05-12",
+      "pnl_pct": 12.704215697475153
+    },
+    {
+      "code": "2282",
+      "name": "日本ハム",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 6175.5,
+      "exit_price": 7396.499999999999,
+      "entered_date": "2026-05-11",
+      "exit_date": "2026-05-12",
+      "pnl_pct": 19.771678406606753
+    },
+    {
+      "code": "9119",
+      "name": "飯野海運",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 1593.0,
+      "exit_price": 1881.0000000000002,
+      "entered_date": "2026-05-08",
+      "exit_date": "2026-05-11",
+      "pnl_pct": 18.07909604519774
+    },
+    {
+      "code": "9507",
+      "name": "四国電力",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 1538.75,
+      "exit_price": 1867.7499999999998,
+      "entered_date": "2026-04-30",
+      "exit_date": "2026-05-01",
+      "pnl_pct": 21.380991064175454
+    },
+    {
+      "code": "9022",
+      "name": "東海旅客鉄道",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 3872.75,
+      "exit_price": 4810.575,
+      "entered_date": "2026-04-30",
+      "exit_date": "2026-05-01",
+      "pnl_pct": 24.215996384997737
+    },
+    {
+      "code": "3086",
+      "name": "J.フロント リテイリング",
+      "win": false,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 2535.0,
+      "exit_price": 2274.0,
+      "entered_date": "2026-03-06",
+      "exit_date": "2026-05-01",
+      "pnl_pct": -10.29585798816568
+    },
+    {
+      "code": "9101",
+      "name": "日本郵船",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 5746.0,
+      "exit_price": 6372.499999999999,
+      "entered_date": "2026-04-28",
+      "exit_date": "2026-04-30",
+      "pnl_pct": 10.903237034458755
+    },
+    {
+      "code": "4507",
+      "name": "塩野義製薬",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 3157.0,
+      "exit_price": 3706.2000000000003,
+      "entered_date": "2026-04-28",
+      "exit_date": "2026-04-30",
+      "pnl_pct": 17.39626227431105
+    },
+    {
+      "code": "5019",
+      "name": "出光興産",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 1356.5,
+      "exit_price": 1667.2,
+      "entered_date": "2026-04-27",
+      "exit_date": "2026-04-28",
+      "pnl_pct": 22.90453372650203
+    },
+    {
+      "code": "7906",
+      "name": "ヨネックス",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 2834.5,
+      "exit_price": 4481.399999999998,
+      "entered_date": "2026-04-24",
+      "exit_date": "2026-04-27",
+      "pnl_pct": 58.101958017286925
+    },
+    {
+      "code": "1808",
+      "name": "長谷工コーポレーション",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 2688.25,
+      "exit_price": 3506.4500000000007,
+      "entered_date": "2026-04-24",
+      "exit_date": "2026-04-27",
+      "pnl_pct": 30.436157351436837
+    },
+    {
+      "code": "1332",
+      "name": "ニッスイ",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 1222.9500122070312,
+      "exit_price": 1532.8250427246094,
+      "entered_date": "2026-04-23",
+      "exit_date": "2026-04-24",
+      "pnl_pct": 25.33832351482244
+    },
+    {
+      "code": "9513",
+      "name": "電源開発",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 3836.5,
+      "exit_price": 4422.599999999999,
+      "entered_date": "2026-04-22",
+      "exit_date": "2026-04-23",
+      "pnl_pct": 15.276945132282012
+    },
+    {
+      "code": "9531",
+      "name": "東京ガス",
+      "win": false,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 7210.5,
+      "exit_price": 6454.0,
+      "entered_date": "2026-04-13",
+      "exit_date": "2026-04-23",
+      "pnl_pct": -10.491644130088067
+    },
+    {
+      "code": "9107",
+      "name": "川崎汽船",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 2531.75,
+      "exit_price": 2938.6,
+      "entered_date": "2026-04-22",
+      "exit_date": "2026-04-23",
+      "pnl_pct": 16.069912116125206
+    },
+    {
+      "code": "9104",
+      "name": "商船三井",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 6108.5,
+      "exit_price": 7093.4,
+      "entered_date": "2026-04-20",
+      "exit_date": "2026-04-21",
+      "pnl_pct": 16.12343455840222
+    },
+    {
+      "code": "7550",
+      "name": "ゼンショーホールディングス",
+      "win": false,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 9593.0,
+      "exit_price": 8861.0,
+      "entered_date": "2026-03-12",
+      "exit_date": "2026-04-10",
+      "pnl_pct": -7.63056395288231
+    },
+    {
+      "code": "7747",
+      "name": "朝日インテック",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 3145.0,
+      "exit_price": 3463.2,
+      "entered_date": "2026-03-19",
+      "exit_date": "2026-04-01",
+      "pnl_pct": 10.117647058823524
+    },
+    {
+      "code": "4911",
+      "name": "資生堂",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 2936.75,
+      "exit_price": 3393.2250000000004,
+      "entered_date": "2026-03-23",
+      "exit_date": "2026-04-01",
+      "pnl_pct": 15.543543032263567
+    },
+    {
+      "code": "9435",
+      "name": "光通信",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 39445.0,
+      "exit_price": 44468.99999999999,
+      "entered_date": "2026-03-30",
+      "exit_date": "2026-03-31",
+      "pnl_pct": 12.736722017999746
+    },
+    {
+      "code": "7729",
+      "name": "東京精密",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 13477.5,
+      "exit_price": 18018.000000000004,
+      "entered_date": "2026-03-30",
+      "exit_date": "2026-03-31",
+      "pnl_pct": 33.68948247078467
+    },
+    {
+      "code": "7282",
+      "name": "豊田合成",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 3891.75,
+      "exit_price": 5107.0,
+      "entered_date": "2026-03-30",
+      "exit_date": "2026-03-31",
+      "pnl_pct": 31.226312070405342
+    },
+    {
+      "code": "5076",
+      "name": "インフロニア・ホールディングス",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 2183.0,
+      "exit_price": 2766.75,
+      "entered_date": "2026-03-30",
+      "exit_date": "2026-03-31",
+      "pnl_pct": 26.740723774622076
+    },
+    {
+      "code": "6471",
+      "name": "日本精工",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 1106.2000122070312,
+      "exit_price": 1396.3250427246094,
+      "entered_date": "2026-03-30",
+      "exit_date": "2026-03-31",
+      "pnl_pct": 26.227176578920492
+    },
+    {
+      "code": "3289",
+      "name": "東急不動産ホールディングス",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 1299.25,
+      "exit_price": 1550.7749999999999,
+      "entered_date": "2026-03-30",
+      "exit_date": "2026-03-31",
+      "pnl_pct": 19.359245718683844
+    },
+    {
+      "code": "1925",
+      "name": "大和ハウス工業",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 4992.0,
+      "exit_price": 5641.650000000001,
+      "entered_date": "2026-03-30",
+      "exit_date": "2026-03-31",
+      "pnl_pct": 13.013822115384627
+    },
+    {
+      "code": "4578",
+      "name": "大塚ホールディングス",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 9809.5,
+      "exit_price": 11321.7,
+      "entered_date": "2026-03-09",
+      "exit_date": "2026-03-27",
+      "pnl_pct": 15.415668484632253
+    },
+    {
+      "code": "4182",
+      "name": "三菱ガス化学",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 4151.75,
+      "exit_price": 5429.250000000001,
+      "entered_date": "2026-03-24",
+      "exit_date": "2026-03-25",
+      "pnl_pct": 30.77015716264228
+    },
+    {
+      "code": "6302",
+      "name": "住友重機械工業",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 5314.0,
+      "exit_price": 6185.7,
+      "entered_date": "2026-03-24",
+      "exit_date": "2026-03-25",
+      "pnl_pct": 16.403838916070754
+    },
+    {
+      "code": "1963",
+      "name": "日揮ホールディングス",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 2111.75,
+      "exit_price": 2561.3749999999995,
+      "entered_date": "2026-03-24",
+      "exit_date": "2026-03-25",
+      "pnl_pct": 21.291582810465233
+    },
+    {
+      "code": "6728",
+      "name": "アルバック",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 8794.5,
+      "exit_price": 11048.300000000001,
+      "entered_date": "2026-03-23",
+      "exit_date": "2026-03-24",
+      "pnl_pct": 25.62738074933198
+    },
+    {
+      "code": "5857",
+      "name": "AREホールディングス",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 3421.0,
+      "exit_price": 4668.400000000001,
+      "entered_date": "2026-03-23",
+      "exit_date": "2026-03-24",
+      "pnl_pct": 36.4630225080386
+    },
+    {
+      "code": "5480",
+      "name": "日本冶金工業",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 4660.0,
+      "exit_price": 5199.999999999999,
+      "entered_date": "2026-03-23",
+      "exit_date": "2026-03-24",
+      "pnl_pct": 11.587982832618025
+    },
+    {
+      "code": "4732",
+      "name": "ユー・エス・エス",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 1631.5,
+      "exit_price": 1881.5999999999997,
+      "entered_date": "2026-03-23",
+      "exit_date": "2026-03-24",
+      "pnl_pct": 15.32945142506895
+    },
+    {
+      "code": "4203",
+      "name": "住友ベークライト",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 4826.5,
+      "exit_price": 5923.500000000001,
+      "entered_date": "2026-03-23",
+      "exit_date": "2026-03-24",
+      "pnl_pct": 22.728685382782555
+    },
+    {
+      "code": "3003",
+      "name": "ヒューリック",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 1822.5,
+      "exit_price": 2093.8500000000004,
+      "entered_date": "2026-03-23",
+      "exit_date": "2026-03-24",
+      "pnl_pct": 14.88888888888891
+    },
+    {
+      "code": "2384",
+      "name": "SBSホールディングス",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 3915.0,
+      "exit_price": 4293.75,
+      "entered_date": "2026-03-23",
+      "exit_date": "2026-03-24",
+      "pnl_pct": 9.67432950191571
+    },
+    {
+      "code": "1951",
+      "name": "エクシオグループ",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 2594.0,
+      "exit_price": 2949.7500000000005,
+      "entered_date": "2026-03-23",
+      "exit_date": "2026-03-24",
+      "pnl_pct": 13.714340786430224
+    },
+    {
+      "code": "8830",
+      "name": "住友不動産",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 4410.25,
+      "exit_price": 5193.75,
+      "entered_date": "2026-03-23",
+      "exit_date": "2026-03-24",
+      "pnl_pct": 17.765432798594183
+    },
+    {
+      "code": "8804",
+      "name": "東京建物",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 3700.5,
+      "exit_price": 4237.8,
+      "entered_date": "2026-03-23",
+      "exit_date": "2026-03-24",
+      "pnl_pct": 14.519659505472237
+    },
+    {
+      "code": "8750",
+      "name": "第一ライフグループ",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 1371.5,
+      "exit_price": 1576.3999999999999,
+      "entered_date": "2026-03-23",
+      "exit_date": "2026-03-24",
+      "pnl_pct": 14.939846882974836
+    },
+    {
+      "code": "6841",
+      "name": "横河電機",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 4972.0,
+      "exit_price": 6165.900000000001,
+      "entered_date": "2026-03-23",
+      "exit_date": "2026-03-24",
+      "pnl_pct": 24.012469831053913
+    },
+    {
+      "code": "5713",
+      "name": "住友金属鉱山",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 9294.5,
+      "exit_price": 13222.500000000005,
+      "entered_date": "2026-03-23",
+      "exit_date": "2026-03-24",
+      "pnl_pct": 42.26155253106682
+    },
+    {
+      "code": "5101",
+      "name": "横浜ゴム",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 5868.5,
+      "exit_price": 7899.100000000001,
+      "entered_date": "2026-03-23",
+      "exit_date": "2026-03-24",
+      "pnl_pct": 34.601686972821014
+    },
+    {
+      "code": "4043",
+      "name": "トクヤマ",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 3612.5,
+      "exit_price": 4547.500000000001,
+      "entered_date": "2026-03-23",
+      "exit_date": "2026-03-24",
+      "pnl_pct": 25.882352941176496
+    },
+    {
+      "code": "3407",
+      "name": "旭化成",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 1511.5,
+      "exit_price": 1871.1,
+      "entered_date": "2026-03-23",
+      "exit_date": "2026-03-24",
+      "pnl_pct": 23.790936156136283
+    },
+    {
+      "code": "3402",
+      "name": "東レ",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 1178.25,
+      "exit_price": 1303.9,
+      "entered_date": "2026-03-23",
+      "exit_date": "2026-03-24",
+      "pnl_pct": 10.664120517716961
+    },
+    {
+      "code": "2802",
+      "name": "味の素",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 4246.5,
+      "exit_price": 4855.2,
+      "entered_date": "2026-03-23",
+      "exit_date": "2026-03-24",
+      "pnl_pct": 14.334157541504764
+    },
+    {
+      "code": "2503",
+      "name": "キリンホールディングス",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 2389.5,
+      "exit_price": 2648.1,
+      "entered_date": "2026-03-23",
+      "exit_date": "2026-03-24",
+      "pnl_pct": 10.82234777150031
+    },
+    {
+      "code": "8572",
+      "name": "アコム",
+      "win": false,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 503.15000915527344,
+      "exit_price": 466.3999938964844,
+      "entered_date": "2026-02-24",
+      "exit_date": "2026-03-23",
+      "pnl_pct": -7.303987794909869
+    },
+    {
+      "code": "7988",
+      "name": "ニフコ",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 4628.5,
+      "exit_price": 5542.5,
+      "entered_date": "2026-03-19",
+      "exit_date": "2026-03-23",
+      "pnl_pct": 19.747218321270392
+    },
+    {
+      "code": "6448",
+      "name": "ブラザー工業",
+      "win": false,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 3118.25,
+      "exit_price": 2895.5,
+      "entered_date": "2026-03-03",
+      "exit_date": "2026-03-23",
+      "pnl_pct": -7.143429808386113
+    },
+    {
+      "code": "4204",
+      "name": "積水化学工業",
+      "win": false,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 2861.25,
+      "exit_price": 2657.5,
+      "entered_date": "2026-03-11",
+      "exit_date": "2026-03-23",
+      "pnl_pct": -7.121013543031891
+    },
+    {
+      "code": "3186",
+      "name": "ネクステージ",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 3305.0,
+      "exit_price": 3835.999999999999,
+      "entered_date": "2026-03-19",
+      "exit_date": "2026-03-23",
+      "pnl_pct": 16.066565809379714
+    },
+    {
+      "code": "8591",
+      "name": "オリックス",
+      "win": false,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 5136.0,
+      "exit_price": 4624.0,
+      "entered_date": "2026-03-06",
+      "exit_date": "2026-03-23",
+      "pnl_pct": -9.968847352024921
+    },
+    {
+      "code": "8001",
+      "name": "伊藤忠商事",
+      "win": false,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 2113.0499877929688,
+      "exit_price": 1939.5999755859377,
+      "entered_date": "2026-03-19",
+      "exit_date": "2026-03-23",
+      "pnl_pct": -8.208514384848781
+    },
+    {
+      "code": "7751",
+      "name": "キヤノン",
+      "win": false,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 4638.5,
+      "exit_price": 4244.0,
+      "entered_date": "2026-03-03",
+      "exit_date": "2026-03-23",
+      "pnl_pct": -8.504904602781071
+    },
+    {
+      "code": "6954",
+      "name": "ファナック",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 5966.0,
+      "exit_price": 7135.499999999999,
+      "entered_date": "2026-03-19",
+      "exit_date": "2026-03-23",
+      "pnl_pct": 19.602748910492792
+    },
+    {
+      "code": "6473",
+      "name": "ジェイテクト",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 1651.25,
+      "exit_price": 2112.7000000000003,
+      "entered_date": "2026-03-19",
+      "exit_date": "2026-03-23",
+      "pnl_pct": 27.945495836487527
+    },
+    {
+      "code": "6305",
+      "name": "日立建機",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 5954.5,
+      "exit_price": 7026.000000000001,
+      "entered_date": "2026-03-19",
+      "exit_date": "2026-03-23",
+      "pnl_pct": 17.994793853388195
+    },
+    {
+      "code": "5201",
+      "name": "AGC",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 6194.5,
+      "exit_price": 6787.500000000001,
+      "entered_date": "2026-03-19",
+      "exit_date": "2026-03-23",
+      "pnl_pct": 9.573008313826783
+    },
+    {
+      "code": "5108",
+      "name": "ブリヂストン",
+      "win": false,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 3482.0,
+      "exit_price": 3239.0,
+      "entered_date": "2026-01-08",
+      "exit_date": "2026-03-23",
+      "pnl_pct": -6.978747846065479
+    },
+    {
+      "code": "4503",
+      "name": "アステラス製薬",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 2377.5,
+      "exit_price": 2562.0,
+      "entered_date": "2026-03-19",
+      "exit_date": "2026-03-23",
+      "pnl_pct": 7.760252365930599
+    },
+    {
+      "code": "4042",
+      "name": "東ソー",
+      "win": false,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 2541.75,
+      "exit_price": 2294.5,
+      "entered_date": "2026-03-04",
+      "exit_date": "2026-03-23",
+      "pnl_pct": -9.727549916396184
+    },
+    {
+      "code": "6951",
+      "name": "日本電子",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 6360.5,
+      "exit_price": 6873.6,
+      "entered_date": "2026-03-18",
+      "exit_date": "2026-03-19",
+      "pnl_pct": 8.06697586667714
+    },
+    {
+      "code": "5105",
+      "name": "TOYO TIRE",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 3988.0,
+      "exit_price": 4837.549999999999,
+      "entered_date": "2026-03-18",
+      "exit_date": "2026-03-19",
+      "pnl_pct": 21.302657973921747
+    },
+    {
+      "code": "6971",
+      "name": "京セラ",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 2567.0,
+      "exit_price": 2779.7999999999997,
+      "entered_date": "2026-03-17",
+      "exit_date": "2026-03-18",
+      "pnl_pct": 8.289832489287095
+    },
+    {
+      "code": "4519",
+      "name": "中外製薬",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 9748.0,
+      "exit_price": 10555.199999999999,
+      "entered_date": "2026-03-17",
+      "exit_date": "2026-03-18",
+      "pnl_pct": 8.280672958555591
+    },
+    {
+      "code": "8439",
+      "name": "東京センチュリー",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 2113.25,
+      "exit_price": 2282.4,
+      "entered_date": "2026-03-12",
+      "exit_date": "2026-03-13",
+      "pnl_pct": 8.004258843014318
+    },
+    {
+      "code": "4202",
+      "name": "ダイセル",
+      "win": false,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 1524.0,
+      "exit_price": 1390.0,
+      "entered_date": "2026-03-12",
+      "exit_date": "2026-03-13",
+      "pnl_pct": -8.792650918635172
+    },
+    {
+      "code": "3116",
+      "name": "トヨタ紡織",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 2884.5,
+      "exit_price": 3225.2999999999997,
+      "entered_date": "2026-03-11",
+      "exit_date": "2026-03-12",
+      "pnl_pct": 11.814872594903802
+    },
+    {
+      "code": "9843",
+      "name": "ニトリホールディングス",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 3037.5,
+      "exit_price": 3485.7000000000003,
+      "entered_date": "2026-03-11",
+      "exit_date": "2026-03-12",
+      "pnl_pct": 14.755555555555564
+    },
+    {
+      "code": "7744",
+      "name": "ノーリツ鋼機",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 2139.0,
+      "exit_price": 2301.6,
+      "entered_date": "2026-03-09",
+      "exit_date": "2026-03-10",
+      "pnl_pct": 7.601683029453012
+    },
+    {
+      "code": "4401",
+      "name": "ADEKA",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 4075.5,
+      "exit_price": 5027.55,
+      "entered_date": "2026-03-09",
+      "exit_date": "2026-03-10",
+      "pnl_pct": 23.36032388663968
+    },
+    {
+      "code": "8795",
+      "name": "T&Dホールディングス",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 3865.0,
+      "exit_price": 4262.5,
+      "entered_date": "2026-03-09",
+      "exit_date": "2026-03-10",
+      "pnl_pct": 10.284605433376456
+    },
+    {
+      "code": "8354",
+      "name": "ふくおかフィナンシャルグループ",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 5751.0,
+      "exit_price": 7294.0,
+      "entered_date": "2026-03-09",
+      "exit_date": "2026-03-10",
+      "pnl_pct": 26.830116501478003
+    },
+    {
+      "code": "7203",
+      "name": "トヨタ自動車",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 3443.0,
+      "exit_price": 3896.1000000000004,
+      "entered_date": "2026-03-09",
+      "exit_date": "2026-03-10",
+      "pnl_pct": 13.1600348533256
+    },
+    {
+      "code": "7202",
+      "name": "いすゞ自動車",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 2531.5,
+      "exit_price": 2880.9,
+      "entered_date": "2026-03-09",
+      "exit_date": "2026-03-10",
+      "pnl_pct": 13.802093620383177
+    },
+    {
+      "code": "7186",
+      "name": "横浜フィナンシャルグループ",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 1426.75,
+      "exit_price": 1655.8999999999999,
+      "entered_date": "2026-03-09",
+      "exit_date": "2026-03-10",
+      "pnl_pct": 16.06097774662694
+    },
+    {
+      "code": "6301",
+      "name": "小松製作所",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 6539.0,
+      "exit_price": 7595.099999999999,
+      "entered_date": "2026-03-09",
+      "exit_date": "2026-03-10",
+      "pnl_pct": 16.150787582199104
+    },
+    {
+      "code": "4208",
+      "name": "UBE",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 2599.25,
+      "exit_price": 2870.625,
+      "entered_date": "2026-03-09",
+      "exit_date": "2026-03-10",
+      "pnl_pct": 10.440511686063287
+    },
+    {
+      "code": "3099",
+      "name": "三越伊勢丹ホールディングス",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 2856.75,
+      "exit_price": 3196.05,
+      "entered_date": "2026-03-09",
+      "exit_date": "2026-03-10",
+      "pnl_pct": 11.877133105802054
+    },
+    {
+      "code": "2501",
+      "name": "サッポロホールディングス",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 1706.0,
+      "exit_price": 1880.0,
+      "entered_date": "2026-03-09",
+      "exit_date": "2026-03-10",
+      "pnl_pct": 10.199296600234467
+    },
+    {
+      "code": "7599",
+      "name": "IDOM",
+      "win": false,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 1429.5,
+      "exit_price": 1292.0,
+      "entered_date": "2026-03-04",
+      "exit_date": "2026-03-09",
+      "pnl_pct": -9.618747813920951
+    },
+    {
+      "code": "5991",
+      "name": "日本発条",
+      "win": false,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 2937.0,
+      "exit_price": 2635.0,
+      "entered_date": "2026-03-06",
+      "exit_date": "2026-03-09",
+      "pnl_pct": -10.28260129383725
+    },
+    {
+      "code": "5444",
+      "name": "大和工業",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 12022.5,
+      "exit_price": 13008.0,
+      "entered_date": "2026-03-06",
+      "exit_date": "2026-03-09",
+      "pnl_pct": 8.197130380536494
+    },
+    {
+      "code": "8308",
+      "name": "りそなホールディングス",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 1888.0,
+      "exit_price": 2137.05,
+      "entered_date": "2026-03-06",
+      "exit_date": "2026-03-09",
+      "pnl_pct": 13.191207627118654
+    },
+    {
+      "code": "6472",
+      "name": "NTN",
+      "win": false,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 385.5,
+      "exit_price": 343.0,
+      "entered_date": "2026-03-05",
+      "exit_date": "2026-03-09",
+      "pnl_pct": -11.024643320363165
+    },
+    {
+      "code": "8411",
+      "name": "みずほフィナンシャルグループ",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 6919.0,
+      "exit_price": 7935.299999999999,
+      "entered_date": "2026-03-05",
+      "exit_date": "2026-03-06",
+      "pnl_pct": 14.688538806185866
+    },
+    {
+      "code": "6479",
+      "name": "ミネベアミツミ",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 3065.25,
+      "exit_price": 3494.4750000000004,
+      "entered_date": "2026-03-05",
+      "exit_date": "2026-03-06",
+      "pnl_pct": 14.002936138977256
+    },
+    {
+      "code": "6178",
+      "name": "日本郵政",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 1869.0,
+      "exit_price": 2098.2000000000003,
+      "entered_date": "2026-03-05",
+      "exit_date": "2026-03-06",
+      "pnl_pct": 12.26324237560194
+    },
+    {
+      "code": "7259",
+      "name": "アイシン",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 2419.5,
+      "exit_price": 3115.4000000000005,
+      "entered_date": "2026-03-04",
+      "exit_date": "2026-03-05",
+      "pnl_pct": 28.76214093821038
+    },
+    {
+      "code": "8604",
+      "name": "野村ホールディングス",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 1208.1499938964844,
+      "exit_price": 1501.1699798583984,
+      "entered_date": "2026-03-04",
+      "exit_date": "2026-03-05",
+      "pnl_pct": 24.253609853266305
+    },
+    {
+      "code": "8331",
+      "name": "千葉銀行",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 2112.0,
+      "exit_price": 2401.65,
+      "entered_date": "2026-03-04",
+      "exit_date": "2026-03-05",
+      "pnl_pct": 13.714488636363642
+    },
+    {
+      "code": "5233",
+      "name": "太平洋セメント",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 4399.5,
+      "exit_price": 4788.75,
+      "entered_date": "2026-03-04",
+      "exit_date": "2026-03-05",
+      "pnl_pct": 8.847596317763381
+    },
+    {
+      "code": "4183",
+      "name": "三井化学",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 2098.0,
+      "exit_price": 2405.8999999999996,
+      "entered_date": "2026-03-04",
+      "exit_date": "2026-03-05",
+      "pnl_pct": 14.675881792183015
+    },
+    {
+      "code": "6701",
+      "name": "日本電気",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 3950.9000244140625,
+      "exit_price": 6148.080175781248,
+      "entered_date": "2026-02-20",
+      "exit_date": "2026-02-24",
+      "pnl_pct": 55.612142493862216
+    },
+    {
+      "code": "2124",
+      "name": "ジェイエイシーリクルートメント",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 941.5,
+      "exit_price": 1161.6000000000001,
+      "entered_date": "2026-02-16",
+      "exit_date": "2026-02-17",
+      "pnl_pct": 23.377588953797122
+    },
+    {
+      "code": "4686",
+      "name": "ジャストシステム",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 4036.5,
+      "exit_price": 5309.85,
+      "entered_date": "2026-02-13",
+      "exit_date": "2026-02-16",
+      "pnl_pct": 31.545893719806774
+    },
+    {
+      "code": "7740",
+      "name": "タムロン",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 992.125,
+      "exit_price": 1113.125,
+      "entered_date": "2026-02-09",
+      "exit_date": "2026-02-10",
+      "pnl_pct": 12.196043845281594
+    },
+    {
+      "code": "7270",
+      "name": "SUBARU",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 3140.0,
+      "exit_price": 3561.3000000000006,
+      "entered_date": "2026-02-09",
+      "exit_date": "2026-02-10",
+      "pnl_pct": 13.417197452229304
+    },
+    {
+      "code": "8801",
+      "name": "三井不動産",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 1789.0,
+      "exit_price": 1991.9999999999998,
+      "entered_date": "2026-02-02",
+      "exit_date": "2026-02-09",
+      "pnl_pct": 11.347121296813862
+    },
+    {
+      "code": "4902",
+      "name": "コニカミノルタ",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 644.3000183105469,
+      "exit_price": 718.5100158691406,
+      "entered_date": "2026-02-05",
+      "exit_date": "2026-02-06",
+      "pnl_pct": 11.517925725531358
+    },
+    {
+      "code": "6702",
+      "name": "富士通",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 4019.0,
+      "exit_price": 4549.5,
+      "entered_date": "2026-02-04",
+      "exit_date": "2026-02-05",
+      "pnl_pct": 13.199800945508834
+    },
+    {
+      "code": "6504",
+      "name": "富士電機",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 10836.5,
+      "exit_price": 12807.85,
+      "entered_date": "2026-02-04",
+      "exit_date": "2026-02-05",
+      "pnl_pct": 18.191759331887607
+    },
+    {
+      "code": "8923",
+      "name": "トーセイ",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 1598.0,
+      "exit_price": 1942.1499999999999,
+      "entered_date": "2026-02-03",
+      "exit_date": "2026-02-04",
+      "pnl_pct": 21.536295369211505
+    },
+    {
+      "code": "9020",
+      "name": "東日本旅客鉄道",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 3789.5,
+      "exit_price": 4210.0,
+      "entered_date": "2026-02-03",
+      "exit_date": "2026-02-04",
+      "pnl_pct": 11.096450719092228
+    },
+    {
+      "code": "8267",
+      "name": "イオン",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 2096.3333129882812,
+      "exit_price": 2863.499908447266,
+      "entered_date": "2026-01-30",
+      "exit_date": "2026-02-02",
+      "pnl_pct": 36.595640144906355
+    },
+    {
+      "code": "2875",
+      "name": "東洋水産",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 10506.5,
+      "exit_price": 11619.6,
+      "entered_date": "2026-01-07",
+      "exit_date": "2026-01-30",
+      "pnl_pct": 10.594393946604487
+    },
+    {
+      "code": "6988",
+      "name": "日東電工",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 3388.75,
+      "exit_price": 4064.25,
+      "entered_date": "2026-01-28",
+      "exit_date": "2026-01-29",
+      "pnl_pct": 19.933603836222797
+    },
+    {
+      "code": "6432",
+      "name": "竹内製作所",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 6245.0,
+      "exit_price": 7308.0,
+      "entered_date": "2026-01-26",
+      "exit_date": "2026-01-27",
+      "pnl_pct": 17.021617293835067
+    },
+    {
+      "code": "7269",
+      "name": "スズキ",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 2192.0,
+      "exit_price": 2388.75,
+      "entered_date": "2026-01-26",
+      "exit_date": "2026-01-27",
+      "pnl_pct": 8.975821167883211
+    },
+    {
+      "code": "6758",
+      "name": "ソニーグループ",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 3825.0,
+      "exit_price": 4742.099999999999,
+      "entered_date": "2026-01-13",
+      "exit_date": "2026-01-14",
+      "pnl_pct": 23.97647058823528
+    },
+    {
+      "code": "9602",
+      "name": "東宝",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 1545.0,
+      "exit_price": 2010.45,
+      "entered_date": "2026-01-09",
+      "exit_date": "2026-01-13",
+      "pnl_pct": 30.126213592233025
+    },
+    {
+      "code": "7974",
+      "name": "任天堂",
+      "win": true,
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 10015.5,
+      "exit_price": 14660.800000000003,
+      "entered_date": "2026-01-09",
+      "exit_date": "2026-01-13",
+      "pnl_pct": 46.38110928061507
     }
   ],
   "equity_curve": [
     {
+      "date": "2026-01-13",
+      "cum_pnl_pct": 46.38110928061507,
+      "cum_pnl_yen": 46381.10928061507
+    },
+    {
+      "date": "2026-01-13",
+      "cum_pnl_pct": 76.50732287284809,
+      "cum_pnl_yen": 76507.32287284809
+    },
+    {
+      "date": "2026-01-14",
+      "cum_pnl_pct": 100.48379346108337,
+      "cum_pnl_yen": 100483.79346108338
+    },
+    {
+      "date": "2026-01-27",
+      "cum_pnl_pct": 109.45961462896658,
+      "cum_pnl_yen": 109459.61462896659
+    },
+    {
+      "date": "2026-01-27",
+      "cum_pnl_pct": 126.48123192280164,
+      "cum_pnl_yen": 126481.23192280166
+    },
+    {
+      "date": "2026-01-29",
+      "cum_pnl_pct": 146.41483575902444,
+      "cum_pnl_yen": 146414.83575902446
+    },
+    {
+      "date": "2026-01-30",
+      "cum_pnl_pct": 157.00922970562894,
+      "cum_pnl_yen": 157009.22970562894
+    },
+    {
+      "date": "2026-02-02",
+      "cum_pnl_pct": 193.6048698505353,
+      "cum_pnl_yen": 193604.8698505353
+    },
+    {
+      "date": "2026-02-04",
+      "cum_pnl_pct": 204.7013205696275,
+      "cum_pnl_yen": 204701.3205696275
+    },
+    {
+      "date": "2026-02-04",
+      "cum_pnl_pct": 226.237615938839,
+      "cum_pnl_yen": 226237.615938839
+    },
+    {
+      "date": "2026-02-05",
+      "cum_pnl_pct": 244.4293752707266,
+      "cum_pnl_yen": 244429.37527072662
+    },
+    {
+      "date": "2026-02-05",
+      "cum_pnl_pct": 257.62917621623546,
+      "cum_pnl_yen": 257629.17621623547
+    },
+    {
+      "date": "2026-02-06",
+      "cum_pnl_pct": 269.14710194176683,
+      "cum_pnl_yen": 269147.1019417668
+    },
+    {
+      "date": "2026-02-09",
+      "cum_pnl_pct": 280.4942232385807,
+      "cum_pnl_yen": 280494.2232385807
+    },
+    {
+      "date": "2026-02-10",
+      "cum_pnl_pct": 293.91142069080996,
+      "cum_pnl_yen": 293911.42069081
+    },
+    {
+      "date": "2026-02-10",
+      "cum_pnl_pct": 306.1074645360916,
+      "cum_pnl_yen": 306107.4645360916
+    },
+    {
+      "date": "2026-02-16",
+      "cum_pnl_pct": 337.65335825589835,
+      "cum_pnl_yen": 337653.35825589835
+    },
+    {
+      "date": "2026-02-17",
+      "cum_pnl_pct": 361.03094720969546,
+      "cum_pnl_yen": 361030.94720969547
+    },
+    {
+      "date": "2026-02-24",
+      "cum_pnl_pct": 416.6430897035577,
+      "cum_pnl_yen": 416643.08970355766
+    },
+    {
+      "date": "2026-03-05",
+      "cum_pnl_pct": 431.3189714957407,
+      "cum_pnl_yen": 431318.9714957407
+    },
+    {
+      "date": "2026-03-05",
+      "cum_pnl_pct": 440.16656781350406,
+      "cum_pnl_yen": 440166.5678135041
+    },
+    {
+      "date": "2026-03-05",
+      "cum_pnl_pct": 453.8810564498677,
+      "cum_pnl_yen": 453881.0564498677
+    },
+    {
+      "date": "2026-03-05",
+      "cum_pnl_pct": 478.134666303134,
+      "cum_pnl_yen": 478134.66630313406
+    },
+    {
+      "date": "2026-03-05",
+      "cum_pnl_pct": 506.8968072413444,
+      "cum_pnl_yen": 506896.8072413444
+    },
+    {
+      "date": "2026-03-06",
+      "cum_pnl_pct": 519.1600496169464,
+      "cum_pnl_yen": 519160.0496169464
+    },
+    {
+      "date": "2026-03-06",
+      "cum_pnl_pct": 533.1629857559236,
+      "cum_pnl_yen": 533162.9857559237
+    },
+    {
+      "date": "2026-03-06",
+      "cum_pnl_pct": 547.8515245621095,
+      "cum_pnl_yen": 547851.5245621095
+    },
+    {
+      "date": "2026-03-09",
+      "cum_pnl_pct": 536.8268812417464,
+      "cum_pnl_yen": 536826.8812417464
+    },
+    {
+      "date": "2026-03-09",
+      "cum_pnl_pct": 550.018088868865,
+      "cum_pnl_yen": 550018.088868865
+    },
+    {
+      "date": "2026-03-09",
+      "cum_pnl_pct": 558.2152192494015,
+      "cum_pnl_yen": 558215.2192494016
+    },
+    {
+      "date": "2026-03-09",
+      "cum_pnl_pct": 547.9326179555642,
+      "cum_pnl_yen": 547932.6179555643
+    },
+    {
+      "date": "2026-03-09",
+      "cum_pnl_pct": 538.3138701416432,
+      "cum_pnl_yen": 538313.8701416433
+    },
+    {
+      "date": "2026-03-10",
+      "cum_pnl_pct": 548.5131667418776,
+      "cum_pnl_yen": 548513.1667418778
+    },
+    {
+      "date": "2026-03-10",
+      "cum_pnl_pct": 560.3902998476797,
+      "cum_pnl_yen": 560390.2998476798
+    },
+    {
+      "date": "2026-03-10",
+      "cum_pnl_pct": 570.8308115337429,
+      "cum_pnl_yen": 570830.811533743
+    },
+    {
+      "date": "2026-03-10",
+      "cum_pnl_pct": 586.981599115942,
+      "cum_pnl_yen": 586981.5991159421
+    },
+    {
+      "date": "2026-03-10",
+      "cum_pnl_pct": 603.0425768625689,
+      "cum_pnl_yen": 603042.5768625691
+    },
+    {
+      "date": "2026-03-10",
+      "cum_pnl_pct": 616.8446704829521,
+      "cum_pnl_yen": 616844.6704829523
+    },
+    {
+      "date": "2026-03-10",
+      "cum_pnl_pct": 630.0047053362777,
+      "cum_pnl_yen": 630004.7053362778
+    },
+    {
+      "date": "2026-03-10",
+      "cum_pnl_pct": 656.8348218377556,
+      "cum_pnl_yen": 656834.8218377559
+    },
+    {
+      "date": "2026-03-10",
+      "cum_pnl_pct": 667.119427271132,
+      "cum_pnl_yen": 667119.4272711324
+    },
+    {
+      "date": "2026-03-10",
+      "cum_pnl_pct": 690.4797511577717,
+      "cum_pnl_yen": 690479.751157772
+    },
+    {
+      "date": "2026-03-10",
+      "cum_pnl_pct": 698.0814341872248,
+      "cum_pnl_yen": 698081.4341872251
+    },
+    {
+      "date": "2026-03-12",
+      "cum_pnl_pct": 712.8369897427804,
+      "cum_pnl_yen": 712836.9897427807
+    },
+    {
+      "date": "2026-03-12",
+      "cum_pnl_pct": 724.6518623376842,
+      "cum_pnl_yen": 724651.8623376845
+    },
+    {
+      "date": "2026-03-13",
+      "cum_pnl_pct": 715.859211419049,
+      "cum_pnl_yen": 715859.2114190493
+    },
+    {
+      "date": "2026-03-13",
+      "cum_pnl_pct": 723.8634702620633,
+      "cum_pnl_yen": 723863.4702620637
+    },
+    {
+      "date": "2026-03-18",
+      "cum_pnl_pct": 732.1441432206188,
+      "cum_pnl_yen": 732144.1432206193
+    },
+    {
+      "date": "2026-03-18",
+      "cum_pnl_pct": 740.4339757099059,
+      "cum_pnl_yen": 740433.9757099064
+    },
+    {
+      "date": "2026-03-19",
+      "cum_pnl_pct": 761.7366336838277,
+      "cum_pnl_yen": 761736.6336838282
+    },
+    {
+      "date": "2026-03-19",
+      "cum_pnl_pct": 769.8036095505048,
+      "cum_pnl_yen": 769803.6095505053
+    },
+    {
+      "date": "2026-03-23",
+      "cum_pnl_pct": 760.0760596341087,
+      "cum_pnl_yen": 760076.0596341091
+    },
+    {
+      "date": "2026-03-23",
+      "cum_pnl_pct": 767.8363120000392,
+      "cum_pnl_yen": 767836.3120000397
+    },
+    {
+      "date": "2026-03-23",
+      "cum_pnl_pct": 760.8575641539737,
+      "cum_pnl_yen": 760857.5641539743
+    },
+    {
+      "date": "2026-03-23",
+      "cum_pnl_pct": 770.4305724678005,
+      "cum_pnl_yen": 770430.572467801
+    },
+    {
+      "date": "2026-03-23",
+      "cum_pnl_pct": 788.4253663211887,
+      "cum_pnl_yen": 788425.3663211892
+    },
+    {
+      "date": "2026-03-23",
+      "cum_pnl_pct": 816.3708621576762,
+      "cum_pnl_yen": 816370.8621576767
+    },
+    {
+      "date": "2026-03-23",
+      "cum_pnl_pct": 835.973611068169,
+      "cum_pnl_yen": 835973.6110681695
+    },
+    {
+      "date": "2026-03-23",
+      "cum_pnl_pct": 827.468706465388,
+      "cum_pnl_yen": 827468.7064653884
+    },
+    {
+      "date": "2026-03-23",
+      "cum_pnl_pct": 819.2601920805392,
+      "cum_pnl_yen": 819260.1920805397
+    },
+    {
+      "date": "2026-03-23",
+      "cum_pnl_pct": 809.2913447285143,
+      "cum_pnl_yen": 809291.3447285148
+    },
+    {
+      "date": "2026-03-23",
+      "cum_pnl_pct": 825.3579105378941,
+      "cum_pnl_yen": 825357.9105378945
+    },
+    {
+      "date": "2026-03-23",
+      "cum_pnl_pct": 818.2368969948623,
+      "cum_pnl_yen": 818236.8969948626
+    },
+    {
+      "date": "2026-03-23",
+      "cum_pnl_pct": 811.0934671864761,
+      "cum_pnl_yen": 811093.4671864765
+    },
+    {
+      "date": "2026-03-23",
+      "cum_pnl_pct": 830.8406855077465,
+      "cum_pnl_yen": 830840.6855077469
+    },
+    {
+      "date": "2026-03-23",
+      "cum_pnl_pct": 823.5366977128366,
+      "cum_pnl_yen": 823536.697712837
+    },
+    {
+      "date": "2026-03-24",
+      "cum_pnl_pct": 834.3590454843369,
+      "cum_pnl_yen": 834359.0454843374
+    },
+    {
+      "date": "2026-03-24",
+      "cum_pnl_pct": 848.6932030258416,
+      "cum_pnl_yen": 848693.2030258421
+    },
+    {
+      "date": "2026-03-24",
+      "cum_pnl_pct": 859.3573235435586,
+      "cum_pnl_yen": 859357.3235435591
+    },
+    {
+      "date": "2026-03-24",
+      "cum_pnl_pct": 883.1482596996948,
+      "cum_pnl_yen": 883148.2596996954
+    },
+    {
+      "date": "2026-03-24",
+      "cum_pnl_pct": 909.0306126408713,
+      "cum_pnl_yen": 909030.6126408719
+    },
+    {
+      "date": "2026-03-24",
+      "cum_pnl_pct": 943.6322996136922,
+      "cum_pnl_yen": 943632.2996136929
+    },
+    {
+      "date": "2026-03-24",
+      "cum_pnl_pct": 985.8938521447591,
+      "cum_pnl_yen": 985893.8521447597
+    },
+    {
+      "date": "2026-03-24",
+      "cum_pnl_pct": 1009.906321975813,
+      "cum_pnl_yen": 1009906.3219758136
+    },
+    {
+      "date": "2026-03-24",
+      "cum_pnl_pct": 1024.8461688587877,
+      "cum_pnl_yen": 1024846.1688587884
+    },
+    {
+      "date": "2026-03-24",
+      "cum_pnl_pct": 1039.3658283642599,
+      "cum_pnl_yen": 1039365.8283642607
+    },
+    {
+      "date": "2026-03-24",
+      "cum_pnl_pct": 1057.1312611628541,
+      "cum_pnl_yen": 1057131.261162855
+    },
+    {
+      "date": "2026-03-24",
+      "cum_pnl_pct": 1070.8456019492844,
+      "cum_pnl_yen": 1070845.6019492853
+    },
+    {
+      "date": "2026-03-24",
+      "cum_pnl_pct": 1080.5199314512001,
+      "cum_pnl_yen": 1080519.931451201
+    },
+    {
+      "date": "2026-03-24",
+      "cum_pnl_pct": 1095.408820340089,
+      "cum_pnl_yen": 1095408.82034009
+    },
+    {
+      "date": "2026-03-24",
+      "cum_pnl_pct": 1118.1375057228715,
+      "cum_pnl_yen": 1118137.5057228724
+    },
+    {
+      "date": "2026-03-24",
+      "cum_pnl_pct": 1133.4669571479405,
+      "cum_pnl_yen": 1133466.9571479415
+    },
+    {
+      "date": "2026-03-24",
+      "cum_pnl_pct": 1145.0549399805586,
+      "cum_pnl_yen": 1145054.9399805595
+    },
+    {
+      "date": "2026-03-24",
+      "cum_pnl_pct": 1181.5179624885973,
+      "cum_pnl_yen": 1181517.9624885982
+    },
+    {
+      "date": "2026-03-24",
+      "cum_pnl_pct": 1207.1453432379292,
+      "cum_pnl_yen": 1207145.3432379302
+    },
+    {
+      "date": "2026-03-25",
+      "cum_pnl_pct": 1228.4369260483945,
+      "cum_pnl_yen": 1228436.9260483955
+    },
+    {
+      "date": "2026-03-25",
+      "cum_pnl_pct": 1244.8407649644653,
+      "cum_pnl_yen": 1244840.7649644662
+    },
+    {
+      "date": "2026-03-25",
+      "cum_pnl_pct": 1275.6109221271076,
+      "cum_pnl_yen": 1275610.9221271086
+    },
+    {
+      "date": "2026-03-27",
+      "cum_pnl_pct": 1291.02659061174,
+      "cum_pnl_yen": 1291026.5906117407
+    },
+    {
+      "date": "2026-03-31",
+      "cum_pnl_pct": 1304.0404127271245,
+      "cum_pnl_yen": 1304040.4127271255
+    },
+    {
+      "date": "2026-03-31",
+      "cum_pnl_pct": 1323.3996584458084,
+      "cum_pnl_yen": 1323399.6584458093
+    },
+    {
+      "date": "2026-03-31",
+      "cum_pnl_pct": 1349.626835024729,
+      "cum_pnl_yen": 1349626.8350247298
+    },
+    {
+      "date": "2026-03-31",
+      "cum_pnl_pct": 1376.367558799351,
+      "cum_pnl_yen": 1376367.558799352
+    },
+    {
+      "date": "2026-03-31",
+      "cum_pnl_pct": 1407.5938708697563,
+      "cum_pnl_yen": 1407593.8708697574
+    },
+    {
+      "date": "2026-03-31",
+      "cum_pnl_pct": 1441.283353340541,
+      "cum_pnl_yen": 1441283.353340542
+    },
+    {
+      "date": "2026-03-31",
+      "cum_pnl_pct": 1454.0200753585407,
+      "cum_pnl_yen": 1454020.0753585417
+    },
+    {
+      "date": "2026-04-01",
+      "cum_pnl_pct": 1469.5636183908043,
+      "cum_pnl_yen": 1469563.6183908053
+    },
+    {
+      "date": "2026-04-01",
+      "cum_pnl_pct": 1479.6812654496277,
+      "cum_pnl_yen": 1479681.265449629
+    },
+    {
+      "date": "2026-04-10",
+      "cum_pnl_pct": 1472.0507014967454,
+      "cum_pnl_yen": 1472050.7014967466
+    },
+    {
+      "date": "2026-04-21",
+      "cum_pnl_pct": 1488.1741360551478,
+      "cum_pnl_yen": 1488174.136055149
+    },
+    {
+      "date": "2026-04-23",
+      "cum_pnl_pct": 1504.2440481712729,
+      "cum_pnl_yen": 1504244.0481712741
+    },
+    {
+      "date": "2026-04-23",
+      "cum_pnl_pct": 1493.7524040411847,
+      "cum_pnl_yen": 1493752.404041186
+    },
+    {
+      "date": "2026-04-23",
+      "cum_pnl_pct": 1509.0293491734667,
+      "cum_pnl_yen": 1509029.349173468
+    },
+    {
+      "date": "2026-04-24",
+      "cum_pnl_pct": 1534.367672688289,
+      "cum_pnl_yen": 1534367.6726882905
+    },
+    {
+      "date": "2026-04-27",
+      "cum_pnl_pct": 1564.8038300397259,
+      "cum_pnl_yen": 1564803.8300397273
+    },
+    {
+      "date": "2026-04-27",
+      "cum_pnl_pct": 1622.9057880570128,
+      "cum_pnl_yen": 1622905.788057014
+    },
+    {
+      "date": "2026-04-28",
+      "cum_pnl_pct": 1645.8103217835148,
+      "cum_pnl_yen": 1645810.321783516
+    },
+    {
+      "date": "2026-04-30",
+      "cum_pnl_pct": 1663.206584057826,
+      "cum_pnl_yen": 1663206.5840578272
+    },
+    {
+      "date": "2026-04-30",
+      "cum_pnl_pct": 1674.1098210922846,
+      "cum_pnl_yen": 1674109.821092286
+    },
+    {
+      "date": "2026-05-01",
+      "cum_pnl_pct": 1663.813963104119,
+      "cum_pnl_yen": 1663813.9631041202
+    },
+    {
+      "date": "2026-05-01",
+      "cum_pnl_pct": 1688.0299594891167,
+      "cum_pnl_yen": 1688029.9594891178
+    },
+    {
+      "date": "2026-05-01",
+      "cum_pnl_pct": 1709.4109505532922,
+      "cum_pnl_yen": 1709410.9505532933
+    },
+    {
+      "date": "2026-05-11",
+      "cum_pnl_pct": 1727.49004659849,
+      "cum_pnl_yen": 1727490.046598491
+    },
+    {
+      "date": "2026-05-12",
+      "cum_pnl_pct": 1747.2617250050967,
+      "cum_pnl_yen": 1747261.7250050977
+    },
+    {
+      "date": "2026-05-12",
+      "cum_pnl_pct": 1759.9659407025717,
+      "cum_pnl_yen": 1759965.940702573
+    },
+    {
+      "date": "2026-05-13",
+      "cum_pnl_pct": 1751.1227465559841,
+      "cum_pnl_yen": 1751122.7465559854
+    },
+    {
+      "date": "2026-05-13",
+      "cum_pnl_pct": 1819.533396074345,
+      "cum_pnl_yen": 1819533.3960743465
+    },
+    {
+      "date": "2026-05-14",
+      "cum_pnl_pct": 1812.4833763815527,
+      "cum_pnl_yen": 1812483.3763815542
+    },
+    {
+      "date": "2026-05-15",
+      "cum_pnl_pct": 1827.2442097964015,
+      "cum_pnl_yen": 1827244.209796403
+    },
+    {
+      "date": "2026-05-18",
+      "cum_pnl_pct": 1905.2661878183792,
+      "cum_pnl_yen": 1905266.1878183808
+    },
+    {
+      "date": "2026-05-18",
+      "cum_pnl_pct": 1950.4892168640224,
+      "cum_pnl_yen": 1950489.216864024
+    },
+    {
+      "date": "2026-05-18",
+      "cum_pnl_pct": 1941.4234455821736,
+      "cum_pnl_yen": 1941423.4455821754
+    },
+    {
+      "date": "2026-05-19",
+      "cum_pnl_pct": 1983.6998683464012,
+      "cum_pnl_yen": 1983699.8683464031
+    },
+    {
+      "date": "2026-05-19",
+      "cum_pnl_pct": 2001.7629076138778,
+      "cum_pnl_yen": 2001762.9076138798
+    },
+    {
+      "date": "2026-05-19",
+      "cum_pnl_pct": 2033.25887285286,
+      "cum_pnl_yen": 2033258.8728528619
+    },
+    {
+      "date": "2026-05-19",
+      "cum_pnl_pct": 2056.1533802634963,
+      "cum_pnl_yen": 2056153.3802634983
+    },
+    {
+      "date": "2026-05-19",
+      "cum_pnl_pct": 2087.7413142418686,
+      "cum_pnl_yen": 2087741.3142418705
+    },
+    {
+      "date": "2026-05-19",
+      "cum_pnl_pct": 2120.365526978048,
+      "cum_pnl_yen": 2120365.52697805
+    },
+    {
+      "date": "2026-05-19",
+      "cum_pnl_pct": 2176.572018386478,
+      "cum_pnl_yen": 2176572.01838648
+    },
+    {
+      "date": "2026-05-21",
+      "cum_pnl_pct": 2195.5351709877395,
+      "cum_pnl_yen": 2195535.1709877416
+    },
+    {
+      "date": "2026-05-21",
+      "cum_pnl_pct": 2184.7776312109645,
+      "cum_pnl_yen": 2184777.6312109665
+    },
+    {
+      "date": "2026-05-25",
+      "cum_pnl_pct": 2207.2814415501475,
+      "cum_pnl_yen": 2207281.4415501496
+    },
+    {
+      "date": "2026-05-26",
+      "cum_pnl_pct": 2239.985419972265,
+      "cum_pnl_yen": 2239985.419972267
+    },
+    {
+      "date": "2026-05-27",
+      "cum_pnl_pct": 2250.565762139323,
+      "cum_pnl_yen": 2250565.762139325
+    },
+    {
+      "date": "2026-05-28",
+      "cum_pnl_pct": 2273.7298600541008,
+      "cum_pnl_yen": 2273729.8600541027
+    },
+    {
+      "date": "2026-06-01",
+      "cum_pnl_pct": 2263.333132037741,
+      "cum_pnl_yen": 2263333.132037743
+    },
+    {
+      "date": "2026-06-02",
+      "cum_pnl_pct": 2255.115114528563,
+      "cum_pnl_yen": 2255115.1145285647
+    },
+    {
+      "date": "2026-06-02",
+      "cum_pnl_pct": 2291.592649090775,
+      "cum_pnl_yen": 2291592.6490907767
+    },
+    {
+      "date": "2026-06-03",
+      "cum_pnl_pct": 2306.071688343527,
+      "cum_pnl_yen": 2306071.6883435287
+    },
+    {
+      "date": "2026-06-03",
+      "cum_pnl_pct": 2319.8264629806545,
+      "cum_pnl_yen": 2319826.4629806564
+    },
+    {
+      "date": "2026-06-03",
+      "cum_pnl_pct": 2351.042481688635,
+      "cum_pnl_yen": 2351042.4816886364
+    },
+    {
+      "date": "2026-06-03",
+      "cum_pnl_pct": 2372.362163144835,
+      "cum_pnl_yen": 2372362.1631448367
+    },
+    {
+      "date": "2026-06-04",
+      "cum_pnl_pct": 2385.056257371776,
+      "cum_pnl_yen": 2385056.2573717777
+    },
+    {
+      "date": "2026-06-08",
+      "cum_pnl_pct": 2376.9364382308568,
+      "cum_pnl_yen": 2376936.438230858
+    },
+    {
+      "date": "2026-06-08",
+      "cum_pnl_pct": 2449.9560354687014,
+      "cum_pnl_yen": 2449956.0354687027
+    },
+    {
+      "date": "2026-06-09",
+      "cum_pnl_pct": 2482.152756780177,
+      "cum_pnl_yen": 2482152.7567801783
+    },
+    {
+      "date": "2026-06-09",
+      "cum_pnl_pct": 2497.1061714377506,
+      "cum_pnl_yen": 2497106.171437752
+    },
+    {
+      "date": "2026-06-09",
+      "cum_pnl_pct": 2518.105256943009,
+      "cum_pnl_yen": 2518105.2569430103
+    },
+    {
+      "date": "2026-06-09",
+      "cum_pnl_pct": 2507.16800987022,
+      "cum_pnl_yen": 2507168.0098702214
+    },
+    {
+      "date": "2026-06-09",
+      "cum_pnl_pct": 2515.992224072781,
+      "cum_pnl_yen": 2515992.2240727823
+    },
+    {
+      "date": "2026-06-10",
+      "cum_pnl_pct": 2555.38246797522,
+      "cum_pnl_yen": 2555382.4679752216
+    },
+    {
+      "date": "2026-06-11",
+      "cum_pnl_pct": 2596.3756388714346,
+      "cum_pnl_yen": 2596375.638871436
+    },
+    {
+      "date": "2026-06-11",
+      "cum_pnl_pct": 2643.9470135412876,
+      "cum_pnl_yen": 2643947.013541289
+    },
+    {
+      "date": "2026-06-11",
+      "cum_pnl_pct": 2658.497643878823,
+      "cum_pnl_yen": 2658497.6438788245
+    },
+    {
+      "date": "2026-06-12",
+      "cum_pnl_pct": 2696.659165811636,
+      "cum_pnl_yen": 2696659.1658116374
+    },
+    {
+      "date": "2026-06-12",
+      "cum_pnl_pct": 2726.1316956942983,
+      "cum_pnl_yen": 2726131.6956943
+    },
+    {
+      "date": "2026-06-12",
+      "cum_pnl_pct": 2767.998362360965,
+      "cum_pnl_yen": 2767998.3623609664
+    },
+    {
+      "date": "2026-06-15",
+      "cum_pnl_pct": 2777.265738691585,
+      "cum_pnl_yen": 2777265.7386915865
+    },
+    {
+      "date": "2026-06-18",
+      "cum_pnl_pct": 2768.4680067876247,
+      "cum_pnl_yen": 2768468.006787626
+    },
+    {
+      "date": "2026-06-22",
+      "cum_pnl_pct": 2797.7703323690203,
+      "cum_pnl_yen": 2797770.3323690216
+    },
+    {
+      "date": "2026-06-22",
+      "cum_pnl_pct": 2807.166984762948,
+      "cum_pnl_yen": 2807166.9847629494
+    },
+    {
+      "date": "2026-06-25",
+      "cum_pnl_pct": 2824.7571723531355,
+      "cum_pnl_yen": 2824757.172353137
+    },
+    {
+      "date": "2026-06-25",
+      "cum_pnl_pct": 2834.2738957091447,
+      "cum_pnl_yen": 2834273.895709146
+    },
+    {
+      "date": "2026-06-25",
+      "cum_pnl_pct": 2847.178520997788,
+      "cum_pnl_yen": 2847178.520997789
+    },
+    {
+      "date": "2026-06-30",
+      "cum_pnl_pct": 2889.6056037246904,
+      "cum_pnl_yen": 2889605.6037246916
+    },
+    {
+      "date": "2026-07-06",
+      "cum_pnl_pct": 2904.1750753489564,
+      "cum_pnl_yen": 2904175.075348958
+    },
+    {
+      "date": "2026-07-07",
+      "cum_pnl_pct": 2917.4392232328546,
+      "cum_pnl_yen": 2917439.223232856
+    },
+    {
+      "date": "2026-07-08",
+      "cum_pnl_pct": 2924.588999017608,
+      "cum_pnl_yen": 2924588.9990176093
+    },
+    {
+      "date": "2026-07-09",
+      "cum_pnl_pct": 2945.4659807555167,
+      "cum_pnl_yen": 2945465.980755518
+    },
+    {
+      "date": "2026-07-14",
+      "cum_pnl_pct": 2963.240916816898,
+      "cum_pnl_yen": 2963240.916816899
+    },
+    {
+      "date": "2026-07-14",
+      "cum_pnl_pct": 2973.7990021711284,
+      "cum_pnl_yen": 2973799.00217113
+    },
+    {
+      "date": "2026-07-15",
+      "cum_pnl_pct": 3048.08446030274,
+      "cum_pnl_yen": 3048084.4603027417
+    },
+    {
+      "date": "2026-07-21",
+      "cum_pnl_pct": 3064.175369393649,
+      "cum_pnl_yen": 3064175.369393651
+    },
+    {
+      "date": "2026-07-21",
+      "cum_pnl_pct": 3149.613430030887,
+      "cum_pnl_yen": 3149613.430030889
+    },
+    {
+      "date": "2026-07-21",
+      "cum_pnl_pct": 3215.684012960191,
+      "cum_pnl_yen": 3215684.0129601927
+    },
+    {
+      "date": "2026-07-27",
+      "cum_pnl_pct": 3228.558517412001,
+      "cum_pnl_yen": 3228558.5174120027
+    },
+    {
+      "date": "2026-07-28",
+      "cum_pnl_pct": 3237.8435622640563,
+      "cum_pnl_yen": 3237843.562264058
+    },
+    {
+      "date": "2026-07-29",
+      "cum_pnl_pct": 3248.777022114608,
+      "cum_pnl_yen": 3248777.0221146094
+    },
+    {
+      "date": "2026-07-30",
+      "cum_pnl_pct": 3321.0457529210526,
+      "cum_pnl_yen": 3321045.7529210537
+    },
+    {
+      "date": "2026-07-30",
+      "cum_pnl_pct": 3378.426149653841,
+      "cum_pnl_yen": 3378426.149653842
+    },
+    {
+      "date": "2026-07-30",
+      "cum_pnl_pct": 3411.6999233846204,
+      "cum_pnl_yen": 3411699.9233846213
+    },
+    {
+      "date": "2026-07-31",
+      "cum_pnl_pct": 3467.913262511277,
+      "cum_pnl_yen": 3467913.2625112776
+    },
+    {
+      "date": "2026-07-31",
+      "cum_pnl_pct": 3487.0275602759334,
+      "cum_pnl_yen": 3487027.5602759337
+    },
+    {
       "date": "2026-08-03",
-      "cum_pnl_pct": -10.331930808789155,
-      "cum_pnl_yen": -10331.930808789155
+      "cum_pnl_pct": 3476.695629467144,
+      "cum_pnl_yen": 3476695.6294671446
     },
     {
       "date": "2026-08-05",
-      "cum_pnl_pct": 0.1739992317453023,
-      "cum_pnl_yen": 173.9992317453034
+      "cum_pnl_pct": 3487.2015595076787,
+      "cum_pnl_yen": 3487201.559507679
     },
     {
       "date": "2026-08-05",
-      "cum_pnl_pct": -7.048508917165317,
-      "cum_pnl_yen": -7048.508917165316
+      "cum_pnl_pct": 3479.979051358768,
+      "cum_pnl_yen": 3479979.0513587687
     }
   ],
   "whats_new": [
