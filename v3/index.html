@@ -378,6 +378,26 @@ function renderNewsCard(e) {
 }
 function sharesFor100k(entry) { return Math.floor(100000 / entry); }
 
+function renderWatchingCard(w) {
+  const zoneOk = w.zone_ok !== false;
+  return `
+      <div class="card ${zoneOk ? '' : 'loss'}">
+        <div class="card-title">
+          <span>${w.name}(${w.code})</span>
+          <span class="badge">指値まで ${fmtPct(w.gap_pct)}</span>
+        </div>
+        <div class="rows rows-current">
+          <div><span class="label">現在値</span><span class="value">${fmtYen(w.last_price)}</span></div>
+          <div><span class="label">指値まで</span><span class="value">${fmtYen(w.gap_yen)}</span></div>
+        </div>
+        <div class="rows rows-2col">
+          <div><span class="label">指値</span><span class="value entry-price">${fmtYen(w.entry)}</span></div>
+          <div><span class="label">損切り</span><span class="value sl-red">${fmtYen(w.sl)}</span></div>
+        </div>
+        ${zoneOk ? '' : '<div class="empty" style="padding:4px 0 0;text-align:left;">⚠️ 現在この戦略のゾーン対象外です。指値注文は解除を推奨します。</div>'}
+      </div>`;
+}
+
 async function load() {
   document.getElementById('updated').textContent = '更新中...';
   try {
@@ -404,29 +424,28 @@ function render(data) {
     ? '<div class="empty">新着はありません。</div>'
     : whatsNew.map(renderNewsCard).join('');
 
-  // 現在指値注文中(未保有。指値まで近い順)
-  const watching = (data.watching || []).slice().sort((a, b) => a.gap_pct - b.gap_pct);
+  // 現在指値注文中(未保有。戦略ゾーンごとに折りたたみ、各グループ内は指値まで近い順)
+  const watching = data.watching || [];
   document.getElementById('watchingCount').textContent = watching.length ? `(${watching.length})` : '';
+  const watchingOrder = ['crash', 'uptrend', 'relative_strength'];
+  const watchingKeys = watchingOrder.concat(
+    [...new Set(watching.map(w => w.strategy))].filter(k => !watchingOrder.includes(k))
+  );
+  const watchingGroups = watchingKeys
+    .map(key => watching.filter(w => w.strategy === key).sort((a, b) => a.gap_pct - b.gap_pct))
+    .filter(items => items.length > 0);
   document.getElementById('watchingList').innerHTML = watching.length === 0
     ? '<div class="empty">現在、指値待ちのセットアップはありません。</div>'
-    : watching.map(w => {
-      const zoneOk = w.zone_ok !== false;
+    : watchingGroups.map(items => {
+      const warnCount = items.filter(w => w.zone_ok === false).length;
       return `
-      <div class="card ${zoneOk ? '' : 'loss'}">
-        <div class="card-title">
-          <span><span class="strategy-tag">${w.strategy_label || ''}</span>${w.name}(${w.code})</span>
-          <span class="badge">指値まで ${fmtPct(w.gap_pct)}</span>
-        </div>
-        <div class="rows rows-current">
-          <div><span class="label">現在値</span><span class="value">${fmtYen(w.last_price)}</span></div>
-          <div><span class="label">指値まで</span><span class="value">${fmtYen(w.gap_yen)}</span></div>
-        </div>
-        <div class="rows rows-2col">
-          <div><span class="label">指値</span><span class="value entry-price">${fmtYen(w.entry)}</span></div>
-          <div><span class="label">損切り</span><span class="value sl-red">${fmtYen(w.sl)}</span></div>
-        </div>
-        ${zoneOk ? '' : '<div class="empty" style="padding:4px 0 0;text-align:left;">⚠️ 現在この戦略のゾーン対象外です。指値注文は解除を推奨します。</div>'}
-      </div>`;
+      <details class="year-group">
+        <summary>
+          <span><span class="arrow">▶</span> ${items[0].strategy_label}(${items.length}件)</span>
+          <span class="year-total value">${warnCount ? `⚠️ ${warnCount}件ゾーン対象外` : ''}</span>
+        </summary>
+        <div class="year-body">${items.map(renderWatchingCard).join('')}</div>
+      </details>`;
     }).join('');
 
   // エントリー中(含み損益で色分け: 青=利益, 赤=損失)
