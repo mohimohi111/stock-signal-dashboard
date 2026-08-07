@@ -70,6 +70,21 @@
   }
   .card.profit { border-color: var(--profit); background: color-mix(in srgb, var(--profit) 8%, var(--surface-2)); }
   .card.loss { border-color: var(--loss); background: color-mix(in srgb, var(--loss) 8%, var(--surface-2)); }
+  .zone-dots { display: inline-flex; gap: 7px; margin-left: 8px; vertical-align: middle; }
+  .zone-dot {
+    display: inline-flex; align-items: center; gap: 3px; font-size: 10px; font-weight: 700;
+    color: var(--text-muted); opacity: 0.35;
+  }
+  .zone-dot::before { content: ''; width: 7px; height: 7px; border-radius: 50%; background: var(--text-muted); flex-shrink: 0; }
+  .zone-dot.crash::before { background: var(--loss); }
+  .zone-dot.relative_strength::before { background: var(--entry-yellow); }
+  .zone-dot.uptrend::before { background: var(--profit); }
+  .zone-dot.active { opacity: 1; }
+  .zone-dot.active.crash { color: var(--loss); }
+  .zone-dot.active.relative_strength { color: var(--entry-yellow); }
+  .zone-dot.active.uptrend { color: var(--profit); }
+  .zone-dot.active::before { animation: zonePulse 1.6s ease-in-out infinite; box-shadow: 0 0 5px currentColor; }
+  @keyframes zonePulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
   .card-title { font-size: 15px; font-weight: 600; margin-bottom: 8px; display: flex; justify-content: space-between; }
   .card-title .badge { font-size: 11px; color: var(--text-muted); font-weight: 500; }
   .card-title .badge.profit { color: var(--profit); }
@@ -228,7 +243,7 @@
 
   <div id="mainContent">
   <header>
-    <h1>📈 JP443</h1>
+    <h1>📈 JP443 <span class="zone-dots" id="zoneDots"></span></h1>
     <div style="display:flex; gap:6px;">
       <button class="refresh-btn" id="installBtn" onclick="installApp()" style="display:none;">📲 インストール</button>
       <button class="refresh-btn" onclick="load()">更新</button>
@@ -378,6 +393,44 @@ function renderNewsCard(e) {
 }
 function sharesFor100k(entry) { return Math.floor(100000 / entry); }
 
+const STRATEGY_ORDER = ['crash', 'uptrend', 'relative_strength'];
+const STRATEGY_ZONE_LABEL = { crash: '暴落', uptrend: '上昇', relative_strength: '相強' };
+
+function groupByStrategy(items) {
+  return STRATEGY_ORDER
+    .concat([...new Set(items.map(x => x.strategy))].filter(k => !STRATEGY_ORDER.includes(k)))
+    .map(key => items.filter(x => x.strategy === key))
+    .filter(g => g.length > 0);
+}
+
+function renderZoneDots(active) {
+  return STRATEGY_ORDER.map(key =>
+    `<span class="zone-dot ${key}${active === key ? ' active' : ''}">${STRATEGY_ZONE_LABEL[key]}</span>`
+  ).join('');
+}
+
+function renderEnteredCard(c) {
+  const cls = c.unrealized_pct >= 0 ? 'profit' : 'loss';
+  return `
+      <div class="card ${cls}">
+        <div class="card-title">
+          <span>${c.name}(${c.code})</span>
+          <span class="badge ${cls}">含み損益 ${fmtPct(c.unrealized_pct)}</span>
+        </div>
+        <div class="rows rows-current">
+          <div><span class="label">現在値</span><span class="value ${cls}">${fmtYen(c.last_price)}</span></div>
+          <div><span class="label">エントリー日</span><span class="value">${c.entered_date || '-'}</span></div>
+        </div>
+        <div class="rows rows-2col">
+          <div><span class="label">建値</span><span class="value">${fmtYen(c.entry)}</span><span class="shares">10万円で${sharesFor100k(c.entry)}株</span></div>
+          ${(c.strategy === 'uptrend' || c.strategy === 'relative_strength')
+            ? `<div><span class="label">損切り(トレーリング中)</span><span class="value sl-red">${fmtYen(c.sl)}</span><span class="shares">あと${fmtYen(Math.abs(c.gap_sl_yen))}(${Math.abs(c.gap_sl_pct).toFixed(1)}%)</span></div>`
+            : `<div><span class="label">利確まで / 損切りまで</span><span class="value-line"><span class="value tp-green">${fmtYen(Math.abs(c.gap_tp_yen))}(${Math.abs(c.gap_tp_pct).toFixed(1)}%)</span> / <span class="value sl-red">${fmtYen(Math.abs(c.gap_sl_yen))}(${Math.abs(c.gap_sl_pct).toFixed(1)}%)</span></span></div>`
+          }
+        </div>
+      </div>`;
+}
+
 function renderWatchingCard(w) {
   const zoneOk = w.zone_ok !== false;
   return `
@@ -412,6 +465,8 @@ async function load() {
 function render(data) {
   document.getElementById('updated').textContent = '最終更新: ' + data.updated;
 
+  document.getElementById('zoneDots').innerHTML = renderZoneDots((data.market_zone || {}).active);
+
   const retractedEl = document.getElementById('retracted');
   retractedEl.innerHTML = (data.retracted || []).map(r =>
     `<div class="retracted-banner">⚠️ ${r.name}: 東証監理・整理銘柄に指定されたため対象外になりました</div>`
@@ -425,54 +480,43 @@ function render(data) {
     : whatsNew.map(renderNewsCard).join('');
 
   // 現在指値注文中(未保有。戦略ゾーンごとに折りたたみ、各グループ内は指値まで近い順)
+  const activeZone = (data.market_zone || {}).active;
   const watching = data.watching || [];
   document.getElementById('watchingCount').textContent = watching.length ? `(${watching.length})` : '';
-  const watchingOrder = ['crash', 'uptrend', 'relative_strength'];
-  const watchingKeys = watchingOrder.concat(
-    [...new Set(watching.map(w => w.strategy))].filter(k => !watchingOrder.includes(k))
-  );
-  const watchingGroups = watchingKeys
-    .map(key => watching.filter(w => w.strategy === key).sort((a, b) => a.gap_pct - b.gap_pct))
-    .filter(items => items.length > 0);
+  const watchingGroups = groupByStrategy(watching)
+    .map(items => items.slice().sort((a, b) => a.gap_pct - b.gap_pct));
   document.getElementById('watchingList').innerHTML = watching.length === 0
     ? '<div class="empty">現在、指値待ちのセットアップはありません。</div>'
     : watchingGroups.map(items => {
+      const key = items[0].strategy;
       const warnCount = items.filter(w => w.zone_ok === false).length;
       return `
       <details class="year-group">
         <summary>
-          <span><span class="arrow">▶</span> ${items[0].strategy_label}(${items.length}件)</span>
+          <span><span class="arrow">▶</span> <span class="zone-dot ${key}${activeZone === key ? ' active' : ''}"></span> ${items[0].strategy_label}(${items.length}件)</span>
           <span class="year-total value">${warnCount ? `⚠️ ${warnCount}件ゾーン対象外` : ''}</span>
         </summary>
         <div class="year-body">${items.map(renderWatchingCard).join('')}</div>
       </details>`;
     }).join('');
 
-  // エントリー中(含み損益で色分け: 青=利益, 赤=損失)
+  // エントリー中(戦略ごとに折りたたみ。デフォルト展開。含み損益で色分け: 青=利益, 赤=損失)
   const entered = data.entered || [];
   document.getElementById('enteredCount').textContent = entered.length ? `(${entered.length})` : '';
+  const enteredGroups = groupByStrategy(entered);
   document.getElementById('enteredList').innerHTML = entered.length === 0
     ? '<div class="empty">現在、保有中のポジションはありません。</div>'
-    : entered.map(c => {
-      const cls = c.unrealized_pct >= 0 ? 'profit' : 'loss';
+    : enteredGroups.map(items => {
+      const pnlYen = items.reduce((sum, c) => sum + sharesFor100k(c.entry) * (c.last_price - c.entry), 0);
+      const totalCls = pnlYen >= 0 ? 'profit' : 'loss';
       return `
-      <div class="card ${cls}">
-        <div class="card-title">
-          <span><span class="strategy-tag">${c.strategy_label || ''}</span>${c.name}(${c.code})</span>
-          <span class="badge ${cls}">含み損益 ${fmtPct(c.unrealized_pct)}</span>
-        </div>
-        <div class="rows rows-current">
-          <div><span class="label">現在値</span><span class="value ${cls}">${fmtYen(c.last_price)}</span></div>
-          <div><span class="label">エントリー日</span><span class="value">${c.entered_date || '-'}</span></div>
-        </div>
-        <div class="rows rows-2col">
-          <div><span class="label">建値</span><span class="value">${fmtYen(c.entry)}</span><span class="shares">10万円で${sharesFor100k(c.entry)}株</span></div>
-          ${(c.strategy === 'uptrend' || c.strategy === 'relative_strength')
-            ? `<div><span class="label">損切り(トレーリング中)</span><span class="value sl-red">${fmtYen(c.sl)}</span><span class="shares">あと${fmtYen(Math.abs(c.gap_sl_yen))}(${Math.abs(c.gap_sl_pct).toFixed(1)}%)</span></div>`
-            : `<div><span class="label">利確まで / 損切りまで</span><span class="value-line"><span class="value tp-green">${fmtYen(Math.abs(c.gap_tp_yen))}(${Math.abs(c.gap_tp_pct).toFixed(1)}%)</span> / <span class="value sl-red">${fmtYen(Math.abs(c.gap_sl_yen))}(${Math.abs(c.gap_sl_pct).toFixed(1)}%)</span></span></div>`
-          }
-        </div>
-      </div>`;
+      <details class="year-group" open>
+        <summary>
+          <span><span class="arrow">▶</span> ${items[0].strategy_label}(${items.length}件)</span>
+          <span class="year-total value ${totalCls}">${fmtYenSigned(pnlYen)}</span>
+        </summary>
+        <div class="year-body">${items.map(renderEnteredCard).join('')}</div>
+      </details>`;
     }).join('');
 
   // 決済済み(年ごとにグループ化。見出しはclosed_summaryだけで即表示し、
