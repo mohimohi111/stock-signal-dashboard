@@ -244,6 +244,11 @@
   </section>
 
   <section>
+    <h2>📍 現在指値注文中(未保有) <span class="count" id="watchingCount"></span></h2>
+    <div id="watchingList"></div>
+  </section>
+
+  <section>
     <h2>エントリー中 <span class="count" id="enteredCount"></span></h2>
     <div id="enteredList"></div>
   </section>
@@ -398,6 +403,27 @@ function render(data) {
   document.getElementById('whatsNewList').innerHTML = whatsNew.length === 0
     ? '<div class="empty">新着はありません。</div>'
     : whatsNew.map(renderNewsCard).join('');
+
+  // 現在指値注文中(未保有。指値まで近い順)
+  const watching = (data.watching || []).slice().sort((a, b) => a.gap_pct - b.gap_pct);
+  document.getElementById('watchingCount').textContent = watching.length ? `(${watching.length})` : '';
+  document.getElementById('watchingList').innerHTML = watching.length === 0
+    ? '<div class="empty">現在、指値待ちのセットアップはありません。</div>'
+    : watching.map(w => `
+      <div class="card">
+        <div class="card-title">
+          <span><span class="strategy-tag">${w.strategy_label || ''}</span>${w.name}(${w.code})</span>
+          <span class="badge">指値まで ${fmtPct(w.gap_pct)}</span>
+        </div>
+        <div class="rows rows-current">
+          <div><span class="label">現在値</span><span class="value">${fmtYen(w.last_price)}</span></div>
+          <div><span class="label">指値まで</span><span class="value">${fmtYen(w.gap_yen)}</span></div>
+        </div>
+        <div class="rows rows-2col">
+          <div><span class="label">指値</span><span class="value entry-price">${fmtYen(w.entry)}</span></div>
+          <div><span class="label">損切り</span><span class="value sl-red">${fmtYen(w.sl)}</span></div>
+        </div>
+      </div>`).join('');
 
   // エントリー中(含み損益で色分け: 青=利益, 赤=損失)
   const entered = data.entered || [];
