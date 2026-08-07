@@ -409,8 +409,10 @@ function render(data) {
   document.getElementById('watchingCount').textContent = watching.length ? `(${watching.length})` : '';
   document.getElementById('watchingList').innerHTML = watching.length === 0
     ? '<div class="empty">現在、指値待ちのセットアップはありません。</div>'
-    : watching.map(w => `
-      <div class="card">
+    : watching.map(w => {
+      const zoneOk = w.zone_ok !== false;
+      return `
+      <div class="card ${zoneOk ? '' : 'loss'}">
         <div class="card-title">
           <span><span class="strategy-tag">${w.strategy_label || ''}</span>${w.name}(${w.code})</span>
           <span class="badge">指値まで ${fmtPct(w.gap_pct)}</span>
@@ -423,7 +425,9 @@ function render(data) {
           <div><span class="label">指値</span><span class="value entry-price">${fmtYen(w.entry)}</span></div>
           <div><span class="label">損切り</span><span class="value sl-red">${fmtYen(w.sl)}</span></div>
         </div>
-      </div>`).join('');
+        ${zoneOk ? '' : '<div class="empty" style="padding:4px 0 0;text-align:left;">⚠️ 現在この戦略のゾーン対象外です。指値注文は解除を推奨します。</div>'}
+      </div>`;
+    }).join('');
 
   // エントリー中(含み損益で色分け: 青=利益, 赤=損失)
   const entered = data.entered || [];
