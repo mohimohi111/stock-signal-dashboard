@@ -73,18 +73,24 @@
   .zone-dots { display: inline-flex; gap: 7px; margin-left: 8px; vertical-align: middle; }
   .zone-dot {
     display: inline-flex; align-items: center; gap: 3px; font-size: 10px; font-weight: 700;
-    color: var(--text-muted); opacity: 0.35;
+    color: var(--text-muted); opacity: 0.25;
   }
   .zone-dot::before { content: ''; width: 7px; height: 7px; border-radius: 50%; background: var(--text-muted); flex-shrink: 0; }
   .zone-dot.crash::before { background: var(--loss); }
   .zone-dot.relative_strength::before { background: var(--entry-yellow); }
   .zone-dot.uptrend::before { background: var(--profit); }
-  .zone-dot.active { opacity: 1; }
+  .zone-dot.active { opacity: 1; font-weight: 800; }
   .zone-dot.active.crash { color: var(--loss); }
   .zone-dot.active.relative_strength { color: var(--entry-yellow); }
   .zone-dot.active.uptrend { color: var(--profit); }
-  .zone-dot.active::before { animation: zonePulse 1.6s ease-in-out infinite; box-shadow: 0 0 5px currentColor; }
-  @keyframes zonePulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+  .zone-dot.active::before {
+    width: 9px; height: 9px; box-shadow: 0 0 6px currentColor;
+    animation: zonePulse 1.3s ease-in-out infinite;
+  }
+  @keyframes zonePulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.25; transform: scale(1.5); }
+  }
   .card-title { font-size: 15px; font-weight: 600; margin-bottom: 8px; display: flex; justify-content: space-between; }
   .card-title .badge { font-size: 11px; color: var(--text-muted); font-weight: 500; }
   .card-title .badge.profit { color: var(--profit); }
