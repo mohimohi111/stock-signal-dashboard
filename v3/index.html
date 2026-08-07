@@ -515,7 +515,7 @@ function render(data) {
       </details>`;
     }).join('');
 
-  // エントリー中(戦略ごとに折りたたみ。デフォルト展開。含み損益で色分け: 青=利益, 赤=損失)
+  // エントリー中(戦略ごとに折りたたみ。含み損益で色分け: 青=利益, 赤=損失)
   const entered = data.entered || [];
   document.getElementById('enteredCount').textContent = entered.length ? `(${entered.length})` : '';
   const enteredGroups = groupByStrategy(entered);
@@ -525,7 +525,7 @@ function render(data) {
       const pnlYen = items.reduce((sum, c) => sum + sharesFor100k(c.entry) * (c.last_price - c.entry), 0);
       const totalCls = pnlYen >= 0 ? 'profit' : 'loss';
       return `
-      <details class="year-group" open>
+      <details class="year-group">
         <summary>
           <span><span class="arrow">▶</span> ${items[0].strategy_label}(${items.length}件)</span>
           <span class="year-total value ${totalCls}">${fmtYenSigned(pnlYen)}</span>
