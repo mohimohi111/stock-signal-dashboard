@@ -94,6 +94,21 @@
     border-radius: 5px; margin-right: 6px; vertical-align: middle;
     background: var(--surface-1); border: 1px solid var(--border); color: var(--text-secondary);
   }
+  .strategy-tag.crash {
+    color: var(--loss); border-color: var(--loss);
+    background: color-mix(in srgb, var(--loss) 14%, var(--surface-1));
+    box-shadow: 0 0 5px color-mix(in srgb, var(--loss) 55%, transparent);
+  }
+  .strategy-tag.uptrend {
+    color: var(--profit); border-color: var(--profit);
+    background: color-mix(in srgb, var(--profit) 14%, var(--surface-1));
+    box-shadow: 0 0 5px color-mix(in srgb, var(--profit) 55%, transparent);
+  }
+  .strategy-tag.relative_strength {
+    color: var(--entry-yellow); border-color: var(--entry-yellow);
+    background: color-mix(in srgb, var(--entry-yellow) 14%, var(--surface-1));
+    box-shadow: 0 0 5px color-mix(in srgb, var(--entry-yellow) 55%, transparent);
+  }
   .rows { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; font-size: 12px; }
   .rows.rows-2col { grid-template-columns: 1fr 1fr; row-gap: 10px; }
   .rows-2col .value { white-space: nowrap; font-size: 11px; }
@@ -321,7 +336,7 @@ function fmtYenSigned(n) { return (n >= 0 ? '+' : '-') + '¥' + Math.round(Math.
 function fmtPct(n) { return (n >= 0 ? '+' : '') + n.toFixed(1) + '%'; }
 
 function renderNewsCard(e) {
-  const tag = e.strategy_label ? `<span class="strategy-tag">${e.strategy_label}</span>` : '';
+  const tag = e.strategy_label ? `<span class="strategy-tag ${e.strategy || ''}">${e.strategy_label}</span>` : '';
   const title = `<span>${tag}${e.name}(${e.code || ''})</span>`;
   let icon = '', cls = '', body = '';
   switch (e.type) {
@@ -393,7 +408,7 @@ function renderNewsCard(e) {
 }
 function sharesFor100k(entry) { return Math.floor(100000 / entry); }
 
-const STRATEGY_ORDER = ['crash', 'uptrend', 'relative_strength'];
+const STRATEGY_ORDER = ['uptrend', 'relative_strength', 'crash'];
 const STRATEGY_ZONE_LABEL = { crash: '暴落', uptrend: '上昇', relative_strength: '相強' };
 
 function groupByStrategy(items) {
