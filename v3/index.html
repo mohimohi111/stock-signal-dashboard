@@ -315,7 +315,7 @@ function renderNewsCard(e) {
     case 'level_up_watching':
       icon = '📐'; cls = '';
       body = `<div class="rows rows-2col">
-        <div><span class="label">指値</span><span class="value entry-price">${fmtYen(e.prev_entry)} → ${fmtYen(e.entry)}</span></div>
+        <div><span class="label">指値(旧注文は解除)</span><span class="value entry-price">${fmtYen(e.prev_entry)} → ${fmtYen(e.entry)}</span></div>
         <div><span class="label">目標/利確</span><span class="value tp-green">${fmtYen(e.prev_tp)} → ${fmtYen(e.tp)}</span></div>
       </div>`;
       break;
@@ -350,6 +350,14 @@ function renderNewsCard(e) {
     case 'retracted':
       icon = '⚠️'; cls = 'loss';
       body = `<div class="empty" style="padding:4px 0;text-align:left;">東証監理・整理銘柄に指定されたため対象外になりました。エントリーは控えてください。</div>`;
+      break;
+    case 'expired':
+      icon = '⛔'; cls = 'loss';
+      body = `<div class="rows rows-2col">
+        <div><span class="label">指値</span><span class="value entry-price">${fmtYen(e.entry)}</span></div>
+        <div><span class="label">損切りライン</span><span class="value sl-red">${fmtYen(e.sl)}</span></div>
+      </div>
+      <div class="empty" style="padding:4px 0 0;text-align:left;">損切りラインを割り込み不成立で終了しました。出していた指値注文は解除してください。</div>`;
       break;
     default:
       return '';
