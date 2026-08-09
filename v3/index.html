@@ -89,7 +89,6 @@
   .card-title .badge { font-size: 11px; color: var(--text-muted); font-weight: 500; }
   .card-title .badge.profit { color: var(--profit); }
   .card-title .badge.loss { color: var(--loss); }
-  .news-kind { color: var(--profit); margin-right: 2px; }
   .strategy-tag {
     display: inline-block; font-size: 10px; font-weight: 700; padding: 2px 6px;
     border-radius: 5px; margin-right: 6px; vertical-align: middle;
@@ -265,56 +264,56 @@ function fmtPct(n) { return (n >= 0 ? '+' : '') + n.toFixed(1) + '%'; }
 function renderNewsCard(e) {
   const tag = e.strategy_label ? `<span class="strategy-tag ${e.strategy || ''}">${e.strategy_label}</span>` : '';
   const title = `<span>${tag}${e.name}(${e.code || ''})</span>`;
-  let icon = '', kind = '', cls = '', body = '';
+  let icon = '', cls = '', body = '';
   switch (e.type) {
     case 'new_watching':
-      icon = '🆕'; kind = '買う!'; cls = '';
+      icon = '🆕'; cls = '';
       body = `<div class="rows rows-2col">
         <div><span class="label">指値</span><span class="value entry-price">${fmtYen(e.entry)}</span></div>
         <div><span class="label">損切り</span><span class="value sl-red">${fmtYen(e.sl)}</span></div>
       </div>`;
       break;
     case 'level_up_watching':
-      icon = '📐'; kind = '指値変更'; cls = '';
+      icon = '📐'; cls = '';
       body = `<div class="rows rows-2col">
         <div><span class="label">指値(旧注文は解除)</span><span class="value entry-price">${fmtYen(e.prev_entry)} → ${fmtYen(e.entry)}</span></div>
         <div><span class="label">目標/利確</span><span class="value tp-green">${fmtYen(e.prev_tp)} → ${fmtYen(e.tp)}</span></div>
       </div>`;
       break;
     case 'level_up_entered':
-      icon = '📐'; kind = '損切り変更'; cls = '';
+      icon = '📐'; cls = '';
       body = `<div class="rows rows-2col">
         <div><span class="label">損切り</span><span class="value sl-red">${fmtYen(e.prev_sl)} → ${fmtYen(e.sl)}</span></div>
         <div><span class="label">参考:現在の高値</span><span class="value tp-green">${fmtYen(e.tp)}</span></div>
       </div>`;
       break;
     case 'entered':
-      icon = '🎯'; kind = 'ポジ確定'; cls = '';
+      icon = '🎯'; cls = '';
       body = `<div class="rows rows-2col">
         <div><span class="label">建値</span><span class="value">${fmtYen(e.entry)}</span></div>
         <div><span class="label">損切り</span><span class="value sl-red">${fmtYen(e.sl)}</span></div>
       </div>`;
       break;
     case 'closed_win':
-      icon = '🔵'; kind = '利確'; cls = 'profit';
+      icon = '🔵'; cls = 'profit';
       body = `<div class="rows rows-2col">
         <div><span class="label">決済値</span><span class="value profit">${fmtYen(e.exit_price)}</span></div>
         <div><span class="label">損益(10万円分)</span><span class="value profit">${fmtYenSigned(sharesFor100k(e.entry) * (e.exit_price - e.entry))}</span></div>
       </div>`;
       break;
     case 'closed_loss':
-      icon = '🔴'; kind = '損切り'; cls = 'loss';
+      icon = '🔴'; cls = 'loss';
       body = `<div class="rows rows-2col">
         <div><span class="label">決済値</span><span class="value loss">${fmtYen(e.exit_price)}</span></div>
         <div><span class="label">損益(10万円分)</span><span class="value loss">${fmtYenSigned(sharesFor100k(e.entry) * (e.exit_price - e.entry))}</span></div>
       </div>`;
       break;
     case 'retracted':
-      icon = '⚠️'; kind = '取消'; cls = 'loss';
+      icon = '⚠️'; cls = 'loss';
       body = `<div class="empty" style="padding:4px 0;text-align:left;">東証監理・整理銘柄に指定されたため対象外になりました。エントリーは控えてください。</div>`;
       break;
     case 'expired':
-      icon = '⛔'; kind = '不成立'; cls = 'loss';
+      icon = '⛔'; cls = 'loss';
       body = `<div class="rows rows-2col">
         <div><span class="label">指値</span><span class="value entry-price">${fmtYen(e.entry)}</span></div>
         <div><span class="label">損切りライン</span><span class="value sl-red">${fmtYen(e.sl)}</span></div>
@@ -327,7 +326,7 @@ function renderNewsCard(e) {
   return `
     <div class="card ${cls}">
       <div class="card-title">
-        <span>${icon} <b class="news-kind">${kind}</b> ${title}</span>
+        <span>${icon} ${title}</span>
         <span class="badge">${e.date || ''}</span>
       </div>
       ${body}
