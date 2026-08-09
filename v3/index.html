@@ -4,14 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>JP443</title>
-<link rel="manifest" href="manifest.json">
 <link rel="icon" href="icon-192.png">
-<link rel="apple-touch-icon" href="icon-192.png">
 <meta name="theme-color" content="#2a78d6">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta name="apple-mobile-web-app-title" content="JP443">
 <style>
   :root {
     color-scheme: light;
@@ -197,12 +191,10 @@
   <header>
     <h1>📈 JP443 <span class="zone-dots" id="zoneDots"></span></h1>
     <div style="display:flex; gap:6px;">
-      <button class="refresh-btn" id="installBtn" onclick="installApp()" style="display:none;">📲 インストール</button>
       <button class="refresh-btn" onclick="load()">更新</button>
     </div>
   </header>
   <div class="updated" id="updated">読み込み中...</div>
-  <div id="installHintBox" style="display:none;"></div>
   <div id="retracted"></div>
 
   <section>
@@ -571,45 +563,6 @@ load();
 
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('sw.js');
-}
-
-// --- インストール(PWA)関連 ---
-const isStandalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
-let deferredInstallPrompt = null;
-window.addEventListener('beforeinstallprompt', (e) => {
-  e.preventDefault();
-  deferredInstallPrompt = e;
-});
-if (!isStandalone) {
-  // 対応ブラウザ判定に頼らず常にボタンを出す。押した時に自動プロンプトが使えなければ手順を案内する
-  document.getElementById('installBtn').style.display = '';
-}
-async function installApp() {
-  if (deferredInstallPrompt) {
-    deferredInstallPrompt.prompt();
-    await deferredInstallPrompt.userChoice;
-    deferredInstallPrompt = null;
-    document.getElementById('installBtn').style.display = 'none';
-    return;
-  }
-  const box = document.getElementById('installHintBox');
-  const ua = navigator.userAgent;
-  const isIOS = /iP(hone|ad|od)/.test(ua);
-  const isMac = /Macintosh/.test(ua) && !isIOS;
-  const isAndroid = /Android/.test(ua);
-  const isSafari = /Safari/.test(ua) && !/Chrome|CriOS|Chromium|Edg/.test(ua);
-  let msg;
-  if (isIOS || (isMac && isSafari)) {
-    msg = `<p><strong>Safari</strong>: 共有アイコン(□に↑)をタップ → 「ホーム画面に追加」(iPhone/iPad)または「Dockに追加」(Mac)を選択</p>`;
-  } else if (isAndroid) {
-    msg = `<p><strong>Android Chrome</strong>: 右上の⋮メニュー → 「アプリをインストール」または「ホーム画面に追加」を選択</p>`;
-  } else {
-    msg = `<p><strong>PC(Chrome/Edge)</strong>: アドレスバー右端のインストールアイコン、または右上の⋮メニュー → 「アプリをインストール」を選択</p>
-           <p>それ以外のブラウザ(Firefoxなど)では、この方法でのインストールに対応していません。</p>`;
-  }
-  box.style.display = '';
-  box.innerHTML = `<div class="push-box">${msg}
-    <button class="refresh-btn" onclick="document.getElementById('installHintBox').style.display='none';">閉じる</button></div>`;
 }
 </script>
 </body>
