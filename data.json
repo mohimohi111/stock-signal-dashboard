@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-10 19:50 JST",
+  "updated": "2026-08-11 19:15 JST",
   "watching": [
     {
       "code": "4043",
@@ -27,20 +27,6 @@
       "gap_yen": 320.75,
       "gap_pct": 17.667309281189755,
       "span_pct": 0.8566650740563784,
-      "zone_ok": true
-    },
-    {
-      "code": "6367",
-      "name": "ダイキン工業",
-      "strategy": "uptrend",
-      "strategy_label": "上昇型",
-      "entry": 22437.5,
-      "sl": 18435.0,
-      "tp": 26440.0,
-      "last_price": 22225.0,
-      "gap_yen": -212.5,
-      "gap_pct": -0.9561304836895388,
-      "span_pct": 0.4342283699484676,
       "zone_ok": true
     },
     {
@@ -100,20 +86,6 @@
       "zone_ok": true
     },
     {
-      "code": "9433",
-      "name": "KDDI",
-      "strategy": "uptrend",
-      "strategy_label": "上昇型",
-      "entry": 2792.0,
-      "sl": 2463.0,
-      "tp": 3121.0,
-      "last_price": 2830.0,
-      "gap_yen": 38.0,
-      "gap_pct": 1.342756183745583,
-      "span_pct": 0.2671538773853025,
-      "zone_ok": true
-    },
-    {
       "code": "6417",
       "name": "SANKYO",
       "strategy": "uptrend",
@@ -142,20 +114,6 @@
       "zone_ok": true
     },
     {
-      "code": "2154",
-      "name": "オープンアップグループ",
-      "strategy": "uptrend",
-      "strategy_label": "上昇型",
-      "entry": 1927.5,
-      "sl": 1749.0,
-      "tp": 2106.0,
-      "last_price": 2021.0,
-      "gap_yen": 93.5,
-      "gap_pct": 4.62642256308758,
-      "span_pct": 0.20411663807890223,
-      "zone_ok": true
-    },
-    {
       "code": "8306",
       "name": "三菱UFJフィナンシャル・グループ",
       "strategy": "uptrend",
@@ -181,20 +139,6 @@
       "gap_yen": 84.0,
       "gap_pct": 4.6966731898238745,
       "span_pct": 0.23908045977011494,
-      "zone_ok": true
-    },
-    {
-      "code": "9090",
-      "name": "AZ-COM丸和ホールディングス",
-      "strategy": "uptrend",
-      "strategy_label": "上昇型",
-      "entry": 881.0,
-      "sl": 795.0,
-      "tp": 967.0,
-      "last_price": 843.0,
-      "gap_yen": -38.0,
-      "gap_pct": -4.507710557532621,
-      "span_pct": 0.21635220125786164,
       "zone_ok": true
     },
     {
@@ -1641,6 +1585,70 @@
     }
   ],
   "entered": [
+    {
+      "code": "6367",
+      "name": "ダイキン工業",
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 22437.5,
+      "sl": 18435.0,
+      "tp": 26440.0,
+      "last_price": 22225.0,
+      "entered_date": "2026-08-11",
+      "gap_tp_yen": 4215.0,
+      "gap_tp_pct": 18.965129358830147,
+      "gap_sl_yen": 3790.0,
+      "gap_sl_pct": 17.052868391451067,
+      "unrealized_pct": -0.947075208913649
+    },
+    {
+      "code": "9433",
+      "name": "KDDI",
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 2792.0,
+      "sl": 2463.0,
+      "tp": 3121.0,
+      "last_price": 2830.0,
+      "entered_date": "2026-08-11",
+      "gap_tp_yen": 291.0,
+      "gap_tp_pct": 10.282685512367491,
+      "gap_sl_yen": 367.0,
+      "gap_sl_pct": 12.968197879858657,
+      "unrealized_pct": 1.361031518624642
+    },
+    {
+      "code": "2154",
+      "name": "オープンアップグループ",
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 1927.5,
+      "sl": 1749.0,
+      "tp": 2106.0,
+      "last_price": 2021.0,
+      "entered_date": "2026-08-11",
+      "gap_tp_yen": 85.0,
+      "gap_tp_pct": 4.205838693715982,
+      "gap_sl_yen": 272.0,
+      "gap_sl_pct": 13.458683819891142,
+      "unrealized_pct": 4.850843060959793
+    },
+    {
+      "code": "9090",
+      "name": "AZ-COM丸和ホールディングス",
+      "strategy": "uptrend",
+      "strategy_label": "上昇型",
+      "entry": 881.0,
+      "sl": 795.0,
+      "tp": 967.0,
+      "last_price": 843.0,
+      "entered_date": "2026-08-11",
+      "gap_tp_yen": 124.0,
+      "gap_tp_pct": 14.709371293001187,
+      "gap_sl_yen": 48.0,
+      "gap_sl_pct": 5.6939501779359425,
+      "unrealized_pct": -4.313280363223609
+    },
     {
       "code": "4324",
       "name": "電通グループ",
@@ -15761,111 +15769,64 @@
   ],
   "whats_new": [
     {
-      "date": "2026-08-10",
-      "type": "level_up_watching",
-      "strategy": "uptrend",
-      "strategy_label": "上昇型",
-      "code": "7832",
-      "name": "バンダイナムコホールディングス",
-      "prev_entry": 4644.0,
-      "entry": 4693.0,
-      "prev_tp": 5420.0,
-      "tp": 5518.0
-    },
-    {
-      "date": "2026-08-10",
-      "type": "level_up_watching",
-      "strategy": "uptrend",
-      "strategy_label": "上昇型",
-      "code": "8304",
-      "name": "あおぞら銀行",
-      "prev_entry": 3082.0,
-      "entry": 3087.0,
-      "prev_tp": 3307.0,
-      "tp": 3317.0
-    },
-    {
-      "date": "2026-08-10",
+      "date": "2026-08-11",
       "type": "level_up_watching",
       "strategy": "uptrend",
       "strategy_label": "上昇型",
       "code": "4613",
       "name": "関西ペイント",
-      "prev_entry": 2762.5,
+      "prev_entry": 2819.25,
       "entry": 2819.25,
-      "prev_tp": 2977.5,
+      "prev_tp": 3091.0,
       "tp": 3091.0
     },
     {
-      "date": "2026-08-10",
-      "type": "level_up_watching",
+      "date": "2026-08-11",
+      "type": "entered",
       "strategy": "uptrend",
       "strategy_label": "上昇型",
-      "code": "7846",
-      "name": "パイロットコーポレーション",
-      "prev_entry": 1786.5,
-      "entry": 1796.5,
-      "prev_tp": 2020.0,
-      "tp": 2040.0
+      "code": "6367",
+      "name": "ダイキン工業",
+      "entry": 22437.5,
+      "tp": 26440.0,
+      "sl": 18435.0,
+      "entered_date": "2026-08-11"
     },
     {
-      "date": "2026-08-10",
-      "type": "new_watching",
+      "date": "2026-08-11",
+      "type": "entered",
       "strategy": "uptrend",
       "strategy_label": "上昇型",
-      "code": "4527",
-      "name": "ロート製薬",
-      "entry": 2711.5,
-      "tp": 2918.5,
-      "sl": 2504.5,
-      "span_pct": 0.16530245557995607
+      "code": "9433",
+      "name": "KDDI",
+      "entry": 2792.0,
+      "tp": 3121.0,
+      "sl": 2463.0,
+      "entered_date": "2026-08-11"
     },
     {
-      "date": "2026-08-10",
-      "type": "new_watching",
+      "date": "2026-08-11",
+      "type": "entered",
       "strategy": "uptrend",
       "strategy_label": "上昇型",
-      "code": "5480",
-      "name": "日本冶金工業",
-      "entry": 5220.0,
-      "tp": 5790.0,
-      "sl": 4650.0,
-      "span_pct": 0.24516129032258063
+      "code": "9090",
+      "name": "AZ-COM丸和ホールディングス",
+      "entry": 881.0,
+      "tp": 967.0,
+      "sl": 795.0,
+      "entered_date": "2026-08-11"
     },
     {
-      "date": "2026-08-10",
-      "type": "new_watching",
+      "date": "2026-08-11",
+      "type": "entered",
       "strategy": "uptrend",
       "strategy_label": "上昇型",
-      "code": "8410",
-      "name": "セブン銀行",
-      "entry": 318.6499938964844,
-      "tp": 342.29998779296875,
-      "sl": 295.0,
-      "span_pct": 0.1603389416710805
-    },
-    {
-      "date": "2026-08-10",
-      "type": "new_watching",
-      "strategy": "uptrend",
-      "strategy_label": "上昇型",
-      "code": "8439",
-      "name": "東京センチュリー",
-      "entry": 2450.5,
-      "tp": 2726.0,
-      "sl": 2175.0,
-      "span_pct": 0.25333333333333335
-    },
-    {
-      "date": "2026-08-10",
-      "type": "closed_win",
-      "strategy": "uptrend",
-      "strategy_label": "上昇型",
-      "code": "5108",
-      "name": "ブリヂストン",
-      "entry": 3853.0,
-      "exit_price": 4262.4,
-      "pnl_pct": 10.62548663379184
+      "code": "2154",
+      "name": "オープンアップグループ",
+      "entry": 1927.5,
+      "tp": 2106.0,
+      "sl": 1749.0,
+      "entered_date": "2026-08-11"
     }
   ],
   "market_zone": {
