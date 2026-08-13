@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-13 19:45 JST",
+  "updated": "2026-08-13 20:36 JST",
   "watching": [
     {
       "code": "4043",
@@ -17104,128 +17104,7 @@
       "cum_pnl_yen": 35410799.26586856
     }
   ],
-  "whats_new": [
-    {
-      "date": "2026-08-13",
-      "type": "level_up_watching",
-      "strategy": "uptrend",
-      "strategy_label": "上昇型",
-      "code": "8304",
-      "name": "あおぞら銀行",
-      "prev_entry": 3102.0,
-      "entry": 3133.5,
-      "prev_tp": 3347.0,
-      "tp": 3410.0
-    },
-    {
-      "date": "2026-08-13",
-      "type": "level_up_watching",
-      "strategy": "uptrend",
-      "strategy_label": "上昇型",
-      "code": "8309",
-      "name": "三井住友トラスト・ホールディングス",
-      "prev_entry": 1533.125,
-      "entry": 1535.5,
-      "prev_tp": 1748.75,
-      "tp": 1753.5
-    },
-    {
-      "date": "2026-08-13",
-      "type": "level_up_watching",
-      "strategy": "uptrend",
-      "strategy_label": "上昇型",
-      "code": "9506",
-      "name": "東北電力",
-      "prev_entry": 1144.0,
-      "entry": 1146.75,
-      "prev_tp": 1235.0,
-      "tp": 1240.5
-    },
-    {
-      "date": "2026-08-13",
-      "type": "level_up_watching",
-      "strategy": "uptrend",
-      "strategy_label": "上昇型",
-      "code": "9507",
-      "name": "四国電力",
-      "prev_entry": 1659.5,
-      "entry": 1662.25,
-      "prev_tp": 1784.0,
-      "tp": 1789.5
-    },
-    {
-      "date": "2026-08-13",
-      "type": "level_up_watching",
-      "strategy": "uptrend",
-      "strategy_label": "上昇型",
-      "code": "8154",
-      "name": "加賀電子",
-      "prev_entry": 4760.0,
-      "entry": 4780.0,
-      "prev_tp": 5160.0,
-      "tp": 5200.0
-    },
-    {
-      "date": "2026-08-13",
-      "type": "new_watching",
-      "strategy": "uptrend",
-      "strategy_label": "上昇型",
-      "code": "4452",
-      "name": "花王",
-      "entry": 3471.0,
-      "tp": 3782.0,
-      "sl": 3160.0,
-      "span_pct": 0.19683544303797468
-    },
-    {
-      "date": "2026-08-13",
-      "type": "new_watching",
-      "strategy": "uptrend",
-      "strategy_label": "上昇型",
-      "code": "6869",
-      "name": "シスメックス",
-      "entry": 1802.5,
-      "tp": 1999.5,
-      "sl": 1605.5,
-      "span_pct": 0.24540641544690128
-    },
-    {
-      "date": "2026-08-13",
-      "type": "new_watching",
-      "strategy": "uptrend",
-      "strategy_label": "上昇型",
-      "code": "9069",
-      "name": "センコーグループホールディングス",
-      "entry": 2171.0,
-      "tp": 2378.5,
-      "sl": 1963.5,
-      "span_pct": 0.21135727018079958
-    },
-    {
-      "date": "2026-08-13",
-      "type": "new_watching",
-      "strategy": "uptrend",
-      "strategy_label": "上昇型",
-      "code": "8088",
-      "name": "岩谷産業",
-      "entry": 2138.0,
-      "tp": 2292.5,
-      "sl": 1983.5,
-      "span_pct": 0.15578522813208975
-    },
-    {
-      "date": "2026-08-13",
-      "type": "entered",
-      "strategy": "uptrend",
-      "strategy_label": "上昇型",
-      "code": "6966",
-      "name": "三井ハイテック",
-      "entry": 1020.0,
-      "tp": 1358.0,
-      "sl": 793.0,
-      "entered_date": "2026-07-07"
-    }
-  ],
+  "whats_new": [],
   "market_zone": {
     "dev_pct": 18.94,
     "active": "uptrend"
