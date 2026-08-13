@@ -1,5 +1,17 @@
 [
   {
+    "code": "2269",
+    "name": "明治ホールディングス",
+    "win": true,
+    "strategy": "uptrend",
+    "strategy_label": "上昇型",
+    "entry": 3579.5,
+    "exit_price": 4080.0,
+    "entered_date": "2026-05-14",
+    "exit_date": "2026-08-13",
+    "pnl_pct": 13.982399776505098
+  },
+  {
     "code": "5108",
     "name": "ブリヂストン",
     "win": true,
