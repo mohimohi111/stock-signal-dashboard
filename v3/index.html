@@ -213,7 +213,7 @@
   </section>
 
   <section>
-    <h2>累計損益<span class="chart-subtitle">(1トレード一律10万円投資の場合)</span></h2>
+    <h2>累計損益<span class="chart-subtitle">(spanサイジング: 値幅に応じて7.5万〜12.5万円投資の場合)</span></h2>
     <div class="chart-wrap">
       <svg id="equityChart" viewBox="0 0 560 180"></svg>
       <div class="tooltip" id="equityTooltip"></div>
@@ -271,7 +271,7 @@ function renderNewsCard(e) {
       body = `<div class="rows rows-2col">
         <div><span class="label">指値</span><span class="value entry-price">${fmtYen(e.entry)}</span></div>
         <div><span class="label">損切り</span><span class="value sl-red">${fmtYen(e.sl)}</span></div>
-      </div>`;
+      </div>${sizingRows(e)}`;
       break;
     case 'level_up_watching':
       icon = '📐'; cls = '';
@@ -292,7 +292,7 @@ function renderNewsCard(e) {
       body = `<div class="rows rows-2col">
         <div><span class="label">建値</span><span class="value">${fmtYen(e.entry)}</span></div>
         <div><span class="label">損切り</span><span class="value sl-red">${fmtYen(e.sl)}</span></div>
-      </div>`;
+      </div>${sizingRows(e)}`;
       break;
     case 'closed_win':
       icon = '🔵'; cls = 'profit';
@@ -334,6 +334,18 @@ function renderNewsCard(e) {
 }
 function sharesFor100k(entry) { return Math.floor(100000 / entry); }
 
+// spanサイジング(2026-08-14採用)の表示用。値は全てscan.py側(recommended_jpy/
+// span_size_multiplier)で計算済みのものをそのまま表示するだけで、境界条件の
+// 判定ロジックをJS側で重複実装しない(production/Discord/dashboardの完全一致を保証するため)。
+function sizingRows(e) {
+  if (e.span_pct == null || e.recommended_jpy == null) return '';
+  const mult = e.sizing_multiplier != null ? `${e.sizing_multiplier.toFixed(2)}x` : '-';
+  return `<div class="rows rows-2col">
+        <div><span class="label">値幅</span><span class="value">${(e.span_pct * 100).toFixed(1)}%(${mult})</span></div>
+        <div><span class="label">推奨投入額</span><span class="value">${fmtYen(e.recommended_jpy)}${e.recommended_shares != null ? `(${e.recommended_shares}株)` : ''}</span></div>
+      </div>`;
+}
+
 const STRATEGY_ORDER = ['uptrend', 'relative_strength', 'crash'];
 const STRATEGY_ZONE_LABEL = { crash: '暴落', uptrend: '上昇', relative_strength: '相強' };
 
@@ -363,7 +375,7 @@ function renderEnteredCard(c) {
           <div><span class="label">エントリー日</span><span class="value">${c.entered_date || '-'}</span></div>
         </div>
         <div class="rows rows-2col">
-          <div><span class="label">建値</span><span class="value">${fmtYen(c.entry)}</span><span class="shares">10万円で${sharesFor100k(c.entry)}株</span></div>
+          <div><span class="label">建値</span><span class="value">${fmtYen(c.entry)}</span><span class="shares">推奨¥${Math.round(c.recommended_jpy ?? 100000).toLocaleString('ja-JP')}(${c.span_pct != null ? (c.span_pct*100).toFixed(1)+'%' : '-'})で${c.recommended_shares ?? sharesFor100k(c.entry)}株</span></div>
           ${(c.strategy === 'uptrend' || c.strategy === 'relative_strength')
             ? `<div><span class="label">損切り(トレーリング中)</span><span class="value sl-red">${fmtYen(c.sl)}</span><span class="shares">あと${fmtYen(Math.abs(c.gap_sl_yen))}(${Math.abs(c.gap_sl_pct).toFixed(1)}%)</span></div>`
             : `<div><span class="label">利確まで / 損切りまで</span><span class="value-line"><span class="value tp-green">${fmtYen(Math.abs(c.gap_tp_yen))}(${Math.abs(c.gap_tp_pct).toFixed(1)}%)</span> / <span class="value sl-red">${fmtYen(Math.abs(c.gap_sl_yen))}(${Math.abs(c.gap_sl_pct).toFixed(1)}%)</span></span></div>`
@@ -385,7 +397,7 @@ function renderWatchingCard(w) {
           <div><span class="label">指値まで</span><span class="value">${fmtYen(w.gap_yen)}</span></div>
         </div>
         <div class="rows rows-2col">
-          <div><span class="label">指値</span><span class="value entry-price">${fmtYen(w.entry)}</span><span class="shares">10万円で${sharesFor100k(w.entry)}株</span></div>
+          <div><span class="label">指値</span><span class="value entry-price">${fmtYen(w.entry)}</span><span class="shares">推奨¥${Math.round(w.recommended_jpy ?? 100000).toLocaleString('ja-JP')}(${w.span_pct != null ? (w.span_pct*100).toFixed(1)+'%' : '-'})で${w.recommended_shares ?? sharesFor100k(w.entry)}株</span></div>
           <div><span class="label">損切り</span><span class="value sl-red">${fmtYen(w.sl)}</span></div>
         </div>
         ${zoneOk ? '' : '<div class="empty" style="padding:4px 0 0;text-align:left;">⚠️ 現在この戦略のゾーン対象外です。指値注文は解除を推奨します。</div>'}
@@ -448,7 +460,7 @@ function render(data) {
   document.getElementById('enteredList').innerHTML = entered.length === 0
     ? '<div class="empty">現在、保有中のポジションはありません。</div>'
     : enteredGroups.map(items => {
-      const pnlYen = items.reduce((sum, c) => sum + sharesFor100k(c.entry) * (c.last_price - c.entry), 0);
+      const pnlYen = items.reduce((sum, c) => sum + (c.recommended_shares ?? sharesFor100k(c.entry)) * (c.last_price - c.entry), 0);
       const totalCls = pnlYen >= 0 ? 'profit' : 'loss';
       return `
       <details class="year-group">
@@ -489,7 +501,8 @@ function render(data) {
         const items = await res.json();
         body.innerHTML = items.map(c => {
           const cls = c.win ? 'profit' : 'loss';
-          const pnlYen = sharesFor100k(c.entry) * (c.exit_price - c.entry);
+          const shares = c.recommended_shares ?? sharesFor100k(c.entry);
+          const pnlYen = shares * (c.exit_price - c.entry);
           return `
       <div class="card ${cls}">
         <div class="card-title">
@@ -497,7 +510,7 @@ function render(data) {
           <span class="badge ${cls}">${fmtYenSigned(pnlYen)}</span>
         </div>
         <div class="rows">
-          <div><span class="label">建値</span><span class="value">${fmtYen(c.entry)}</span><span class="shares">10万円で${sharesFor100k(c.entry)}株</span></div>
+          <div><span class="label">建値</span><span class="value">${fmtYen(c.entry)}</span><span class="shares">推奨¥${Math.round(c.recommended_jpy ?? 100000).toLocaleString('ja-JP')}(${c.span_pct != null ? (c.span_pct*100).toFixed(1)+'%' : '-'})で${shares}株</span></div>
           <div><span class="label">決済値</span><span class="value ${cls}">${fmtYen(c.exit_price)}</span></div>
           <div><span class="label">決済日</span><span class="value">${c.exit_date || '-'}</span></div>
         </div>
