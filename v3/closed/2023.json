@@ -9,7 +9,11 @@
     "exit_price": 2356.0,
     "entered_date": "2023-12-21",
     "exit_date": "2023-12-22",
-    "pnl_pct": 32.062780269058294
+    "pnl_pct": 32.062780269058294,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 42
   },
   {
     "code": "1802",
@@ -21,7 +25,11 @@
     "exit_price": 1420.5,
     "entered_date": "2023-12-18",
     "exit_date": "2023-12-19",
-    "pnl_pct": 19.520403870424904
+    "pnl_pct": 19.520403870424904,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 63
   },
   {
     "code": "6178",
@@ -33,7 +41,11 @@
     "exit_price": 1341.6,
     "entered_date": "2023-12-15",
     "exit_date": "2023-12-18",
-    "pnl_pct": 8.149939540507853
+    "pnl_pct": 8.149939540507853,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 60
   },
   {
     "code": "7269",
@@ -45,7 +57,11 @@
     "exit_price": 1630.8875,
     "entered_date": "2023-12-14",
     "exit_date": "2023-12-15",
-    "pnl_pct": 17.79613578909354
+    "pnl_pct": 17.79613578909354,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 54
   },
   {
     "code": "8136",
@@ -57,7 +73,11 @@
     "exit_price": 545.7899871826172,
     "entered_date": "2023-12-14",
     "exit_date": "2023-12-15",
-    "pnl_pct": 50.36917300363925
+    "pnl_pct": 50.36917300363925,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 206
   },
   {
     "code": "5076",
@@ -69,7 +89,11 @@
     "exit_price": 1628.55,
     "entered_date": "2023-12-13",
     "exit_date": "2023-12-14",
-    "pnl_pct": 23.374999999999996
+    "pnl_pct": 23.374999999999996,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 56
   },
   {
     "code": "1332",
@@ -81,7 +105,11 @@
     "exit_price": 796.9,
     "entered_date": "2023-10-04",
     "exit_date": "2023-12-11",
-    "pnl_pct": 13.656137336806687
+    "pnl_pct": 13.656137336806687,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 106
   },
   {
     "code": "3405",
@@ -93,7 +121,11 @@
     "exit_price": 1786.9499999999998,
     "entered_date": "2023-12-08",
     "exit_date": "2023-12-11",
-    "pnl_pct": 23.62158422691109
+    "pnl_pct": 23.62158422691109,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 51
   },
   {
     "code": "7282",
@@ -105,7 +137,11 @@
     "exit_price": 3473.25,
     "entered_date": "2023-12-08",
     "exit_date": "2023-12-11",
-    "pnl_pct": 22.47002820874471
+    "pnl_pct": 22.47002820874471,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 26
   },
   {
     "code": "7994",
@@ -117,7 +153,11 @@
     "exit_price": 2267.2000000000003,
     "entered_date": "2023-12-08",
     "exit_date": "2023-12-11",
-    "pnl_pct": 11.410319410319424
+    "pnl_pct": 11.410319410319424,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 36
   },
   {
     "code": "1605",
@@ -129,7 +169,11 @@
     "exit_price": 2320.5,
     "entered_date": "2023-12-07",
     "exit_date": "2023-12-08",
-    "pnl_pct": 18.52892350913038
+    "pnl_pct": 18.52892350913038,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 38
   },
   {
     "code": "6841",
@@ -141,7 +185,11 @@
     "exit_price": 3130.3999999999996,
     "entered_date": "2023-12-07",
     "exit_date": "2023-12-08",
-    "pnl_pct": 15.919274208479898
+    "pnl_pct": 15.919274208479898,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 27
   },
   {
     "code": "7752",
@@ -153,7 +201,11 @@
     "exit_price": 1132.0,
     "entered_date": "2023-10-20",
     "exit_date": "2023-12-08",
-    "pnl_pct": -8.911687789177227
+    "pnl_pct": -8.911687789177227,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 60
   },
   {
     "code": "7944",
@@ -165,7 +217,11 @@
     "exit_price": 4115.0,
     "entered_date": "2023-12-01",
     "exit_date": "2023-12-08",
-    "pnl_pct": -10.882512181916622
+    "pnl_pct": -10.882512181916622,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 16
   },
   {
     "code": "8354",
@@ -177,7 +233,11 @@
     "exit_price": 4088.9,
     "entered_date": "2023-12-06",
     "exit_date": "2023-12-07",
-    "pnl_pct": 20.226403998823862
+    "pnl_pct": 20.226403998823862,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 22
   },
   {
     "code": "8088",
@@ -189,7 +249,11 @@
     "exit_price": 1690.0,
     "entered_date": "2023-07-13",
     "exit_date": "2023-12-05",
-    "pnl_pct": -7.713310580204778
+    "pnl_pct": -7.713310580204778,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 40
   },
   {
     "code": "9989",
@@ -201,7 +265,11 @@
     "exit_price": 4566.0,
     "entered_date": "2023-07-20",
     "exit_date": "2023-12-05",
-    "pnl_pct": 11.365853658536587
+    "pnl_pct": 11.365853658536587,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 18
   },
   {
     "code": "1803",
@@ -213,7 +281,11 @@
     "exit_price": 1085.5,
     "entered_date": "2023-11-29",
     "exit_date": "2023-11-30",
-    "pnl_pct": 10.96345514950166
+    "pnl_pct": 10.96345514950166,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 76
   },
   {
     "code": "8795",
@@ -225,7 +297,11 @@
     "exit_price": 2768.0,
     "entered_date": "2023-11-28",
     "exit_date": "2023-11-29",
-    "pnl_pct": 22.858411007545495
+    "pnl_pct": 22.858411007545495,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 33
   },
   {
     "code": "1808",
@@ -237,7 +313,11 @@
     "exit_price": 1946.2499999999998,
     "entered_date": "2023-11-21",
     "exit_date": "2023-11-22",
-    "pnl_pct": 9.570724841660802
+    "pnl_pct": 9.570724841660802,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 42
   },
   {
     "code": "2531",
@@ -249,7 +329,11 @@
     "exit_price": 1280.5,
     "entered_date": "2023-11-21",
     "exit_date": "2023-11-22",
-    "pnl_pct": 10.913815504547424
+    "pnl_pct": 10.913815504547424,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 64
   },
   {
     "code": "4527",
@@ -261,7 +345,11 @@
     "exit_price": 4097.75,
     "entered_date": "2023-11-16",
     "exit_date": "2023-11-17",
-    "pnl_pct": 29.42987997473152
+    "pnl_pct": 29.42987997473152,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 23
   },
   {
     "code": "5105",
@@ -273,7 +361,11 @@
     "exit_price": 2555.8000000000006,
     "entered_date": "2023-10-24",
     "exit_date": "2023-11-15",
-    "pnl_pct": 16.556835024512605
+    "pnl_pct": 16.556835024512605,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 34
   },
   {
     "code": "7744",
@@ -285,7 +377,11 @@
     "exit_price": 1118.2499725341797,
     "entered_date": "2023-11-14",
     "exit_date": "2023-11-15",
-    "pnl_pct": 13.24050704733569
+    "pnl_pct": 13.24050704733569,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 75
   },
   {
     "code": "3099",
@@ -297,7 +393,11 @@
     "exit_price": 1802.5,
     "entered_date": "2023-10-24",
     "exit_date": "2023-11-14",
-    "pnl_pct": 11.437403400309119
+    "pnl_pct": 11.437403400309119,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 46
   },
   {
     "code": "5706",
@@ -309,7 +409,11 @@
     "exit_price": 4251.0,
     "entered_date": "2023-10-23",
     "exit_date": "2023-11-14",
-    "pnl_pct": 15.203252032520325
+    "pnl_pct": 15.203252032520325,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 20
   },
   {
     "code": "7906",
@@ -321,7 +425,11 @@
     "exit_price": 1430.0,
     "entered_date": "2023-10-16",
     "exit_date": "2023-11-13",
-    "pnl_pct": -9.949622166246852
+    "pnl_pct": -9.949622166246852,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 47
   },
   {
     "code": "8411",
@@ -333,7 +441,11 @@
     "exit_price": 2724.3999999999996,
     "entered_date": "2023-11-09",
     "exit_date": "2023-11-10",
-    "pnl_pct": 16.664168718552602
+    "pnl_pct": 16.664168718552602,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 32
   },
   {
     "code": "1719",
@@ -345,7 +457,11 @@
     "exit_price": 1238.3,
     "entered_date": "2023-11-09",
     "exit_date": "2023-11-10",
-    "pnl_pct": 16.10876699484294
+    "pnl_pct": 16.10876699484294,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 70
   },
   {
     "code": "6432",
@@ -357,7 +473,11 @@
     "exit_price": 5310.000000000001,
     "entered_date": "2023-11-09",
     "exit_date": "2023-11-10",
-    "pnl_pct": 28.106151990349844
+    "pnl_pct": 28.106151990349844,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 18
   },
   {
     "code": "8331",
@@ -369,7 +489,11 @@
     "exit_price": 1019.0,
     "entered_date": "2023-10-06",
     "exit_date": "2023-11-09",
-    "pnl_pct": -8.032490974729242
+    "pnl_pct": -8.032490974729242,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 67
   },
   {
     "code": "9531",
@@ -381,7 +505,11 @@
     "exit_price": 3615.3000000000006,
     "entered_date": "2023-11-08",
     "exit_date": "2023-11-09",
-    "pnl_pct": 14.08330703692017
+    "pnl_pct": 14.08330703692017,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 23
   },
   {
     "code": "9107",
@@ -393,7 +521,11 @@
     "exit_price": 1915.3332641601564,
     "entered_date": "2023-11-07",
     "exit_date": "2023-11-08",
-    "pnl_pct": 24.736780472820346
+    "pnl_pct": 24.736780472820346,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 48
   },
   {
     "code": "8113",
@@ -405,7 +537,11 @@
     "exit_price": 1657.3333740234375,
     "entered_date": "2023-09-19",
     "exit_date": "2023-11-08",
-    "pnl_pct": -9.021041783327298
+    "pnl_pct": -9.021041783327298,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 41
   },
   {
     "code": "5805",
@@ -417,7 +553,11 @@
     "exit_price": 2524.2,
     "entered_date": "2023-10-19",
     "exit_date": "2023-11-06",
-    "pnl_pct": 24.621081214514927
+    "pnl_pct": 24.621081214514927,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 37
   },
   {
     "code": "8174",
@@ -429,7 +569,11 @@
     "exit_price": 2435.4,
     "entered_date": "2023-09-29",
     "exit_date": "2023-11-06",
-    "pnl_pct": 10.9016393442623
+    "pnl_pct": 10.9016393442623,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 34
   },
   {
     "code": "1911",
@@ -441,7 +585,11 @@
     "exit_price": 1425.0832977294922,
     "entered_date": "2023-11-01",
     "exit_date": "2023-11-02",
-    "pnl_pct": 26.505400473668583
+    "pnl_pct": 26.505400473668583,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 66
   },
   {
     "code": "6701",
@@ -453,7 +601,11 @@
     "exit_price": 1629.6,
     "entered_date": "2023-10-31",
     "exit_date": "2023-11-01",
-    "pnl_pct": 14.381974172622769
+    "pnl_pct": 14.381974172622769,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 52
   },
   {
     "code": "7267",
@@ -465,7 +617,11 @@
     "exit_price": 1799.0332702636717,
     "entered_date": "2023-10-31",
     "exit_date": "2023-11-01",
-    "pnl_pct": 20.672999093213388
+    "pnl_pct": 20.672999093213388,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 50
   },
   {
     "code": "2897",
@@ -477,7 +633,11 @@
     "exit_price": 4445.833435058594,
     "entered_date": "2023-05-29",
     "exit_date": "2023-11-01",
-    "pnl_pct": 11.284938653635077
+    "pnl_pct": 11.284938653635077,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 18
   },
   {
     "code": "7259",
@@ -489,7 +649,11 @@
     "exit_price": 1955.250054931641,
     "entered_date": "2023-10-31",
     "exit_date": "2023-11-01",
-    "pnl_pct": 13.611275707823403
+    "pnl_pct": 13.611275707823403,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 43
   },
   {
     "code": "8194",
@@ -501,7 +665,11 @@
     "exit_price": 1931.25,
     "entered_date": "2023-10-31",
     "exit_date": "2023-11-01",
-    "pnl_pct": 10.91170136396267
+    "pnl_pct": 10.91170136396267,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 43
   },
   {
     "code": "2802",
@@ -513,7 +681,11 @@
     "exit_price": 2992.6000000000004,
     "entered_date": "2023-10-30",
     "exit_date": "2023-10-31",
-    "pnl_pct": 11.022073826748281
+    "pnl_pct": 11.022073826748281,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 27
   },
   {
     "code": "2875",
@@ -525,7 +697,11 @@
     "exit_price": 7012.5,
     "entered_date": "2023-07-19",
     "exit_date": "2023-10-31",
-    "pnl_pct": 13.978057700121902
+    "pnl_pct": 13.978057700121902,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 12
   },
   {
     "code": "7740",
@@ -537,7 +713,11 @@
     "exit_price": 604.6875,
     "entered_date": "2023-10-30",
     "exit_date": "2023-10-31",
-    "pnl_pct": 19.74009900990099
+    "pnl_pct": 19.74009900990099,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 148
   },
   {
     "code": "6724",
@@ -549,7 +729,11 @@
     "exit_price": 2075.0,
     "entered_date": "2023-09-08",
     "exit_date": "2023-10-30",
-    "pnl_pct": -7.179601878774323
+    "pnl_pct": -7.179601878774323,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 33
   },
   {
     "code": "7270",
@@ -561,7 +745,11 @@
     "exit_price": 2591.0,
     "entered_date": "2023-10-11",
     "exit_date": "2023-10-30",
-    "pnl_pct": -9.183315807921485
+    "pnl_pct": -9.183315807921485,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 26
   },
   {
     "code": "3231",
@@ -573,7 +761,11 @@
     "exit_price": 780.8400329589845,
     "entered_date": "2023-10-27",
     "exit_date": "2023-10-30",
-    "pnl_pct": 13.791900184839937
+    "pnl_pct": 13.791900184839937,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 109
   },
   {
     "code": "6723",
@@ -585,7 +777,11 @@
     "exit_price": 2849.0000000000005,
     "entered_date": "2023-10-26",
     "exit_date": "2023-10-27",
-    "pnl_pct": 35.84455835022055
+    "pnl_pct": 35.84455835022055,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 35
   },
   {
     "code": "8802",
@@ -597,7 +793,11 @@
     "exit_price": 2036.4,
     "entered_date": "2023-10-26",
     "exit_date": "2023-10-27",
-    "pnl_pct": 6.981875492513784
+    "pnl_pct": 6.981875492513784,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 39
   },
   {
     "code": "4502",
@@ -609,7 +809,11 @@
     "exit_price": 4687.5,
     "entered_date": "2023-10-24",
     "exit_date": "2023-10-25",
-    "pnl_pct": 8.72086280876725
+    "pnl_pct": 8.72086280876725,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 17
   },
   {
     "code": "4578",
@@ -621,7 +825,11 @@
     "exit_price": 5649.750000000001,
     "entered_date": "2023-10-24",
     "exit_date": "2023-10-25",
-    "pnl_pct": 14.587770003042289
+    "pnl_pct": 14.587770003042289,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 15
   },
   {
     "code": "5101",
@@ -633,7 +841,11 @@
     "exit_price": 3223.5,
     "entered_date": "2023-10-24",
     "exit_date": "2023-10-25",
-    "pnl_pct": 18.05530122688152
+    "pnl_pct": 18.05530122688152,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 27
   },
   {
     "code": "7186",
@@ -645,7 +857,11 @@
     "exit_price": 717.6,
     "entered_date": "2023-10-24",
     "exit_date": "2023-10-25",
-    "pnl_pct": 7.320721835091161
+    "pnl_pct": 7.320721835091161,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 112
   },
   {
     "code": "7203",
@@ -657,7 +873,11 @@
     "exit_price": 2845.05,
     "entered_date": "2023-10-24",
     "exit_date": "2023-10-25",
-    "pnl_pct": 11.570588235294125
+    "pnl_pct": 11.570588235294125,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 29
   },
   {
     "code": "1959",
@@ -669,7 +889,11 @@
     "exit_price": 4782.0,
     "entered_date": "2023-10-24",
     "exit_date": "2023-10-25",
-    "pnl_pct": 8.991452991452991
+    "pnl_pct": 8.991452991452991,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 17
   },
   {
     "code": "5991",
@@ -681,7 +905,11 @@
     "exit_price": 1174.5,
     "entered_date": "2023-10-24",
     "exit_date": "2023-10-25",
-    "pnl_pct": 14.00145595729192
+    "pnl_pct": 14.00145595729192,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 72
   },
   {
     "code": "9119",
@@ -693,7 +921,11 @@
     "exit_price": 1171.8,
     "entered_date": "2023-10-24",
     "exit_date": "2023-10-25",
-    "pnl_pct": 16.365441906653423
+    "pnl_pct": 16.365441906653423,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 74
   },
   {
     "code": "9302",
@@ -705,7 +937,11 @@
     "exit_price": 1481.25,
     "entered_date": "2023-10-24",
     "exit_date": "2023-10-25",
-    "pnl_pct": 9.45197208877296
+    "pnl_pct": 9.45197208877296,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 55
   },
   {
     "code": "4004",
@@ -717,7 +953,11 @@
     "exit_price": 2670.0,
     "entered_date": "2023-10-23",
     "exit_date": "2023-10-24",
-    "pnl_pct": 9.090909090909092
+    "pnl_pct": 9.090909090909092,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 30
   },
   {
     "code": "4062",
@@ -729,7 +969,11 @@
     "exit_price": 4563.000000000001,
     "entered_date": "2023-10-23",
     "exit_date": "2023-10-24",
-    "pnl_pct": 27.147335423197518
+    "pnl_pct": 27.147335423197518,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 20
   },
   {
     "code": "6471",
@@ -741,7 +985,11 @@
     "exit_price": 791.0,
     "entered_date": "2023-08-01",
     "exit_date": "2023-10-24",
-    "pnl_pct": -8.162079274273344
+    "pnl_pct": -8.162079274273344,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 87
   },
   {
     "code": "8725",
@@ -753,7 +1001,11 @@
     "exit_price": 1943.599951171875,
     "entered_date": "2023-10-23",
     "exit_date": "2023-10-24",
-    "pnl_pct": 8.71259289397829
+    "pnl_pct": 8.71259289397829,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 41
   },
   {
     "code": "2222",
@@ -765,7 +1017,11 @@
     "exit_price": 2484.9000000000005,
     "entered_date": "2023-10-23",
     "exit_date": "2023-10-24",
-    "pnl_pct": 23.50397614314116
+    "pnl_pct": 23.50397614314116,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 37
   },
   {
     "code": "4684",
@@ -777,7 +1033,11 @@
     "exit_price": 4270.0,
     "entered_date": "2023-09-27",
     "exit_date": "2023-10-24",
-    "pnl_pct": -8.955223880597014
+    "pnl_pct": -8.955223880597014,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 15
   },
   {
     "code": "5444",
@@ -789,7 +1049,11 @@
     "exit_price": 7660.9,
     "entered_date": "2023-10-23",
     "exit_date": "2023-10-24",
-    "pnl_pct": 11.011447616287501
+    "pnl_pct": 11.011447616287501,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 10
   },
   {
     "code": "8020",
@@ -801,7 +1065,11 @@
     "exit_price": 958.5,
     "entered_date": "2023-10-11",
     "exit_date": "2023-10-24",
-    "pnl_pct": -8.866175421915855
+    "pnl_pct": -8.866175421915855,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 71
   },
   {
     "code": "6305",
@@ -813,7 +1081,11 @@
     "exit_price": 4777.75,
     "entered_date": "2023-10-20",
     "exit_date": "2023-10-23",
-    "pnl_pct": 16.21868158598881
+    "pnl_pct": 16.21868158598881,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 18
   },
   {
     "code": "9104",
@@ -825,7 +1097,11 @@
     "exit_price": 4596.75,
     "entered_date": "2023-10-20",
     "exit_date": "2023-10-23",
-    "pnl_pct": 14.063275434243176
+    "pnl_pct": 14.063275434243176,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 18
   },
   {
     "code": "6632",
@@ -837,7 +1113,11 @@
     "exit_price": 705.5999999999999,
     "entered_date": "2023-10-20",
     "exit_date": "2023-10-23",
-    "pnl_pct": 15.577395577395562
+    "pnl_pct": 15.577395577395562,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 122
   },
   {
     "code": "6473",
@@ -849,7 +1129,11 @@
     "exit_price": 1476.1,
     "entered_date": "2023-10-19",
     "exit_date": "2023-10-20",
-    "pnl_pct": 16.18260527351436
+    "pnl_pct": 16.18260527351436,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 59
   },
   {
     "code": "6752",
@@ -861,7 +1145,11 @@
     "exit_price": 1787.8,
     "entered_date": "2023-10-19",
     "exit_date": "2023-10-20",
-    "pnl_pct": 15.90275526742301
+    "pnl_pct": 15.90275526742301,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 48
   },
   {
     "code": "7211",
@@ -873,7 +1161,11 @@
     "exit_price": 656.25,
     "entered_date": "2023-10-19",
     "exit_date": "2023-10-20",
-    "pnl_pct": 8.83084577114428
+    "pnl_pct": 8.83084577114428,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 124
   },
   {
     "code": "2726",
@@ -885,7 +1177,11 @@
     "exit_price": 1088.5500000000002,
     "entered_date": "2023-10-19",
     "exit_date": "2023-10-20",
-    "pnl_pct": 28.556244464127566
+    "pnl_pct": 28.556244464127566,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 88
   },
   {
     "code": "3086",
@@ -897,7 +1193,11 @@
     "exit_price": 1619.6499999999999,
     "entered_date": "2023-10-18",
     "exit_date": "2023-10-19",
-    "pnl_pct": 17.72851172087951
+    "pnl_pct": 17.72851172087951,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 54
   },
   {
     "code": "9101",
@@ -909,7 +1209,11 @@
     "exit_price": 4386.150000000001,
     "entered_date": "2023-10-18",
     "exit_date": "2023-10-19",
-    "pnl_pct": 14.000000000000016
+    "pnl_pct": 14.000000000000016,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 19
   },
   {
     "code": "7459",
@@ -921,7 +1225,11 @@
     "exit_price": 2622.0,
     "entered_date": "2023-10-18",
     "exit_date": "2023-10-19",
-    "pnl_pct": 7.712847899763788
+    "pnl_pct": 7.712847899763788,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 30
   },
   {
     "code": "8309",
@@ -933,7 +1241,11 @@
     "exit_price": 740.85,
     "entered_date": "2023-10-16",
     "exit_date": "2023-10-17",
-    "pnl_pct": 7.156029651057678
+    "pnl_pct": 7.156029651057678,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 108
   },
   {
     "code": "3116",
@@ -945,7 +1257,11 @@
     "exit_price": 2890.0,
     "entered_date": "2023-10-16",
     "exit_date": "2023-10-17",
-    "pnl_pct": 9.542310243532645
+    "pnl_pct": 9.542310243532645,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 28
   },
   {
     "code": "7532",
@@ -957,7 +1273,11 @@
     "exit_price": 637.1999999999999,
     "entered_date": "2023-10-13",
     "exit_date": "2023-10-16",
-    "pnl_pct": 8.681564602898257
+    "pnl_pct": 8.681564602898257,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 127
   },
   {
     "code": "9021",
@@ -969,7 +1289,11 @@
     "exit_price": 2790.0,
     "entered_date": "2023-10-06",
     "exit_date": "2023-10-16",
-    "pnl_pct": -8.5995085995086
+    "pnl_pct": -8.5995085995086,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 24
   },
   {
     "code": "9022",
@@ -981,7 +1305,11 @@
     "exit_price": 3314.0,
     "entered_date": "2023-10-05",
     "exit_date": "2023-10-16",
-    "pnl_pct": -8.453038674033149
+    "pnl_pct": -8.453038674033149,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 20
   },
   {
     "code": "9001",
@@ -993,7 +1321,11 @@
     "exit_price": 4191.75,
     "entered_date": "2023-10-12",
     "exit_date": "2023-10-13",
-    "pnl_pct": 14.858199753390874
+    "pnl_pct": 14.858199753390874,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 20
   },
   {
     "code": "2670",
@@ -1005,7 +1337,11 @@
     "exit_price": 2466.666748046875,
     "entered_date": "2023-10-04",
     "exit_date": "2023-10-13",
-    "pnl_pct": -7.01765243906788
+    "pnl_pct": -7.01765243906788,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 28
   },
   {
     "code": "4812",
@@ -1017,7 +1353,11 @@
     "exit_price": 1941.6667175292969,
     "entered_date": "2023-10-12",
     "exit_date": "2023-10-13",
-    "pnl_pct": 9.802073865262129
+    "pnl_pct": 9.802073865262129,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 42
   },
   {
     "code": "5401",
@@ -1029,7 +1369,11 @@
     "exit_price": 762.45,
     "entered_date": "2023-10-11",
     "exit_date": "2023-10-12",
-    "pnl_pct": 12.980661347589498
+    "pnl_pct": 12.980661347589498,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 111
   },
   {
     "code": "7202",
@@ -1041,7 +1385,11 @@
     "exit_price": 1989.6,
     "entered_date": "2023-10-11",
     "exit_date": "2023-10-12",
-    "pnl_pct": 7.910508474576266
+    "pnl_pct": 7.910508474576266,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 40
   },
   {
     "code": "7148",
@@ -1053,7 +1401,11 @@
     "exit_price": 1510.6000000000001,
     "entered_date": "2023-10-11",
     "exit_date": "2023-10-12",
-    "pnl_pct": 12.187151875232093
+    "pnl_pct": 12.187151875232093,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 55
   },
   {
     "code": "6269",
@@ -1065,7 +1417,11 @@
     "exit_price": 2060.45,
     "entered_date": "2023-10-10",
     "exit_date": "2023-10-11",
-    "pnl_pct": 17.270916334661344
+    "pnl_pct": 17.270916334661344,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 42
   },
   {
     "code": "1963",
@@ -1077,7 +1433,11 @@
     "exit_price": 2271.1,
     "entered_date": "2023-10-06",
     "exit_date": "2023-10-10",
-    "pnl_pct": 12.472452643308154
+    "pnl_pct": 12.472452643308154,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 37
   },
   {
     "code": "4043",
@@ -1089,7 +1449,11 @@
     "exit_price": 2442.7000000000003,
     "entered_date": "2023-10-06",
     "exit_date": "2023-10-10",
-    "pnl_pct": 11.50062763893645
+    "pnl_pct": 11.50062763893645,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 34
   },
   {
     "code": "2767",
@@ -1101,7 +1465,11 @@
     "exit_price": 3378.7500000000086,
     "entered_date": "2023-10-06",
     "exit_date": "2023-10-10",
-    "pnl_pct": 85.39094650205809
+    "pnl_pct": 85.39094650205809,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 41
   },
   {
     "code": "9506",
@@ -1113,7 +1481,11 @@
     "exit_price": 1118.0,
     "entered_date": "2023-10-06",
     "exit_date": "2023-10-10",
-    "pnl_pct": 12.986356745831229
+    "pnl_pct": 12.986356745831229,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 75
   },
   {
     "code": "9508",
@@ -1125,7 +1497,11 @@
     "exit_price": 1083.75,
     "entered_date": "2023-10-06",
     "exit_date": "2023-10-10",
-    "pnl_pct": 11.039959016393443
+    "pnl_pct": 11.039959016393443,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 76
   },
   {
     "code": "7453",
@@ -1137,7 +1513,11 @@
     "exit_price": 995.6250000000001,
     "entered_date": "2023-10-05",
     "exit_date": "2023-10-06",
-    "pnl_pct": 14.604316546762602
+    "pnl_pct": 14.604316546762602,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 86
   },
   {
     "code": "2871",
@@ -1149,7 +1529,11 @@
     "exit_price": 1764.7500000000002,
     "entered_date": "2023-10-04",
     "exit_date": "2023-10-05",
-    "pnl_pct": 11.763774540848638
+    "pnl_pct": 11.763774540848638,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 47
   },
   {
     "code": "5803",
@@ -1161,7 +1545,11 @@
     "exit_price": 209.925,
     "entered_date": "2023-10-04",
     "exit_date": "2023-10-05",
-    "pnl_pct": 12.585473324766049
+    "pnl_pct": 12.585473324766049,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 402
   },
   {
     "code": "7751",
@@ -1173,7 +1561,11 @@
     "exit_price": 3851.9000000000005,
     "entered_date": "2023-10-04",
     "exit_date": "2023-10-05",
-    "pnl_pct": 12.05527272727273
+    "pnl_pct": 12.05527272727273,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 21
   },
   {
     "code": "9766",
@@ -1185,7 +1577,11 @@
     "exit_price": 8606.0,
     "entered_date": "2023-10-04",
     "exit_date": "2023-10-05",
-    "pnl_pct": 13.013788575180566
+    "pnl_pct": 13.013788575180566,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 9
   },
   {
     "code": "6787",
@@ -1197,7 +1593,11 @@
     "exit_price": 3588.0,
     "entered_date": "2023-10-04",
     "exit_date": "2023-10-05",
-    "pnl_pct": 12.388410336726704
+    "pnl_pct": 12.388410336726704,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 23
   },
   {
     "code": "7716",
@@ -1209,7 +1609,11 @@
     "exit_price": 3645.2,
     "entered_date": "2023-10-04",
     "exit_date": "2023-10-05",
-    "pnl_pct": 10.729040097205354
+    "pnl_pct": 10.729040097205354,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 22
   },
   {
     "code": "9435",
@@ -1221,7 +1625,11 @@
     "exit_price": 24691.5,
     "entered_date": "2023-10-04",
     "exit_date": "2023-10-05",
-    "pnl_pct": 14.697479967483451
+    "pnl_pct": 14.697479967483451,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 3
   },
   {
     "code": "5411",
@@ -1233,7 +1641,11 @@
     "exit_price": 2086.0,
     "entered_date": "2023-09-28",
     "exit_date": "2023-10-04",
-    "pnl_pct": -7.760336060137077
+    "pnl_pct": -7.760336060137077,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 33
   },
   {
     "code": "9009",
@@ -1245,7 +1657,11 @@
     "exit_price": 2020.166729736328,
     "entered_date": "2023-10-03",
     "exit_date": "2023-10-04",
-    "pnl_pct": 20.46312797921702
+    "pnl_pct": 20.46312797921702,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 44
   },
   {
     "code": "9602",
@@ -1257,7 +1673,11 @@
     "exit_price": 1002.0,
     "entered_date": "2023-06-23",
     "exit_date": "2023-10-04",
-    "pnl_pct": -7.564575645756458
+    "pnl_pct": -7.564575645756458,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 69
   },
   {
     "code": "4186",
@@ -1269,7 +1689,11 @@
     "exit_price": 3360.0,
     "entered_date": "2023-10-03",
     "exit_date": "2023-10-04",
-    "pnl_pct": 16.330061834916677
+    "pnl_pct": 16.330061834916677,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 25
   },
   {
     "code": "9418",
@@ -1281,7 +1705,11 @@
     "exit_price": 1212.8666381835938,
     "entered_date": "2023-10-03",
     "exit_date": "2023-10-04",
-    "pnl_pct": 14.981825863836711
+    "pnl_pct": 14.981825863836711,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 71
   },
   {
     "code": "5631",
@@ -1293,7 +1721,11 @@
     "exit_price": 2702.0,
     "entered_date": "2023-07-13",
     "exit_date": "2023-10-03",
-    "pnl_pct": -8.095238095238095
+    "pnl_pct": -8.095238095238095,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 25
   },
   {
     "code": "9202",
@@ -1305,7 +1737,11 @@
     "exit_price": 3508.7000000000003,
     "entered_date": "2023-10-02",
     "exit_date": "2023-10-03",
-    "pnl_pct": 13.019809953293615
+    "pnl_pct": 13.019809953293615,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 24
   },
   {
     "code": "7988",
@@ -1317,7 +1753,11 @@
     "exit_price": 3785.0,
     "entered_date": "2023-09-29",
     "exit_date": "2023-10-03",
-    "pnl_pct": -7.985900085085694
+    "pnl_pct": -7.985900085085694,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 18
   },
   {
     "code": "7012",
@@ -1329,7 +1769,11 @@
     "exit_price": 822.1500000000002,
     "entered_date": "2023-09-29",
     "exit_date": "2023-10-02",
-    "pnl_pct": 13.041387845317976
+    "pnl_pct": 13.041387845317976,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 103
   },
   {
     "code": "4403",
@@ -1341,7 +1785,11 @@
     "exit_price": 2262.0,
     "entered_date": "2023-09-28",
     "exit_date": "2023-09-29",
-    "pnl_pct": 12.968201466611678
+    "pnl_pct": 12.968201466611678,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 37
   },
   {
     "code": "4689",
@@ -1353,7 +1801,11 @@
     "exit_price": 455.49999237060547,
     "entered_date": "2023-09-27",
     "exit_date": "2023-09-28",
-    "pnl_pct": 10.921709275716383
+    "pnl_pct": 10.921709275716383,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 182
   },
   {
     "code": "5344",
@@ -1365,7 +1817,11 @@
     "exit_price": 27465.0,
     "entered_date": "2023-09-27",
     "exit_date": "2023-09-28",
-    "pnl_pct": 19.23160408074669
+    "pnl_pct": 19.23160408074669,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 3
   },
   {
     "code": "9984",
@@ -1377,7 +1833,11 @@
     "exit_price": 1766.8125000000002,
     "entered_date": "2023-09-21",
     "exit_date": "2023-09-22",
-    "pnl_pct": 12.787264602617315
+    "pnl_pct": 12.787264602617315,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 47
   },
   {
     "code": "2124",
@@ -1389,7 +1849,11 @@
     "exit_price": 612.5,
     "entered_date": "2023-08-23",
     "exit_date": "2023-09-22",
-    "pnl_pct": -7.337367624810892
+    "pnl_pct": -7.337367624810892,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 113
   },
   {
     "code": "3088",
@@ -1401,7 +1865,11 @@
     "exit_price": 3098.666552734375,
     "entered_date": "2023-09-21",
     "exit_date": "2023-09-22",
-    "pnl_pct": 14.616850480280185
+    "pnl_pct": 14.616850480280185,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 27
   },
   {
     "code": "6460",
@@ -1413,7 +1881,11 @@
     "exit_price": 3169.6,
     "entered_date": "2023-09-21",
     "exit_date": "2023-09-22",
-    "pnl_pct": 15.615538938537293
+    "pnl_pct": 15.615538938537293,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 27
   },
   {
     "code": "8848",
@@ -1425,7 +1897,11 @@
     "exit_price": 374.4,
     "entered_date": "2023-09-20",
     "exit_date": "2023-09-21",
-    "pnl_pct": 8.995633187772919
+    "pnl_pct": 8.995633187772919,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 218
   },
   {
     "code": "5423",
@@ -1437,7 +1913,11 @@
     "exit_price": 1825.2,
     "entered_date": "2023-08-24",
     "exit_date": "2023-09-20",
-    "pnl_pct": 13.968154854823606
+    "pnl_pct": 13.968154854823606,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 46
   },
   {
     "code": "6436",
@@ -1449,7 +1929,11 @@
     "exit_price": 3400.8,
     "entered_date": "2023-08-18",
     "exit_date": "2023-09-20",
-    "pnl_pct": 11.556503198294234
+    "pnl_pct": 11.556503198294234,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 24
   },
   {
     "code": "2678",
@@ -1461,7 +1945,11 @@
     "exit_price": 1859.0,
     "entered_date": "2023-07-26",
     "exit_date": "2023-09-19",
-    "pnl_pct": -12.476459510357815
+    "pnl_pct": -12.476459510357815,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 35
   },
   {
     "code": "9697",
@@ -1473,7 +1961,11 @@
     "exit_price": 3220.0000000000005,
     "entered_date": "2023-09-15",
     "exit_date": "2023-09-19",
-    "pnl_pct": 15.22633744855967
+    "pnl_pct": 15.22633744855967,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 26
   },
   {
     "code": "5233",
@@ -1485,7 +1977,11 @@
     "exit_price": 2962.5,
     "entered_date": "2023-09-11",
     "exit_date": "2023-09-12",
-    "pnl_pct": 9.55991124260355
+    "pnl_pct": 9.55991124260355,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 27
   },
   {
     "code": "2154",
@@ -1497,7 +1993,11 @@
     "exit_price": 1957.0,
     "entered_date": "2023-08-21",
     "exit_date": "2023-09-08",
-    "pnl_pct": -7.448569401749823
+    "pnl_pct": -7.448569401749823,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 35
   },
   {
     "code": "9020",
@@ -1509,7 +2009,11 @@
     "exit_price": 2785.59990234375,
     "entered_date": "2023-07-18",
     "exit_date": "2023-09-06",
-    "pnl_pct": 9.317808103549472
+    "pnl_pct": 9.317808103549472,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 29
   },
   {
     "code": "8056",
@@ -1521,7 +2025,11 @@
     "exit_price": 3858.0,
     "entered_date": "2023-07-10",
     "exit_date": "2023-09-06",
-    "pnl_pct": 11.117511520737327
+    "pnl_pct": 11.117511520737327,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 21
   },
   {
     "code": "8308",
@@ -1533,7 +2041,11 @@
     "exit_price": 816.3599853515625,
     "entered_date": "2023-08-21",
     "exit_date": "2023-09-04",
-    "pnl_pct": 10.835652553296482
+    "pnl_pct": 10.835652553296482,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 101
   },
   {
     "code": "6302",
@@ -1545,7 +2057,11 @@
     "exit_price": 3556.25,
     "entered_date": "2023-04-05",
     "exit_date": "2023-08-30",
-    "pnl_pct": 12.717908082408874
+    "pnl_pct": 12.717908082408874,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 23
   },
   {
     "code": "9759",
@@ -1557,7 +2073,11 @@
     "exit_price": 2933.75,
     "entered_date": "2023-08-28",
     "exit_date": "2023-08-29",
-    "pnl_pct": 10.56152251742981
+    "pnl_pct": 10.56152251742981,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 28
   },
   {
     "code": "7735",
@@ -1569,7 +2089,11 @@
     "exit_price": 4166.25,
     "entered_date": "2023-08-25",
     "exit_date": "2023-08-28",
-    "pnl_pct": 19.142091152815013
+    "pnl_pct": 19.142091152815013,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 21
   },
   {
     "code": "5711",
@@ -1581,7 +2105,11 @@
     "exit_price": 2572.5,
     "entered_date": "2023-08-23",
     "exit_date": "2023-08-24",
-    "pnl_pct": 8.854331958108537
+    "pnl_pct": 8.854331958108537,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 31
   },
   {
     "code": "5802",
@@ -1593,7 +2121,11 @@
     "exit_price": 469.79999999999995,
     "entered_date": "2023-08-23",
     "exit_date": "2023-08-24",
-    "pnl_pct": 7.076923076923067
+    "pnl_pct": 7.076923076923067,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 170
   },
   {
     "code": "7272",
@@ -1605,7 +2137,11 @@
     "exit_price": 1399.6666137695313,
     "entered_date": "2023-08-23",
     "exit_date": "2023-08-24",
-    "pnl_pct": 11.839122154976533
+    "pnl_pct": 11.839122154976533,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 59
   },
   {
     "code": "6707",
@@ -1617,7 +2153,11 @@
     "exit_price": 14640.500000000004,
     "entered_date": "2023-08-22",
     "exit_date": "2023-08-23",
-    "pnl_pct": 39.43333333333337
+    "pnl_pct": 39.43333333333337,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 7
   },
   {
     "code": "8804",
@@ -1629,7 +2169,11 @@
     "exit_price": 1956.0,
     "entered_date": "2023-08-18",
     "exit_date": "2023-08-21",
-    "pnl_pct": 8.320642392357747
+    "pnl_pct": 8.320642392357747,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 41
   },
   {
     "code": "9983",
@@ -1641,7 +2185,11 @@
     "exit_price": 36833.3341796875,
     "entered_date": "2023-08-17",
     "exit_date": "2023-08-18",
-    "pnl_pct": 11.813813758796595
+    "pnl_pct": 11.813813758796595,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 2
   },
   {
     "code": "5471",
@@ -1653,7 +2201,11 @@
     "exit_price": 1267.2,
     "entered_date": "2023-08-17",
     "exit_date": "2023-08-18",
-    "pnl_pct": 8.215200683176777
+    "pnl_pct": 8.215200683176777,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 64
   },
   {
     "code": "1801",
@@ -1665,7 +2217,11 @@
     "exit_price": 5350.000000000001,
     "entered_date": "2023-08-16",
     "exit_date": "2023-08-17",
-    "pnl_pct": 9.777367395095927
+    "pnl_pct": 9.777367395095927,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 15
   },
   {
     "code": "6503",
@@ -1677,7 +2233,11 @@
     "exit_price": 2046.1999999999998,
     "entered_date": "2023-08-16",
     "exit_date": "2023-08-17",
-    "pnl_pct": 11.236749116607776
+    "pnl_pct": 11.236749116607776,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 40
   },
   {
     "code": "8750",
@@ -1689,7 +2249,11 @@
     "exit_price": 632.25,
     "entered_date": "2023-07-27",
     "exit_date": "2023-08-17",
-    "pnl_pct": -7.379600805713239
+    "pnl_pct": -7.379600805713239,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 109
   },
   {
     "code": "8227",
@@ -1701,7 +2265,11 @@
     "exit_price": 7476.000000000001,
     "entered_date": "2023-07-13",
     "exit_date": "2023-08-15",
-    "pnl_pct": 10.612169410024043
+    "pnl_pct": 10.612169410024043,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 11
   },
   {
     "code": "6367",
@@ -1713,7 +2281,11 @@
     "exit_price": 31313.250000000004,
     "entered_date": "2023-08-09",
     "exit_date": "2023-08-10",
-    "pnl_pct": 14.858321870701527
+    "pnl_pct": 14.858321870701527,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 2
   },
   {
     "code": "7731",
@@ -1725,7 +2297,11 @@
     "exit_price": 1929.7499999999998,
     "entered_date": "2023-08-09",
     "exit_date": "2023-08-10",
-    "pnl_pct": 21.044378234279428
+    "pnl_pct": 21.044378234279428,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 47
   },
   {
     "code": "7762",
@@ -1737,7 +2313,11 @@
     "exit_price": 949.1999999999999,
     "entered_date": "2023-06-27",
     "exit_date": "2023-08-10",
-    "pnl_pct": 11.539365452408923
+    "pnl_pct": 11.539365452408923,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 88
   },
   {
     "code": "2801",
@@ -1749,7 +2329,11 @@
     "exit_price": 1715.9999999999998,
     "entered_date": "2023-08-07",
     "exit_date": "2023-08-08",
-    "pnl_pct": 11.827956989247312
+    "pnl_pct": 11.827956989247312,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 48
   },
   {
     "code": "4183",
@@ -1761,7 +2345,11 @@
     "exit_price": 2158.0,
     "entered_date": "2023-08-04",
     "exit_date": "2023-08-07",
-    "pnl_pct": 12.880868314371648
+    "pnl_pct": 12.880868314371648,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 39
   },
   {
     "code": "4661",
@@ -1773,7 +2361,11 @@
     "exit_price": 5574.000000000001,
     "entered_date": "2023-08-04",
     "exit_date": "2023-08-07",
-    "pnl_pct": 7.182001730602828
+    "pnl_pct": 7.182001730602828,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 14
   },
   {
     "code": "6963",
@@ -1785,7 +2377,11 @@
     "exit_price": 3438.5,
     "entered_date": "2023-08-04",
     "exit_date": "2023-08-07",
-    "pnl_pct": 10.763036037849808
+    "pnl_pct": 10.763036037849808,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 24
   },
   {
     "code": "8923",
@@ -1797,7 +2393,11 @@
     "exit_price": 949.6500000000001,
     "entered_date": "2023-08-04",
     "exit_date": "2023-08-07",
-    "pnl_pct": 11.39589442815249
+    "pnl_pct": 11.39589442815249,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 87
   },
   {
     "code": "4704",
@@ -1809,7 +2409,11 @@
     "exit_price": 6360.0,
     "entered_date": "2023-07-11",
     "exit_date": "2023-08-04",
-    "pnl_pct": -8.849874596918667
+    "pnl_pct": -8.849874596918667,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 10
   },
   {
     "code": "8630",
@@ -1821,7 +2425,11 @@
     "exit_price": 1931.0,
     "entered_date": "2023-07-27",
     "exit_date": "2023-08-03",
-    "pnl_pct": -7.148579686744368
+    "pnl_pct": -7.148579686744368,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 36
   },
   {
     "code": "4063",
@@ -1833,7 +2441,11 @@
     "exit_price": 4847.999999999999,
     "entered_date": "2023-07-28",
     "exit_date": "2023-07-31",
-    "pnl_pct": 7.685473123056418
+    "pnl_pct": 7.685473123056418,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 16
   },
   {
     "code": "6971",
@@ -1845,7 +2457,11 @@
     "exit_price": 2003.6999999999998,
     "entered_date": "2023-07-28",
     "exit_date": "2023-07-31",
-    "pnl_pct": 8.86715566422167
+    "pnl_pct": 8.86715566422167,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 40
   },
   {
     "code": "2267",
@@ -1857,7 +2473,11 @@
     "exit_price": 5110.000000000001,
     "entered_date": "2023-07-28",
     "exit_date": "2023-07-31",
-    "pnl_pct": 25.629993853718503
+    "pnl_pct": 25.629993853718503,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 18
   },
   {
     "code": "8410",
@@ -1869,7 +2489,11 @@
     "exit_price": 304.8,
     "entered_date": "2023-06-01",
     "exit_date": "2023-07-28",
-    "pnl_pct": 11.44424131627057
+    "pnl_pct": 11.44424131627057,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 274
   },
   {
     "code": "7013",
@@ -1881,7 +2505,11 @@
     "exit_price": 490.7142944335937,
     "entered_date": "2023-07-24",
     "exit_date": "2023-07-27",
-    "pnl_pct": -8.680046971513539
+    "pnl_pct": -8.680046971513539,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 139
   },
   {
     "code": "9041",
@@ -1893,7 +2521,11 @@
     "exit_price": 5124.0,
     "entered_date": "2023-07-20",
     "exit_date": "2023-07-21",
-    "pnl_pct": 8.709027262119443
+    "pnl_pct": 8.709027262119443,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 15
   },
   {
     "code": "6506",
@@ -1905,7 +2537,11 @@
     "exit_price": 6637.499999999999,
     "entered_date": "2023-07-13",
     "exit_date": "2023-07-14",
-    "pnl_pct": 9.088667926698989
+    "pnl_pct": 9.088667926698989,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 12
   },
   {
     "code": "8002",
@@ -1917,7 +2553,11 @@
     "exit_price": 2662.2000000000003,
     "entered_date": "2023-07-13",
     "exit_date": "2023-07-14",
-    "pnl_pct": 13.84220654265556
+    "pnl_pct": 13.84220654265556,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 32
   },
   {
     "code": "4716",
@@ -1929,7 +2569,11 @@
     "exit_price": 11956.0,
     "entered_date": "2023-07-13",
     "exit_date": "2023-07-14",
-    "pnl_pct": 16.30350194552529
+    "pnl_pct": 16.30350194552529,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 7
   },
   {
     "code": "2587",
@@ -1941,7 +2585,11 @@
     "exit_price": 5346.0,
     "entered_date": "2023-07-12",
     "exit_date": "2023-07-13",
-    "pnl_pct": 7.2955343702960365
+    "pnl_pct": 7.2955343702960365,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 15
   },
   {
     "code": "4503",
@@ -1953,7 +2601,11 @@
     "exit_price": 2012.5,
     "entered_date": "2023-06-23",
     "exit_date": "2023-07-12",
-    "pnl_pct": -7.957923622227304
+    "pnl_pct": -7.957923622227304,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 34
   },
   {
     "code": "6988",
@@ -1965,7 +2617,11 @@
     "exit_price": 2176.7999999999997,
     "entered_date": "2023-07-11",
     "exit_date": "2023-07-12",
-    "pnl_pct": 8.704119850187253
+    "pnl_pct": 8.704119850187253,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 37
   },
   {
     "code": "6758",
@@ -1977,7 +2633,11 @@
     "exit_price": 2785.2,
     "entered_date": "2023-07-10",
     "exit_date": "2023-07-11",
-    "pnl_pct": 8.352460610776106
+    "pnl_pct": 8.352460610776106,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 29
   },
   {
     "code": "4523",
@@ -1989,7 +2649,11 @@
     "exit_price": 11131.65,
     "entered_date": "2023-07-07",
     "exit_date": "2023-07-10",
-    "pnl_pct": 17.62719923918212
+    "pnl_pct": 17.62719923918212,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 7
   },
   {
     "code": "6632",
@@ -2001,7 +2665,11 @@
     "exit_price": 538.6500000000001,
     "entered_date": "2023-07-07",
     "exit_date": "2023-07-10",
-    "pnl_pct": 14.000000000000018
+    "pnl_pct": 14.000000000000018,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 158
   },
   {
     "code": "9007",
@@ -2013,7 +2681,11 @@
     "exit_price": 1853.0,
     "entered_date": "2023-06-08",
     "exit_date": "2023-07-07",
-    "pnl_pct": -8.290027220984905
+    "pnl_pct": -8.290027220984905,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 37
   },
   {
     "code": "9509",
@@ -2025,7 +2697,11 @@
     "exit_price": 637.2,
     "entered_date": "2023-07-06",
     "exit_date": "2023-07-07",
-    "pnl_pct": 8.78361075544173
+    "pnl_pct": 8.78361075544173,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 128
   },
   {
     "code": "6323",
@@ -2037,7 +2713,11 @@
     "exit_price": 1282.7999999999997,
     "entered_date": "2023-06-16",
     "exit_date": "2023-07-05",
-    "pnl_pct": 10.206185567010305
+    "pnl_pct": 10.206185567010305,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 64
   },
   {
     "code": "4568",
@@ -2049,7 +2729,11 @@
     "exit_price": 4480.0,
     "entered_date": "2023-07-03",
     "exit_date": "2023-07-04",
-    "pnl_pct": -7.073221323376893
+    "pnl_pct": -7.073221323376893,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 15
   },
   {
     "code": "6586",
@@ -2061,7 +2745,11 @@
     "exit_price": 4242.0,
     "entered_date": "2023-06-09",
     "exit_date": "2023-07-04",
-    "pnl_pct": 10.974493132766513
+    "pnl_pct": 10.974493132766513,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 19
   },
   {
     "code": "7741",
@@ -2073,7 +2761,11 @@
     "exit_price": 18231.25,
     "entered_date": "2023-06-27",
     "exit_date": "2023-06-28",
-    "pnl_pct": 10.710490359799605
+    "pnl_pct": 10.710490359799605,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 4
   },
   {
     "code": "4587",
@@ -2085,7 +2777,11 @@
     "exit_price": 2483.0,
     "entered_date": "2023-06-27",
     "exit_date": "2023-06-28",
-    "pnl_pct": 11.370262390670554
+    "pnl_pct": 11.370262390670554,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 33
   },
   {
     "code": "3774",
@@ -2097,7 +2793,11 @@
     "exit_price": 2974.9999999999995,
     "entered_date": "2023-06-26",
     "exit_date": "2023-06-27",
-    "pnl_pct": 9.778597785977858
+    "pnl_pct": 9.778597785977858,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 27
   },
   {
     "code": "1419",
@@ -2109,7 +2809,11 @@
     "exit_price": 4021.5,
     "entered_date": "2023-06-16",
     "exit_date": "2023-06-19",
-    "pnl_pct": 18.17513958272113
+    "pnl_pct": 18.17513958272113,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 22
   },
   {
     "code": "9090",
@@ -2121,7 +2825,11 @@
     "exit_price": 2193.75,
     "entered_date": "2023-06-16",
     "exit_date": "2023-06-19",
-    "pnl_pct": 14.347146207974982
+    "pnl_pct": 14.347146207974982,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 39
   },
   {
     "code": "3697",
@@ -2133,7 +2841,11 @@
     "exit_price": 1861.6000488281247,
     "entered_date": "2023-05-09",
     "exit_date": "2023-06-16",
-    "pnl_pct": 9.142076995687662
+    "pnl_pct": 9.142076995687662,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 43
   },
   {
     "code": "5411",
@@ -2145,7 +2857,11 @@
     "exit_price": 1988.3999999999999,
     "entered_date": "2023-05-30",
     "exit_date": "2023-06-14",
-    "pnl_pct": 10.374687760199826
+    "pnl_pct": 10.374687760199826,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 41
   },
   {
     "code": "7261",
@@ -2157,7 +2873,11 @@
     "exit_price": 1366.2,
     "entered_date": "2023-03-29",
     "exit_date": "2023-06-14",
-    "pnl_pct": 15.632670334320784
+    "pnl_pct": 15.632670334320784,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 63
   },
   {
     "code": "6301",
@@ -2169,7 +2889,11 @@
     "exit_price": 3619.8500000000004,
     "entered_date": "2023-04-06",
     "exit_date": "2023-06-13",
-    "pnl_pct": 15.217633484522954
+    "pnl_pct": 15.217633484522954,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 23
   },
   {
     "code": "9024",
@@ -2181,7 +2905,11 @@
     "exit_price": 1611.6,
     "entered_date": "2023-06-09",
     "exit_date": "2023-06-12",
-    "pnl_pct": 8.855116514690977
+    "pnl_pct": 8.855116514690977,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 50
   },
   {
     "code": "2501",
@@ -2193,7 +2921,11 @@
     "exit_price": 808.75,
     "entered_date": "2023-06-08",
     "exit_date": "2023-06-09",
-    "pnl_pct": 10.787671232876713
+    "pnl_pct": 10.787671232876713,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 102
   },
   {
     "code": "9005",
@@ -2205,7 +2937,11 @@
     "exit_price": 1994.3999999999999,
     "entered_date": "2023-06-07",
     "exit_date": "2023-06-08",
-    "pnl_pct": 7.863710113574898
+    "pnl_pct": 7.863710113574898,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 40
   },
   {
     "code": "5444",
@@ -2217,7 +2953,11 @@
     "exit_price": 5843.75,
     "entered_date": "2023-03-30",
     "exit_date": "2023-06-07",
-    "pnl_pct": 11.468764902241297
+    "pnl_pct": 11.468764902241297,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 14
   },
   {
     "code": "5401",
@@ -2229,7 +2969,11 @@
     "exit_price": 642.6400177001952,
     "entered_date": "2023-05-31",
     "exit_date": "2023-06-01",
-    "pnl_pct": 16.631582159745054
+    "pnl_pct": 16.631582159745054,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 136
   },
   {
     "code": "7003",
@@ -2241,7 +2985,11 @@
     "exit_price": 553.0,
     "entered_date": "2023-05-30",
     "exit_date": "2023-05-31",
-    "pnl_pct": 14.61139896373057
+    "pnl_pct": 14.61139896373057,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 155
   },
   {
     "code": "9302",
@@ -2253,7 +3001,11 @@
     "exit_price": 1315.999951171875,
     "entered_date": "2023-05-30",
     "exit_date": "2023-05-31",
-    "pnl_pct": 6.847090228530495
+    "pnl_pct": 6.847090228530495,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 60
   },
   {
     "code": "6141",
@@ -2265,7 +3017,11 @@
     "exit_price": 2403.6,
     "entered_date": "2023-04-05",
     "exit_date": "2023-05-29",
-    "pnl_pct": 11.200555170020815
+    "pnl_pct": 11.200555170020815,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 34
   },
   {
     "code": "6361",
@@ -2277,7 +3033,11 @@
     "exit_price": 1272.0000000000002,
     "entered_date": "2023-04-27",
     "exit_date": "2023-05-25",
-    "pnl_pct": 9.278350515463918
+    "pnl_pct": 9.278350515463918,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 64
   },
   {
     "code": "8725",
@@ -2289,7 +3049,11 @@
     "exit_price": 1585.600048828125,
     "entered_date": "2023-03-30",
     "exit_date": "2023-05-23",
-    "pnl_pct": 10.277037483919106
+    "pnl_pct": 10.277037483919106,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 52
   },
   {
     "code": "6103",
@@ -2301,7 +3065,11 @@
     "exit_price": 3150.0000000000005,
     "entered_date": "2023-04-06",
     "exit_date": "2023-05-19",
-    "pnl_pct": 9.75609756097561
+    "pnl_pct": 9.75609756097561,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 26
   },
   {
     "code": "8111",
@@ -2313,7 +3081,11 @@
     "exit_price": 4229.333227539063,
     "entered_date": "2023-05-12",
     "exit_date": "2023-05-15",
-    "pnl_pct": 12.283184244970116
+    "pnl_pct": 12.283184244970116,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 19
   },
   {
     "code": "6465",
@@ -2325,7 +3097,11 @@
     "exit_price": 5281.25,
     "entered_date": "2023-04-06",
     "exit_date": "2023-05-11",
-    "pnl_pct": 14.127498649378714
+    "pnl_pct": 14.127498649378714,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 16
   },
   {
     "code": "8133",
@@ -2337,7 +3113,11 @@
     "exit_price": 1215.6,
     "entered_date": "2023-04-06",
     "exit_date": "2023-05-09",
-    "pnl_pct": 11.574116567232668
+    "pnl_pct": 11.574116567232668,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 68
   },
   {
     "code": "3132",
@@ -2349,7 +3129,11 @@
     "exit_price": 1436.5,
     "entered_date": "2023-03-20",
     "exit_date": "2023-05-09",
-    "pnl_pct": 20.2092050209205
+    "pnl_pct": 20.2092050209205,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 62
   },
   {
     "code": "6965",
@@ -2361,7 +3145,11 @@
     "exit_price": 3712.5,
     "entered_date": "2023-02-10",
     "exit_date": "2023-05-02",
-    "pnl_pct": 11.570247933884298
+    "pnl_pct": 11.570247933884298,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 22
   },
   {
     "code": "6966",
@@ -2373,7 +3161,11 @@
     "exit_price": 1732.8000000000002,
     "entered_date": "2023-05-01",
     "exit_date": "2023-05-02",
-    "pnl_pct": 7.962616822429903
+    "pnl_pct": 7.962616822429903,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 46
   },
   {
     "code": "6965",
@@ -2385,7 +3177,11 @@
     "exit_price": 3712.5,
     "entered_date": "2022-12-21",
     "exit_date": "2023-05-02",
-    "pnl_pct": 11.570247933884298
+    "pnl_pct": 11.570247933884298,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 22
   },
   {
     "code": "4202",
@@ -2397,7 +3193,11 @@
     "exit_price": 1100.3999999999999,
     "entered_date": "2023-04-03",
     "exit_date": "2023-05-01",
-    "pnl_pct": 10.927419354838696
+    "pnl_pct": 10.927419354838696,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 75
   },
   {
     "code": "8001",
@@ -2409,7 +3209,11 @@
     "exit_price": 911.7599853515626,
     "entered_date": "2023-01-04",
     "exit_date": "2023-05-01",
-    "pnl_pct": 11.014245574468054
+    "pnl_pct": 11.014245574468054,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 91
   },
   {
     "code": "6857",
@@ -2421,7 +3225,11 @@
     "exit_price": 2652.5,
     "entered_date": "2023-04-13",
     "exit_date": "2023-04-27",
-    "pnl_pct": -8.019072388383181
+    "pnl_pct": -8.019072388383181,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 26
   },
   {
     "code": "8020",
@@ -2433,7 +3241,11 @@
     "exit_price": 880.1999999999999,
     "entered_date": "2023-04-06",
     "exit_date": "2023-04-25",
-    "pnl_pct": 9.750623441396499
+    "pnl_pct": 9.750623441396499,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 93
   },
   {
     "code": "7762",
@@ -2445,7 +3257,11 @@
     "exit_price": 870.0,
     "entered_date": "2023-04-20",
     "exit_date": "2023-04-21",
-    "pnl_pct": 17.56756756756757
+    "pnl_pct": 17.56756756756757,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 101
   },
   {
     "code": "2678",
@@ -2457,7 +3273,11 @@
     "exit_price": 1855.2,
     "entered_date": "2023-03-22",
     "exit_date": "2023-04-20",
-    "pnl_pct": 11.590977443609011
+    "pnl_pct": 11.590977443609011,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 45
   },
   {
     "code": "2678",
@@ -2469,7 +3289,11 @@
     "exit_price": 1855.2,
     "entered_date": "2023-03-14",
     "exit_date": "2023-04-20",
-    "pnl_pct": 11.590977443609011
+    "pnl_pct": 11.590977443609011,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 45
   },
   {
     "code": "8002",
@@ -2481,7 +3305,11 @@
     "exit_price": 1985.6250000000002,
     "entered_date": "2023-04-05",
     "exit_date": "2023-04-14",
-    "pnl_pct": 12.771546216101093
+    "pnl_pct": 12.771546216101093,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 42
   },
   {
     "code": "3107",
@@ -2493,7 +3321,11 @@
     "exit_price": 2374.7999999999997,
     "entered_date": "2023-03-30",
     "exit_date": "2023-04-11",
-    "pnl_pct": 11.12774918109498
+    "pnl_pct": 11.12774918109498,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 35
   },
   {
     "code": "3382",
@@ -2505,7 +3337,11 @@
     "exit_price": 1839.6666259765625,
     "entered_date": "2023-03-30",
     "exit_date": "2023-04-07",
-    "pnl_pct": -9.062447776547721
+    "pnl_pct": -9.062447776547721,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 37
   },
   {
     "code": "4661",
@@ -2517,7 +3353,11 @@
     "exit_price": 4612.8,
     "entered_date": "2023-02-24",
     "exit_date": "2023-04-07",
-    "pnl_pct": 10.924612239990386
+    "pnl_pct": 10.924612239990386,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 18
   },
   {
     "code": "6472",
@@ -2529,7 +3369,11 @@
     "exit_price": 367.20000000000005,
     "entered_date": "2023-04-06",
     "exit_date": "2023-04-07",
-    "pnl_pct": 12.9846153846154
+    "pnl_pct": 12.9846153846154,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 230
   },
   {
     "code": "4661",
@@ -2541,7 +3385,11 @@
     "exit_price": 4612.8,
     "entered_date": "2023-02-22",
     "exit_date": "2023-04-07",
-    "pnl_pct": 10.924612239990386
+    "pnl_pct": 10.924612239990386,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 18
   },
   {
     "code": "6101",
@@ -2553,7 +3401,11 @@
     "exit_price": 1500.0000000000002,
     "entered_date": "2023-04-04",
     "exit_date": "2023-04-05",
-    "pnl_pct": 6.761565836298933
+    "pnl_pct": 6.761565836298933,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 53
   },
   {
     "code": "6178",
@@ -2565,7 +3417,11 @@
     "exit_price": 1230.0,
     "entered_date": "2023-03-31",
     "exit_date": "2023-04-03",
-    "pnl_pct": 9.236234458259325
+    "pnl_pct": 9.236234458259325,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 66
   },
   {
     "code": "8308",
@@ -2577,7 +3433,11 @@
     "exit_price": 782.7499999999998,
     "entered_date": "2023-03-31",
     "exit_date": "2023-04-03",
-    "pnl_pct": 20.432338687404673
+    "pnl_pct": 20.432338687404673,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 115
   },
   {
     "code": "8411",
@@ -2589,7 +3449,11 @@
     "exit_price": 2194.4250000000006,
     "entered_date": "2023-03-31",
     "exit_date": "2023-04-03",
-    "pnl_pct": 13.597774039083744
+    "pnl_pct": 13.597774039083744,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 38
   },
   {
     "code": "9107",
@@ -2601,7 +3465,11 @@
     "exit_price": 1148.7666931152344,
     "entered_date": "2023-03-31",
     "exit_date": "2023-04-03",
-    "pnl_pct": 12.513874513097436
+    "pnl_pct": 12.513874513097436,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 73
   },
   {
     "code": "7167",
@@ -2613,7 +3481,11 @@
     "exit_price": 370.99999999999994,
     "entered_date": "2023-03-31",
     "exit_date": "2023-04-03",
-    "pnl_pct": 14.683153013910355
+    "pnl_pct": 14.683153013910355,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 231
   },
   {
     "code": "5411",
@@ -2625,7 +3497,11 @@
     "exit_price": 1790.3999999999996,
     "entered_date": "2023-03-30",
     "exit_date": "2023-03-31",
-    "pnl_pct": 7.273816656680639
+    "pnl_pct": 7.273816656680639,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 44
   },
   {
     "code": "5423",
@@ -2637,7 +3513,11 @@
     "exit_price": 1593.75,
     "entered_date": "2023-03-30",
     "exit_date": "2023-03-31",
-    "pnl_pct": 10.908141962421713
+    "pnl_pct": 10.908141962421713,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 52
   },
   {
     "code": "5471",
@@ -2649,7 +3529,11 @@
     "exit_price": 1115.4,
     "entered_date": "2023-03-30",
     "exit_date": "2023-03-31",
-    "pnl_pct": 12.21327967806842
+    "pnl_pct": 12.21327967806842,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 75
   },
   {
     "code": "8593",
@@ -2661,7 +3545,11 @@
     "exit_price": 732.0,
     "entered_date": "2023-03-30",
     "exit_date": "2023-03-31",
-    "pnl_pct": 7.885040530582168
+    "pnl_pct": 7.885040530582168,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 110
   },
   {
     "code": "8848",
@@ -2673,7 +3561,11 @@
     "exit_price": 361.2,
     "entered_date": "2023-03-28",
     "exit_date": "2023-03-31",
-    "pnl_pct": 10.29007633587786
+    "pnl_pct": 10.29007633587786,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 229
   },
   {
     "code": "8015",
@@ -2685,7 +3577,11 @@
     "exit_price": 1938.0,
     "entered_date": "2023-03-27",
     "exit_date": "2023-03-28",
-    "pnl_pct": 9.029535864978904
+    "pnl_pct": 9.029535864978904,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 42
   },
   {
     "code": "5713",
@@ -2697,7 +3593,11 @@
     "exit_price": 5463.75,
     "entered_date": "2023-03-23",
     "exit_date": "2023-03-24",
-    "pnl_pct": 10.535100141614404
+    "pnl_pct": 10.535100141614404,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 15
   },
   {
     "code": "8306",
@@ -2709,7 +3609,11 @@
     "exit_price": 972.2700317382813,
     "entered_date": "2023-03-22",
     "exit_date": "2023-03-23",
-    "pnl_pct": 11.281906621731054
+    "pnl_pct": 11.281906621731054,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 85
   },
   {
     "code": "8078",
@@ -2721,7 +3625,11 @@
     "exit_price": 834.0,
     "entered_date": "2023-03-22",
     "exit_date": "2023-03-23",
-    "pnl_pct": 7.821590174531351
+    "pnl_pct": 7.821590174531351,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 96
   },
   {
     "code": "2222",
@@ -2733,7 +3641,11 @@
     "exit_price": 1807.2000000000003,
     "entered_date": "2023-03-16",
     "exit_date": "2023-03-17",
-    "pnl_pct": 6.808510638297875
+    "pnl_pct": 6.808510638297875,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 44
   },
   {
     "code": "7186",
@@ -2745,7 +3657,11 @@
     "exit_price": 604.5,
     "entered_date": "2023-03-14",
     "exit_date": "2023-03-15",
-    "pnl_pct": 12.569832402234638
+    "pnl_pct": 12.569832402234638,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 139
   },
   {
     "code": "8306",
@@ -2757,7 +3673,11 @@
     "exit_price": 972.2700317382813,
     "entered_date": "2023-03-14",
     "exit_date": "2023-03-15",
-    "pnl_pct": 11.281906621731054
+    "pnl_pct": 11.281906621731054,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 85
   },
   {
     "code": "8354",
@@ -2769,7 +3689,11 @@
     "exit_price": 3230.5499999999997,
     "entered_date": "2023-03-14",
     "exit_date": "2023-03-15",
-    "pnl_pct": 14.497607655502398
+    "pnl_pct": 14.497607655502398,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 26
   },
   {
     "code": "8795",
@@ -2781,7 +3705,11 @@
     "exit_price": 2160.2,
     "entered_date": "2023-03-14",
     "exit_date": "2023-03-15",
-    "pnl_pct": 15.828418230562994
+    "pnl_pct": 15.828418230562994,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 40
   },
   {
     "code": "7282",
@@ -2793,7 +3721,11 @@
     "exit_price": 2415.0,
     "entered_date": "2023-03-14",
     "exit_date": "2023-03-15",
-    "pnl_pct": 10.047846889952153
+    "pnl_pct": 10.047846889952153,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 34
   },
   {
     "code": "8078",
@@ -2805,7 +3737,11 @@
     "exit_price": 834.0,
     "entered_date": "2023-03-14",
     "exit_date": "2023-03-15",
-    "pnl_pct": 7.821590174531351
+    "pnl_pct": 7.821590174531351,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 96
   },
   {
     "code": "9759",
@@ -2817,7 +3753,11 @@
     "exit_price": 2578.75,
     "entered_date": "2023-03-14",
     "exit_date": "2023-03-15",
-    "pnl_pct": 9.130342784595854
+    "pnl_pct": 9.130342784595854,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 31
   },
   {
     "code": "8354",
@@ -2829,7 +3769,11 @@
     "exit_price": 3230.5499999999997,
     "entered_date": "2023-03-13",
     "exit_date": "2023-03-14",
-    "pnl_pct": 14.497607655502398
+    "pnl_pct": 14.497607655502398,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 26
   },
   {
     "code": "8750",
@@ -2841,7 +3785,11 @@
     "exit_price": 632.875,
     "entered_date": "2023-02-24",
     "exit_date": "2023-03-14",
-    "pnl_pct": -10.571403338337896
+    "pnl_pct": -10.571403338337896,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 105
   },
   {
     "code": "8795",
@@ -2853,7 +3801,11 @@
     "exit_price": 2160.2,
     "entered_date": "2023-03-13",
     "exit_date": "2023-03-14",
-    "pnl_pct": 15.828418230562994
+    "pnl_pct": 15.828418230562994,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 40
   },
   {
     "code": "7148",
@@ -2865,7 +3817,11 @@
     "exit_price": 1117.0,
     "entered_date": "2023-02-24",
     "exit_date": "2023-03-14",
-    "pnl_pct": -7.762180016515277
+    "pnl_pct": -7.762180016515277,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 61
   },
   {
     "code": "7148",
@@ -2877,7 +3833,11 @@
     "exit_price": 1117.0,
     "entered_date": "2023-02-22",
     "exit_date": "2023-03-14",
-    "pnl_pct": -7.762180016515277
+    "pnl_pct": -7.762180016515277,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 61
   },
   {
     "code": "2685",
@@ -2889,7 +3849,11 @@
     "exit_price": 2458.7999999999997,
     "entered_date": "2023-01-27",
     "exit_date": "2023-03-09",
-    "pnl_pct": 11.207598371777463
+    "pnl_pct": 11.207598371777463,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 33
   },
   {
     "code": "8058",
@@ -2901,7 +3865,11 @@
     "exit_price": 1613.5999511718749,
     "entered_date": "2023-01-30",
     "exit_date": "2023-03-02",
-    "pnl_pct": 10.558407068987657
+    "pnl_pct": 10.558407068987657,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 51
   },
   {
     "code": "8058",
@@ -2913,7 +3881,11 @@
     "exit_price": 1613.5999511718749,
     "entered_date": "2022-12-19",
     "exit_date": "2023-03-02",
-    "pnl_pct": 10.558407068987657
+    "pnl_pct": 10.558407068987657,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 51
   },
   {
     "code": "4911",
@@ -2925,7 +3897,11 @@
     "exit_price": 6783.6,
     "entered_date": "2023-02-22",
     "exit_date": "2023-02-24",
-    "pnl_pct": 8.563655277266536
+    "pnl_pct": 8.563655277266536,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 12
   },
   {
     "code": "9433",
@@ -2937,7 +3913,11 @@
     "exit_price": 2232.75,
     "entered_date": "2023-02-22",
     "exit_date": "2023-02-24",
-    "pnl_pct": 10.6554330318424
+    "pnl_pct": 10.6554330318424,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 37
   },
   {
     "code": "2670",
@@ -2949,7 +3929,11 @@
     "exit_price": 2431.9999511718747,
     "entered_date": "2023-02-22",
     "exit_date": "2023-02-24",
-    "pnl_pct": 7.136564606292701
+    "pnl_pct": 7.136564606292701,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 33
   },
   {
     "code": "4732",
@@ -2961,7 +3945,11 @@
     "exit_price": 1301.3999999999999,
     "entered_date": "2023-02-22",
     "exit_date": "2023-02-24",
-    "pnl_pct": 13.461203138622501
+    "pnl_pct": 13.461203138622501,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 65
   },
   {
     "code": "6254",
@@ -2973,7 +3961,11 @@
     "exit_price": 1247.0625,
     "entered_date": "2023-02-20",
     "exit_date": "2023-02-21",
-    "pnl_pct": 13.822019395322304
+    "pnl_pct": 13.822019395322304,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 68
   },
   {
     "code": "9697",
@@ -2985,7 +3977,11 @@
     "exit_price": 2295.0,
     "entered_date": "2023-01-24",
     "exit_date": "2023-02-21",
-    "pnl_pct": 10.137972405518896
+    "pnl_pct": 10.137972405518896,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 35
   },
   {
     "code": "9697",
@@ -2997,7 +3993,11 @@
     "exit_price": 2295.0,
     "entered_date": "2022-12-20",
     "exit_date": "2023-02-21",
-    "pnl_pct": 10.137972405518896
+    "pnl_pct": 10.137972405518896,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 35
   },
   {
     "code": "4911",
@@ -3009,7 +4009,11 @@
     "exit_price": 6783.6,
     "entered_date": "2023-02-17",
     "exit_date": "2023-02-20",
-    "pnl_pct": 8.563655277266536
+    "pnl_pct": 8.563655277266536,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 12
   },
   {
     "code": "4681",
@@ -3021,7 +4025,11 @@
     "exit_price": 1055.0,
     "entered_date": "2022-11-11",
     "exit_date": "2023-02-10",
-    "pnl_pct": -7.130281690140845
+    "pnl_pct": -7.130281690140845,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 66
   },
   {
     "code": "4681",
@@ -3033,7 +4041,11 @@
     "exit_price": 1055.0,
     "entered_date": "2023-01-05",
     "exit_date": "2023-02-10",
-    "pnl_pct": -7.658643326039387
+    "pnl_pct": -7.658643326039387,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 65
   },
   {
     "code": "2670",
@@ -3045,7 +4057,11 @@
     "exit_price": 2431.9999511718747,
     "entered_date": "2023-02-08",
     "exit_date": "2023-02-09",
-    "pnl_pct": 7.136564606292701
+    "pnl_pct": 7.136564606292701,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 33
   },
   {
     "code": "7186",
@@ -3057,7 +4073,11 @@
     "exit_price": 604.5,
     "entered_date": "2023-02-06",
     "exit_date": "2023-02-07",
-    "pnl_pct": 12.569832402234638
+    "pnl_pct": 12.569832402234638,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 139
   },
   {
     "code": "8174",
@@ -3069,7 +4089,11 @@
     "exit_price": 2263.45,
     "entered_date": "2023-02-06",
     "exit_date": "2023-02-07",
-    "pnl_pct": 17.704108164326563
+    "pnl_pct": 17.704108164326563,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 39
   },
   {
     "code": "2802",
@@ -3081,7 +4105,11 @@
     "exit_price": 2250.0,
     "entered_date": "2023-02-02",
     "exit_date": "2023-02-03",
-    "pnl_pct": 10.11868346996207
+    "pnl_pct": 10.11868346996207,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 36
   },
   {
     "code": "8630",
@@ -3093,7 +4121,11 @@
     "exit_price": 1785.0,
     "entered_date": "2022-11-25",
     "exit_date": "2023-02-03",
-    "pnl_pct": -8.656714515939717
+    "pnl_pct": -8.656714515939717,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 38
   },
   {
     "code": "8630",
@@ -3105,7 +4137,11 @@
     "exit_price": 1785.0,
     "entered_date": "2022-12-23",
     "exit_date": "2023-02-03",
-    "pnl_pct": -8.656714515939717
+    "pnl_pct": -8.656714515939717,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 38
   },
   {
     "code": "6707",
@@ -3117,7 +4153,11 @@
     "exit_price": 7787.499999999999,
     "entered_date": "2022-12-20",
     "exit_date": "2023-02-01",
-    "pnl_pct": 16.144668158090976
+    "pnl_pct": 16.144668158090976,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 11
   },
   {
     "code": "2501",
@@ -3129,7 +4169,11 @@
     "exit_price": 731.9999999999999,
     "entered_date": "2023-01-24",
     "exit_date": "2023-01-25",
-    "pnl_pct": 18.83116883116883
+    "pnl_pct": 18.83116883116883,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 121
   },
   {
     "code": "6432",
@@ -3141,7 +4185,11 @@
     "exit_price": 3182.4000000000005,
     "entered_date": "2023-01-24",
     "exit_date": "2023-01-25",
-    "pnl_pct": 11.6044187269858
+    "pnl_pct": 11.6044187269858,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 26
   },
   {
     "code": "7740",
@@ -3153,7 +4201,11 @@
     "exit_price": 433.3875,
     "entered_date": "2023-01-24",
     "exit_date": "2023-01-25",
-    "pnl_pct": 11.089394424863823
+    "pnl_pct": 11.089394424863823,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 192
   },
   {
     "code": "1801",
@@ -3165,7 +4217,11 @@
     "exit_price": 4416.0,
     "entered_date": "2022-10-25",
     "exit_date": "2023-01-24",
-    "pnl_pct": 9.919103920348475
+    "pnl_pct": 9.919103920348475,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 18
   },
   {
     "code": "1801",
@@ -3177,7 +4233,11 @@
     "exit_price": 4416.0,
     "entered_date": "2023-01-13",
     "exit_date": "2023-01-24",
-    "pnl_pct": 9.919103920348475
+    "pnl_pct": 9.919103920348475,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 18
   },
   {
     "code": "2760",
@@ -3189,7 +4249,11 @@
     "exit_price": 2583.000054931641,
     "entered_date": "2022-12-23",
     "exit_date": "2023-01-24",
-    "pnl_pct": 18.66768901019776
+    "pnl_pct": 18.66768901019776,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 34
   },
   {
     "code": "3186",
@@ -3201,7 +4265,11 @@
     "exit_price": 3287.9999999999995,
     "entered_date": "2023-01-20",
     "exit_date": "2023-01-23",
-    "pnl_pct": 21.440443213296398
+    "pnl_pct": 21.440443213296398,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 27
   },
   {
     "code": "5803",
@@ -3213,7 +4281,11 @@
     "exit_price": 193.95833969116208,
     "entered_date": "2023-01-06",
     "exit_date": "2023-01-10",
-    "pnl_pct": 10.991896818976887
+    "pnl_pct": 10.991896818976887,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 429
   },
   {
     "code": "6849",
@@ -3225,7 +4297,11 @@
     "exit_price": 1505.0,
     "entered_date": "2022-12-01",
     "exit_date": "2023-01-06",
-    "pnl_pct": -8.3015993907083
+    "pnl_pct": -8.3015993907083,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 45
   },
   {
     "code": "2501",
@@ -3237,7 +4313,11 @@
     "exit_price": 731.9999999999999,
     "entered_date": "2023-01-05",
     "exit_date": "2023-01-06",
-    "pnl_pct": 18.83116883116883
+    "pnl_pct": 18.83116883116883,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 121
   },
   {
     "code": "2124",
@@ -3249,7 +4329,11 @@
     "exit_price": 559.0,
     "entered_date": "2022-12-21",
     "exit_date": "2023-01-06",
-    "pnl_pct": -8.6414708886619
+    "pnl_pct": -8.6414708886619,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 122
   },
   {
     "code": "6849",
@@ -3261,7 +4345,11 @@
     "exit_price": 1505.0,
     "entered_date": "2022-12-19",
     "exit_date": "2023-01-06",
-    "pnl_pct": -8.3015993907083
+    "pnl_pct": -8.3015993907083,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 45
   },
   {
     "code": "4578",
@@ -3273,7 +4361,11 @@
     "exit_price": 4283.0,
     "entered_date": "2022-08-02",
     "exit_date": "2023-01-04",
-    "pnl_pct": -7.723796186577616
+    "pnl_pct": -7.723796186577616,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 16
   },
   {
     "code": "5101",
@@ -3285,7 +4377,11 @@
     "exit_price": 2025.0,
     "entered_date": "2022-11-10",
     "exit_date": "2023-01-04",
-    "pnl_pct": -8.3710407239819
+    "pnl_pct": -8.3710407239819,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 33
   },
   {
     "code": "9001",
@@ -3297,7 +4393,11 @@
     "exit_price": 3020.0,
     "entered_date": "2022-11-08",
     "exit_date": "2023-01-04",
-    "pnl_pct": -8.41546626231994
+    "pnl_pct": -8.41546626231994,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 22
   },
   {
     "code": "2802",
@@ -3309,7 +4409,11 @@
     "exit_price": 2250.0,
     "entered_date": "2022-12-30",
     "exit_date": "2023-01-04",
-    "pnl_pct": 10.11868346996207
+    "pnl_pct": 10.11868346996207,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 36
   },
   {
     "code": "4578",
@@ -3321,7 +4425,11 @@
     "exit_price": 4283.0,
     "entered_date": "2022-12-19",
     "exit_date": "2023-01-04",
-    "pnl_pct": -7.723796186577616
+    "pnl_pct": -7.723796186577616,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 16
   },
   {
     "code": "5101",
@@ -3333,6 +4441,10 @@
     "exit_price": 2025.0,
     "entered_date": "2022-10-03",
     "exit_date": "2023-01-04",
-    "pnl_pct": -8.3710407239819
+    "pnl_pct": -8.3710407239819,
+    "span_pct": 0,
+    "sizing_multiplier": 0.75,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 33
   }
 ]
