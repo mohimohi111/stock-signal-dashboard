@@ -64,6 +64,8 @@
   }
   .card.profit { border-color: var(--profit); background: color-mix(in srgb, var(--profit) 8%, var(--surface-2)); }
   .card.loss { border-color: var(--loss); background: color-mix(in srgb, var(--loss) 8%, var(--surface-2)); }
+  .card.zone-off { opacity: 0.6; }
+  .card.zone-near { border-color: var(--entry-yellow); background: color-mix(in srgb, var(--entry-yellow) 7%, var(--surface-2)); }
   .zone-dots { display: inline-flex; gap: 7px; margin-left: 8px; vertical-align: middle; }
   .zone-dot {
     display: inline-flex; align-items: center; gap: 3px; font-size: 10px; font-weight: 700;
@@ -84,6 +86,29 @@
   @keyframes zonePulse {
     0%, 100% { opacity: 1; transform: scale(1); }
     50% { opacity: 0.25; transform: scale(1.5); }
+  }
+  .market-status-panel {
+    background: var(--surface-2); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 14px; font-size: 13px; line-height: 1.8;
+  }
+  .market-status-panel .ms-title { font-size: 12px; color: var(--text-muted); font-weight: 700; }
+  .market-status-panel .ms-dev { font-size: 20px; font-weight: 800; margin: 2px 0 8px; }
+  .market-status-panel .ms-strategies { display: flex; flex-direction: column; gap: 3px; margin-bottom: 6px; }
+  .market-status-panel .ms-boundary { font-size: 12px; color: var(--text-secondary); }
+  .zone-badge {
+    display: inline-flex; align-items: center; gap: 4px; font-size: 11px; font-weight: 700;
+    padding: 3px 8px; border-radius: 6px; margin-bottom: 8px;
+  }
+  .zone-badge.on {
+    color: var(--tp-green); border: 1px solid var(--tp-green);
+    background: color-mix(in srgb, var(--tp-green) 14%, var(--surface-1));
+  }
+  .zone-badge.near {
+    color: var(--entry-yellow); border: 1px solid var(--entry-yellow);
+    background: color-mix(in srgb, var(--entry-yellow) 14%, var(--surface-1));
+  }
+  .zone-badge.off {
+    color: var(--text-muted); border: 1px solid var(--border); background: var(--surface-1);
   }
   .card-title { font-size: 15px; font-weight: 600; margin-bottom: 8px; display: flex; justify-content: space-between; }
   .card-title .badge { font-size: 11px; color: var(--text-muted); font-weight: 500; }
@@ -196,6 +221,7 @@
   </header>
   <div class="updated" id="updated">読み込み中...</div>
   <div id="retracted"></div>
+  <div id="marketStatus"></div>
 
   <section>
     <h2>🆕 新着 <span class="count" id="whatsNewCount"></span></h2>
@@ -348,6 +374,31 @@ function sizingRows(e) {
 
 const STRATEGY_ORDER = ['uptrend', 'relative_strength', 'crash'];
 const STRATEGY_ZONE_LABEL = { crash: '暴落', uptrend: '上昇', relative_strength: '相強' };
+const STRATEGY_FULL_LABEL = { crash: '暴落型', uptrend: '上昇型', relative_strength: '相対強さ型' };
+
+// 市場状態パネル。dev%・境界距離はscan.py側(export_public_data)で計算済みの
+// market_zoneオブジェクトをそのまま表示するだけ(境界判定ロジックをJS側で重複実装しない)。
+function renderMarketStatus(mz) {
+  if (!mz || mz.dev_pct == null) {
+    return '<div class="market-status-panel"><div class="ms-title">市場状態</div><div class="empty" style="padding:8px 0;">取得できませんでした</div></div>';
+  }
+  const strategies = mz.strategies || {};
+  const rows = STRATEGY_ORDER.map(key => {
+    const on = !!strategies[key];
+    return `<div>${on ? '🟢' : '⚪'} ${STRATEGY_FULL_LABEL[key]} ${on ? 'ON' : 'OFF'}</div>`;
+  }).join('');
+  const boundaryLine = (mz.next_boundary_pt != null && mz.next_boundary_val != null)
+    ? `次の境界 ${mz.next_boundary_val}%まで: ${mz.next_boundary_pt}pt`
+    : '';
+  const nearNote = (mz.near_0 || mz.near_neg10) ? ' <span style="color:var(--entry-yellow);font-weight:700;">🟡 切替接近</span>' : '';
+  return `
+    <div class="market-status-panel">
+      <div class="ms-title">市場状態</div>
+      <div class="ms-dev">200MA乖離: ${fmtPct(mz.dev_pct)}</div>
+      <div class="ms-strategies">${rows}</div>
+      <div class="ms-boundary">${boundaryLine}${nearNote}</div>
+    </div>`;
+}
 
 function groupByStrategy(items) {
   return STRATEGY_ORDER
@@ -385,9 +436,14 @@ function renderEnteredCard(c) {
 }
 
 function renderWatchingCard(w) {
-  const zoneOk = w.zone_ok !== false;
+  // zone_badge/zone_badge_labelはscan.py側(watching_zone_badge)で計算済みの値を
+  // そのまま表示するだけ(境界判定ロジックをJS側で重複実装しない)。
+  const badge = w.zone_badge || (w.zone_ok !== false ? 'on' : 'off');
+  const badgeLabel = w.zone_badge_label || (badge === 'on' ? '🟢 指値対象' : '⚪ 監視のみ・指値解除');
+  const cardCls = badge === 'off' ? 'zone-off' : (badge === 'near' ? 'zone-near' : '');
   return `
-      <div class="card ${zoneOk ? '' : 'loss'}">
+      <div class="card ${cardCls}">
+        <div class="zone-badge ${badge}">${badgeLabel}</div>
         <div class="card-title">
           <span>${w.name}(${w.code})</span>
           <span class="badge">指値まで ${fmtPct(w.gap_pct)}</span>
@@ -400,7 +456,7 @@ function renderWatchingCard(w) {
           <div><span class="label">指値</span><span class="value entry-price">${fmtYen(w.entry)}</span><span class="shares">推奨¥${Math.round(w.recommended_jpy ?? 100000).toLocaleString('ja-JP')}(${w.span_pct != null ? (w.span_pct*100).toFixed(1)+'%' : '-'})で${w.recommended_shares ?? sharesFor100k(w.entry)}株</span></div>
           <div><span class="label">損切り</span><span class="value sl-red">${fmtYen(w.sl)}</span></div>
         </div>
-        ${zoneOk ? '' : '<div class="empty" style="padding:4px 0 0;text-align:left;">⚠️ 現在この戦略のゾーン対象外です。指値注文は解除を推奨します。</div>'}
+        ${badge === 'off' ? '<div class="empty" style="padding:4px 0 0;text-align:left;">⚠️ 現在この戦略のゾーン対象外です。指値注文は解除を推奨します。</div>' : ''}
       </div>`;
 }
 
@@ -419,6 +475,7 @@ function render(data) {
   document.getElementById('updated').textContent = '最終更新: ' + data.updated;
 
   document.getElementById('zoneDots').innerHTML = renderZoneDots((data.market_zone || {}).active);
+  document.getElementById('marketStatus').innerHTML = renderMarketStatus(data.market_zone);
 
   const retractedEl = document.getElementById('retracted');
   retractedEl.innerHTML = (data.retracted || []).map(r =>
