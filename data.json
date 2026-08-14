@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-14 15:55 JST",
+  "updated": "2026-08-14 16:45 JST",
   "watching": [
     {
       "code": "4043",
@@ -16814,138 +16814,9 @@
       "cum_pnl_yen": 35410799.26586856
     }
   ],
-  "whats_new": [
-    {
-      "date": "2026-08-14",
-      "type": "level_up_watching",
-      "strategy": "uptrend",
-      "strategy_label": "上昇型",
-      "code": "7752",
-      "name": "リコー",
-      "prev_entry": 1541.5,
-      "entry": 1551.0,
-      "prev_tp": 1665.0,
-      "tp": 1684.0
-    },
-    {
-      "date": "2026-08-14",
-      "type": "level_up_entered",
-      "strategy": "uptrend",
-      "strategy_label": "上昇型",
-      "code": "7912",
-      "name": "大日本印刷",
-      "prev_sl": 2485.0,
-      "sl": 3354.75,
-      "tp": 3364.0
-    },
-    {
-      "date": "2026-08-14",
-      "type": "level_up_watching",
-      "strategy": "uptrend",
-      "strategy_label": "上昇型",
-      "code": "8304",
-      "name": "あおぞら銀行",
-      "prev_entry": 3133.5,
-      "entry": 3162.0,
-      "prev_tp": 3410.0,
-      "tp": 3467.0
-    },
-    {
-      "date": "2026-08-14",
-      "type": "level_up_watching",
-      "strategy": "uptrend",
-      "strategy_label": "上昇型",
-      "code": "8309",
-      "name": "三井住友トラスト・ホールディングス",
-      "prev_entry": 1535.5,
-      "entry": 1542.25,
-      "prev_tp": 1753.5,
-      "tp": 1767.0
-    },
-    {
-      "date": "2026-08-14",
-      "type": "level_up_entered",
-      "strategy": "uptrend",
-      "strategy_label": "上昇型",
-      "code": "9107",
-      "name": "川崎汽船",
-      "prev_sl": 2134.0,
-      "sl": 2987.6,
-      "tp": 3059.0
-    },
-    {
-      "date": "2026-08-14",
-      "type": "level_up_watching",
-      "strategy": "uptrend",
-      "strategy_label": "上昇型",
-      "code": "9506",
-      "name": "東北電力",
-      "prev_entry": 1146.75,
-      "entry": 1153.5,
-      "prev_tp": 1240.5,
-      "tp": 1254.0
-    },
-    {
-      "date": "2026-08-14",
-      "type": "level_up_watching",
-      "strategy": "uptrend",
-      "strategy_label": "上昇型",
-      "code": "9507",
-      "name": "四国電力",
-      "prev_entry": 1662.25,
-      "entry": 1669.75,
-      "prev_tp": 1789.5,
-      "tp": 1804.5
-    },
-    {
-      "date": "2026-08-14",
-      "type": "level_up_watching",
-      "strategy": "uptrend",
-      "strategy_label": "上昇型",
-      "code": "3132",
-      "name": "マクニカホールディングス",
-      "prev_entry": 3144.5,
-      "entry": 3174.0,
-      "prev_tp": 3855.0,
-      "tp": 3914.0
-    },
-    {
-      "date": "2026-08-14",
-      "type": "entered",
-      "strategy": "uptrend",
-      "strategy_label": "上昇型",
-      "code": "9101",
-      "name": "日本郵船",
-      "entry": 5611.0,
-      "tp": 6441.0,
-      "sl": 4979.0,
-      "entered_date": "2026-04-28"
-    },
-    {
-      "date": "2026-08-14",
-      "type": "entered",
-      "strategy": "uptrend",
-      "strategy_label": "上昇型",
-      "code": "4666",
-      "name": "パーク24",
-      "entry": 1990.5,
-      "tp": 2218.5,
-      "sl": 1896.5,
-      "entered_date": "2026-07-16"
-    },
-    {
-      "date": "2026-08-14",
-      "type": "expired",
-      "strategy": "relative_strength",
-      "strategy_label": "相対強さ型",
-      "code": "6988",
-      "name": "日東電工",
-      "entry": 3801.5,
-      "sl": 3535.0
-    }
-  ],
+  "whats_new": [],
   "market_zone": {
-    "dev_pct": 19.42,
+    "dev_pct": 18.87,
     "active": "uptrend"
   }
 }
