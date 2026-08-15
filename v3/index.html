@@ -379,9 +379,10 @@ function sizingRows(e) {
       </div>`;
 }
 
-// 市場状態パネル。market_score・modes・境界距離はscan.py側(export_public_data)で
-// 計算済みの公開専用フィールドをそのまま表示するだけ(境界判定ロジックをJS側で
-// 重複実装しない)。dev_pct/active/strategies等の内部フィールドは参照しない。
+// 市場状態パネル。market_score・modesはscan.py側(export_public_data)で計算済みの
+// 公開専用フィールドをそのまま表示するだけ(境界判定ロジックをJS側で重複実装しない)。
+// dev_pct/active/strategies/near_0/near_neg10/next_boundary_pt等、どちら側の閾値かや
+// 距離が逆算できる内部フィールドは参照しない(2026-08-15 hotfix)。
 function renderMarketStatus(mz) {
   if (!mz || mz.market_score == null) {
     return '<div class="market-status-panel"><div class="ms-title">市場状態</div><div class="empty" style="padding:8px 0;">取得できませんでした</div></div>';
@@ -391,16 +392,13 @@ function renderMarketStatus(mz) {
     const on = !!modes[key];
     return `<div>${on ? '🟢' : '⚪'} ${key} ${on ? 'ON' : 'OFF'}</div>`;
   }).join('');
-  const boundaryLine = (mz.next_boundary_pt != null)
-    ? `次の閾値まで: ${mz.next_boundary_pt}pt`
-    : '';
-  const nearNote = (mz.near_0 || mz.near_neg10) ? ' <span style="color:var(--entry-yellow);font-weight:700;">🟡 切替接近</span>' : '';
+  const nearNote = mz.boundary_near ? '<span style="color:var(--entry-yellow);font-weight:700;">🟡 Market Mode切替接近</span>' : '';
   return `
     <div class="market-status-panel">
       <div class="ms-title">市場状態</div>
       <div class="ms-dev">Market Score: ${mz.market_score >= 0 ? '+' : ''}${mz.market_score.toFixed(1)} pt</div>
       <div class="ms-strategies">${rows}</div>
-      <div class="ms-boundary">${boundaryLine}${nearNote}</div>
+      <div class="ms-boundary">${nearNote}</div>
     </div>`;
 }
 
