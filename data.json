@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-15 10:45 JST",
+  "updated": "2026-08-15 11:09 JST",
   "watching": [
     {
       "code": "4043",
@@ -17232,9 +17232,7 @@
   ],
   "whats_new": [],
   "market_zone": {
-    "near_0": false,
-    "near_neg10": false,
-    "next_boundary_pt": 18.87,
+    "boundary_near": false,
     "market_score": 18.87,
     "active_mode": "MODE A",
     "modes": {
