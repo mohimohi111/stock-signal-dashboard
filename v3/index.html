@@ -26,7 +26,7 @@
       --surface-1:      #1a1a19;
       --surface-2:      #242422;
       --border:         #3a3937;
-      --text-primary:   #ffffff;
+      --text-primary:   #e9e8e4;
       --text-secondary: #c3c2b7;
       --text-muted:     #8a887f;
       --profit:         #3987e5;
@@ -94,6 +94,9 @@
   }
   .market-status-panel .ms-title { font-size: 12px; color: var(--text-muted); font-weight: 700; }
   .market-status-panel .ms-dev { font-size: 20px; font-weight: 800; margin: 2px 0 8px; }
+  .ms-score-num.mode-a { color: var(--profit); }
+  .ms-score-num.mode-b { color: var(--entry-yellow); }
+  .ms-score-num.mode-c { color: var(--loss); }
   .market-status-panel .ms-strategies { display: flex; flex-direction: column; gap: 5px; margin-bottom: 6px; }
   .ms-mode-row {
     display: flex; align-items: center; gap: 6px; font-weight: 700;
@@ -421,7 +424,7 @@ function renderMarketStatus(mz) {
   return `
     <div class="market-status-panel ${activeCss}">
       <div class="ms-title">市場状態</div>
-      <div class="ms-dev">Market Score: ${mz.market_score >= 0 ? '+' : ''}${mz.market_score.toFixed(1)} pt</div>
+      <div class="ms-dev">Market Score: <span class="ms-score-num ${activeCss}">${mz.market_score >= 0 ? '+' : ''}${mz.market_score.toFixed(1)} pt</span></div>
       <div class="ms-strategies">${rows}</div>
       <div class="ms-boundary">${nearNote}</div>
     </div>`;
