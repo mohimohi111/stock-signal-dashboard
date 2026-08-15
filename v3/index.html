@@ -239,19 +239,12 @@
       <div class="gate-error" id="gateError"></div>
     </div>
   </div>
-  <div class="gate-overlay" id="rulesScreen" style="display:none;">
-    <div class="gate-box">
-      <h1 class="kan-title">完</h1>
-      <button onclick="enterDashboard()">ダッシュボードを開く</button>
-    </div>
-  </div>
   <div id="mainContent">
   <header>
     <h1>📈 JP443 <span class="zone-dots" id="zoneDots"></span></h1>
     <div style="display:flex; gap:6px;">
       <button class="refresh-btn" onclick="load()">更新</button>
       <button class="refresh-btn" onclick="backToHub()">戻る</button>
-      <button class="refresh-btn" onclick="showRulesScreen()">ルール</button>
       <button class="refresh-btn" onclick="logout()">ログアウト</button>
     </div>
   </header>
@@ -303,7 +296,7 @@ async function checkGatePassword() {
   if (hash === GATE_PASSWORD_HASH) {
     localStorage.setItem(GATE_STORAGE_KEY, '1');
     document.getElementById('gateOverlay').style.display = 'none';
-    showRulesScreen();
+    document.getElementById('mainContent').style.display = 'block';
   } else {
     document.getElementById('gateError').textContent = 'パスワードが違います';
   }
@@ -315,17 +308,6 @@ document.getElementById('gatePassword').addEventListener('keydown', e => {
 
 if (localStorage.getItem(GATE_STORAGE_KEY) === '1') {
   document.getElementById('gateOverlay').style.display = 'none';
-  showRulesScreen();
-}
-
-function showRulesScreen() {
-  document.getElementById('mainContent').style.display = 'none';
-  document.getElementById('gateOverlay').style.display = 'none';
-  document.getElementById('rulesScreen').style.display = 'flex';
-}
-
-function enterDashboard() {
-  document.getElementById('rulesScreen').style.display = 'none';
   document.getElementById('mainContent').style.display = 'block';
 }
 
@@ -344,7 +326,6 @@ function logout() {
   document.getElementById('gatePassword').value = '';
   document.getElementById('gateError').textContent = '';
   document.getElementById('mainContent').style.display = 'none';
-  document.getElementById('rulesScreen').style.display = 'none';
   document.getElementById('gateOverlay').style.display = 'flex';
   if (window.self !== window.top && window.parent && typeof window.parent.logoutHub === 'function') {
     window.parent.logoutHub();
