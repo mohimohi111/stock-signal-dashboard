@@ -566,10 +566,11 @@ function render(data) {
     : watchingGroups.map(items => {
       const key = items[0].mode;
       const warnCount = items.filter(w => w.zone_ok === false).length;
+      const totalJpy = items.reduce((sum, w) => sum + (w.recommended_jpy ?? 100000), 0);
       return `
       <details class="year-group">
         <summary>
-          <span class="mode-label${activeMode === key ? ' active' : ''}"><span class="arrow">▶</span> <span class="zone-dot ${MODE_CSS[key] || ''}${activeMode === key ? ' active' : ''}"></span> ${key || ''}(${items.length}件)</span>
+          <span class="mode-label${activeMode === key ? ' active' : ''}"><span class="arrow">▶</span> <span class="zone-dot ${MODE_CSS[key] || ''}${activeMode === key ? ' active' : ''}"></span> ${key || ''} (${items.length}件、${fmtYen(totalJpy)})</span>
           <span class="year-total value">${warnCount ? `⚠️ ${warnCount}件ゾーン対象外` : ''}</span>
         </summary>
         <div class="year-body">${items.map(renderWatchingCard).join('')}</div>
