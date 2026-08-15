@@ -250,6 +250,7 @@
     <h1>📈 JP443 <span class="zone-dots" id="zoneDots"></span></h1>
     <div style="display:flex; gap:6px;">
       <button class="refresh-btn" onclick="load()">更新</button>
+      <button class="refresh-btn" onclick="backToHub()">戻る</button>
       <button class="refresh-btn" onclick="showRulesScreen()">ルール</button>
       <button class="refresh-btn" onclick="logout()">ログアウト</button>
     </div>
@@ -328,6 +329,16 @@ function enterDashboard() {
   document.getElementById('mainContent').style.display = 'block';
 }
 
+const HUB_URL = 'https://mohimohi111.github.io/stock-signal-hub/';
+
+function backToHub() {
+  if (window.self !== window.top && window.parent && typeof window.parent.closeFrame === 'function') {
+    window.parent.closeFrame();
+  } else {
+    window.location.href = HUB_URL;
+  }
+}
+
 function logout() {
   localStorage.removeItem(GATE_STORAGE_KEY);
   document.getElementById('gatePassword').value = '';
@@ -335,6 +346,11 @@ function logout() {
   document.getElementById('mainContent').style.display = 'none';
   document.getElementById('rulesScreen').style.display = 'none';
   document.getElementById('gateOverlay').style.display = 'flex';
+  if (window.self !== window.top && window.parent && typeof window.parent.logoutHub === 'function') {
+    window.parent.logoutHub();
+  } else {
+    window.location.href = HUB_URL;
+  }
 }
 </script>
 <script>
