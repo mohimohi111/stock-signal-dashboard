@@ -72,13 +72,13 @@
     color: var(--text-muted); opacity: 0.25;
   }
   .zone-dot::before { content: ''; width: 7px; height: 7px; border-radius: 50%; background: var(--text-muted); flex-shrink: 0; }
-  .zone-dot.crash::before { background: var(--loss); }
-  .zone-dot.relative_strength::before { background: var(--entry-yellow); }
-  .zone-dot.uptrend::before { background: var(--profit); }
+  .zone-dot.mode-c::before { background: var(--loss); }
+  .zone-dot.mode-b::before { background: var(--entry-yellow); }
+  .zone-dot.mode-a::before { background: var(--profit); }
   .zone-dot.active { opacity: 1; font-weight: 800; }
-  .zone-dot.active.crash { color: var(--loss); }
-  .zone-dot.active.relative_strength { color: var(--entry-yellow); }
-  .zone-dot.active.uptrend { color: var(--profit); }
+  .zone-dot.active.mode-c { color: var(--loss); }
+  .zone-dot.active.mode-b { color: var(--entry-yellow); }
+  .zone-dot.active.mode-a { color: var(--profit); }
   .zone-dot.active::before {
     width: 9px; height: 9px; box-shadow: 0 0 6px currentColor;
     animation: zonePulse 1.3s ease-in-out infinite;
@@ -119,17 +119,17 @@
     border-radius: 5px; margin-right: 6px; vertical-align: middle;
     background: var(--surface-1); border: 1px solid var(--border); color: var(--text-secondary);
   }
-  .strategy-tag.crash {
+  .strategy-tag.mode-c {
     color: var(--loss); border-color: var(--loss);
     background: color-mix(in srgb, var(--loss) 14%, var(--surface-1));
     box-shadow: 0 0 5px color-mix(in srgb, var(--loss) 55%, transparent);
   }
-  .strategy-tag.uptrend {
+  .strategy-tag.mode-a {
     color: var(--profit); border-color: var(--profit);
     background: color-mix(in srgb, var(--profit) 14%, var(--surface-1));
     box-shadow: 0 0 5px color-mix(in srgb, var(--profit) 55%, transparent);
   }
-  .strategy-tag.relative_strength {
+  .strategy-tag.mode-b {
     color: var(--entry-yellow); border-color: var(--entry-yellow);
     background: color-mix(in srgb, var(--entry-yellow) 14%, var(--surface-1));
     box-shadow: 0 0 5px color-mix(in srgb, var(--entry-yellow) 55%, transparent);
@@ -239,7 +239,7 @@
   </section>
 
   <section>
-    <h2>累計損益<span class="chart-subtitle">(spanサイジング: 値幅に応じて7.5万〜12.5万円投資の場合)</span></h2>
+    <h2>累計損益<span class="chart-subtitle">(戦略別の推奨投入額に応じて投資した場合)</span></h2>
     <div class="chart-wrap">
       <svg id="equityChart" viewBox="0 0 560 180"></svg>
       <div class="tooltip" id="equityTooltip"></div>
@@ -287,8 +287,16 @@ function fmtYen(n) { return '¥' + Math.round(n).toLocaleString('ja-JP'); }
 function fmtYenSigned(n) { return (n >= 0 ? '+' : '-') + '¥' + Math.round(Math.abs(n)).toLocaleString('ja-JP'); }
 function fmtPct(n) { return (n >= 0 ? '+' : '') + n.toFixed(1) + '%'; }
 
+// 外部表示用の抽象化(2026-08-15、段階移行STEP3)。scan.py側(export_public_data)で
+// 計算済みの公開専用フィールド(mode/active_mode/modes/market_score)だけを使い、
+// strategy/strategy_label/dev_pct等の内部フィールドはJSから一切参照しない。
+// MODE_ORDER/MODE_CSSは表示順・CSSクラス名の変換のみに使う(ロジックを含まない)。
+const MODE_ORDER = ['MODE A', 'MODE B', 'MODE C'];
+const MODE_CSS = { 'MODE A': 'mode-a', 'MODE B': 'mode-b', 'MODE C': 'mode-c' };
+
 function renderNewsCard(e) {
-  const tag = e.strategy_label ? `<span class="strategy-tag ${e.strategy || ''}">${e.strategy_label}</span>` : '';
+  const modeLabel = e.mode || '';
+  const tag = modeLabel ? `<span class="strategy-tag ${MODE_CSS[modeLabel] || ''}">${modeLabel}</span>` : '';
   const title = `<span>${tag}${e.name}(${e.code || ''})</span>`;
   let icon = '', cls = '', body = '';
   switch (e.type) {
@@ -360,56 +368,52 @@ function renderNewsCard(e) {
 }
 function sharesFor100k(entry) { return Math.floor(100000 / entry); }
 
-// spanサイジング(2026-08-14採用)の表示用。値は全てscan.py側(recommended_jpy/
-// span_size_multiplier)で計算済みのものをそのまま表示するだけで、境界条件の
-// 判定ロジックをJS側で重複実装しない(production/Discord/dashboardの完全一致を保証するため)。
+// 推奨投入額の表示用。値は全てscan.py側(recommended_jpy)で計算済みのものを
+// そのまま表示するだけで、境界条件の判定ロジックをJS側で重複実装しない
+// (production/Discord/dashboardの完全一致を保証するため)。値幅・サイジング倍率は
+// 売買ロジックを推測できる情報のため表示しない(2026-08-15)。
 function sizingRows(e) {
-  if (e.span_pct == null || e.recommended_jpy == null) return '';
-  const mult = e.sizing_multiplier != null ? `${e.sizing_multiplier.toFixed(2)}x` : '-';
+  if (e.recommended_jpy == null) return '';
   return `<div class="rows rows-2col">
-        <div><span class="label">値幅</span><span class="value">${(e.span_pct * 100).toFixed(1)}%(${mult})</span></div>
         <div><span class="label">推奨投入額</span><span class="value">${fmtYen(e.recommended_jpy)}${e.recommended_shares != null ? `(${e.recommended_shares}株)` : ''}</span></div>
       </div>`;
 }
 
-const STRATEGY_ORDER = ['uptrend', 'relative_strength', 'crash'];
-const STRATEGY_ZONE_LABEL = { crash: '暴落', uptrend: '上昇', relative_strength: '相強' };
-const STRATEGY_FULL_LABEL = { crash: '暴落型', uptrend: '上昇型', relative_strength: '相対強さ型' };
-
-// 市場状態パネル。dev%・境界距離はscan.py側(export_public_data)で計算済みの
-// market_zoneオブジェクトをそのまま表示するだけ(境界判定ロジックをJS側で重複実装しない)。
+// 市場状態パネル。market_score・modes・境界距離はscan.py側(export_public_data)で
+// 計算済みの公開専用フィールドをそのまま表示するだけ(境界判定ロジックをJS側で
+// 重複実装しない)。dev_pct/active/strategies等の内部フィールドは参照しない。
 function renderMarketStatus(mz) {
-  if (!mz || mz.dev_pct == null) {
+  if (!mz || mz.market_score == null) {
     return '<div class="market-status-panel"><div class="ms-title">市場状態</div><div class="empty" style="padding:8px 0;">取得できませんでした</div></div>';
   }
-  const strategies = mz.strategies || {};
-  const rows = STRATEGY_ORDER.map(key => {
-    const on = !!strategies[key];
-    return `<div>${on ? '🟢' : '⚪'} ${STRATEGY_FULL_LABEL[key]} ${on ? 'ON' : 'OFF'}</div>`;
+  const modes = mz.modes || {};
+  const rows = MODE_ORDER.map(key => {
+    const on = !!modes[key];
+    return `<div>${on ? '🟢' : '⚪'} ${key} ${on ? 'ON' : 'OFF'}</div>`;
   }).join('');
-  const boundaryLine = (mz.next_boundary_pt != null && mz.next_boundary_val != null)
-    ? `次の境界 ${mz.next_boundary_val}%まで: ${mz.next_boundary_pt}pt`
+  const boundaryLine = (mz.next_boundary_pt != null)
+    ? `次の閾値まで: ${mz.next_boundary_pt}pt`
     : '';
   const nearNote = (mz.near_0 || mz.near_neg10) ? ' <span style="color:var(--entry-yellow);font-weight:700;">🟡 切替接近</span>' : '';
   return `
     <div class="market-status-panel">
       <div class="ms-title">市場状態</div>
-      <div class="ms-dev">200MA乖離: ${fmtPct(mz.dev_pct)}</div>
+      <div class="ms-dev">Market Score: ${mz.market_score >= 0 ? '+' : ''}${mz.market_score.toFixed(1)} pt</div>
       <div class="ms-strategies">${rows}</div>
       <div class="ms-boundary">${boundaryLine}${nearNote}</div>
     </div>`;
 }
 
-function groupByStrategy(items) {
-  return STRATEGY_ORDER
-    .concat([...new Set(items.map(x => x.strategy))].filter(k => !STRATEGY_ORDER.includes(k)))
-    .map(key => items.filter(x => x.strategy === key))
+function groupByMode(items) {
+  return MODE_ORDER
+    .concat([...new Set(items.map(x => x.mode))].filter(k => !MODE_ORDER.includes(k)))
+    .map(key => items.filter(x => x.mode === key))
     .filter(g => g.length > 0);
 }
 
-function renderZoneDots(active) {
-  return STRATEGY_ORDER.map(key =>
-    `<span class="zone-dot ${key}${active === key ? ' active' : ''}">${STRATEGY_ZONE_LABEL[key]}</span>`
+function renderZoneDots(activeMode) {
+  return MODE_ORDER.map(key =>
+    `<span class="zone-dot ${MODE_CSS[key]}${activeMode === key ? ' active' : ''}">${key.replace('MODE ', '')}</span>`
   ).join('');
 }
 
@@ -426,8 +430,8 @@ function renderEnteredCard(c) {
           <div><span class="label">エントリー日</span><span class="value">${c.entered_date || '-'}</span></div>
         </div>
         <div class="rows rows-2col">
-          <div><span class="label">建値</span><span class="value">${fmtYen(c.entry)}</span><span class="shares">推奨¥${Math.round(c.recommended_jpy ?? 100000).toLocaleString('ja-JP')}(${c.span_pct != null ? (c.span_pct*100).toFixed(1)+'%' : '-'})で${c.recommended_shares ?? sharesFor100k(c.entry)}株</span></div>
-          ${(c.strategy === 'uptrend' || c.strategy === 'relative_strength')
+          <div><span class="label">建値</span><span class="value">${fmtYen(c.entry)}</span><span class="shares">推奨¥${Math.round(c.recommended_jpy ?? 100000).toLocaleString('ja-JP')}で${c.recommended_shares ?? sharesFor100k(c.entry)}株</span></div>
+          ${(c.mode === 'MODE A' || c.mode === 'MODE B')
             ? `<div><span class="label">損切り(トレーリング中)</span><span class="value sl-red">${fmtYen(c.sl)}</span><span class="shares">あと${fmtYen(Math.abs(c.gap_sl_yen))}(${Math.abs(c.gap_sl_pct).toFixed(1)}%)</span></div>`
             : `<div><span class="label">利確まで / 損切りまで</span><span class="value-line"><span class="value tp-green">${fmtYen(Math.abs(c.gap_tp_yen))}(${Math.abs(c.gap_tp_pct).toFixed(1)}%)</span> / <span class="value sl-red">${fmtYen(Math.abs(c.gap_sl_yen))}(${Math.abs(c.gap_sl_pct).toFixed(1)}%)</span></span></div>`
           }
@@ -453,7 +457,7 @@ function renderWatchingCard(w) {
           <div><span class="label">指値まで</span><span class="value">${fmtYen(w.gap_yen)}</span></div>
         </div>
         <div class="rows rows-2col">
-          <div><span class="label">指値</span><span class="value entry-price">${fmtYen(w.entry)}</span><span class="shares">推奨¥${Math.round(w.recommended_jpy ?? 100000).toLocaleString('ja-JP')}(${w.span_pct != null ? (w.span_pct*100).toFixed(1)+'%' : '-'})で${w.recommended_shares ?? sharesFor100k(w.entry)}株</span></div>
+          <div><span class="label">指値</span><span class="value entry-price">${fmtYen(w.entry)}</span><span class="shares">推奨¥${Math.round(w.recommended_jpy ?? 100000).toLocaleString('ja-JP')}で${w.recommended_shares ?? sharesFor100k(w.entry)}株</span></div>
           <div><span class="label">損切り</span><span class="value sl-red">${fmtYen(w.sl)}</span></div>
         </div>
         ${badge === 'off' ? '<div class="empty" style="padding:4px 0 0;text-align:left;">⚠️ 現在この戦略のゾーン対象外です。指値注文は解除を推奨します。</div>' : ''}
@@ -474,7 +478,7 @@ async function load() {
 function render(data) {
   document.getElementById('updated').textContent = '最終更新: ' + data.updated;
 
-  document.getElementById('zoneDots').innerHTML = renderZoneDots((data.market_zone || {}).active);
+  document.getElementById('zoneDots').innerHTML = renderZoneDots((data.market_zone || {}).active_mode);
   document.getElementById('marketStatus').innerHTML = renderMarketStatus(data.market_zone);
 
   const retractedEl = document.getElementById('retracted');
@@ -489,31 +493,31 @@ function render(data) {
     ? '<div class="empty">新着はありません。</div>'
     : whatsNew.map(renderNewsCard).join('');
 
-  // 現在指値注文中(未保有。戦略ゾーンごとに折りたたみ、各グループ内は指値まで近い順)
-  const activeZone = (data.market_zone || {}).active;
+  // 現在指値注文中(未保有。MODEごとに折りたたみ、各グループ内は指値まで近い順)
+  const activeMode = (data.market_zone || {}).active_mode;
   const watching = data.watching || [];
   document.getElementById('watchingCount').textContent = watching.length ? `(${watching.length})` : '';
-  const watchingGroups = groupByStrategy(watching)
+  const watchingGroups = groupByMode(watching)
     .map(items => items.slice().sort((a, b) => a.gap_pct - b.gap_pct));
   document.getElementById('watchingList').innerHTML = watching.length === 0
     ? '<div class="empty">現在、指値待ちのセットアップはありません。</div>'
     : watchingGroups.map(items => {
-      const key = items[0].strategy;
+      const key = items[0].mode;
       const warnCount = items.filter(w => w.zone_ok === false).length;
       return `
       <details class="year-group">
         <summary>
-          <span><span class="arrow">▶</span> <span class="zone-dot ${key}${activeZone === key ? ' active' : ''}"></span> ${items[0].strategy_label}(${items.length}件)</span>
+          <span><span class="arrow">▶</span> <span class="zone-dot ${MODE_CSS[key] || ''}${activeMode === key ? ' active' : ''}"></span> ${key || ''}(${items.length}件)</span>
           <span class="year-total value">${warnCount ? `⚠️ ${warnCount}件ゾーン対象外` : ''}</span>
         </summary>
         <div class="year-body">${items.map(renderWatchingCard).join('')}</div>
       </details>`;
     }).join('');
 
-  // エントリー中(戦略ごとに折りたたみ。含み損益で色分け: 青=利益, 赤=損失)
+  // エントリー中(MODEごとに折りたたみ。含み損益で色分け: 青=利益, 赤=損失)
   const entered = data.entered || [];
   document.getElementById('enteredCount').textContent = entered.length ? `(${entered.length})` : '';
-  const enteredGroups = groupByStrategy(entered);
+  const enteredGroups = groupByMode(entered);
   document.getElementById('enteredList').innerHTML = entered.length === 0
     ? '<div class="empty">現在、保有中のポジションはありません。</div>'
     : enteredGroups.map(items => {
@@ -522,7 +526,7 @@ function render(data) {
       return `
       <details class="year-group">
         <summary>
-          <span><span class="arrow">▶</span> ${items[0].strategy_label}(${items.length}件)</span>
+          <span><span class="arrow">▶</span> ${items[0].mode || ''}(${items.length}件)</span>
           <span class="year-total value ${totalCls}">${fmtYenSigned(pnlYen)}</span>
         </summary>
         <div class="year-body">${items.map(renderEnteredCard).join('')}</div>
@@ -563,11 +567,11 @@ function render(data) {
           return `
       <div class="card ${cls}">
         <div class="card-title">
-          <span><span class="strategy-tag">${c.strategy_label || ''}</span>${c.name}(${c.code})</span>
+          <span><span class="strategy-tag ${MODE_CSS[c.mode] || ''}">${c.mode || ''}</span>${c.name}(${c.code})</span>
           <span class="badge ${cls}">${fmtYenSigned(pnlYen)}</span>
         </div>
         <div class="rows">
-          <div><span class="label">建値</span><span class="value">${fmtYen(c.entry)}</span><span class="shares">推奨¥${Math.round(c.recommended_jpy ?? 100000).toLocaleString('ja-JP')}(${c.span_pct != null ? (c.span_pct*100).toFixed(1)+'%' : '-'})で${shares}株</span></div>
+          <div><span class="label">建値</span><span class="value">${fmtYen(c.entry)}</span><span class="shares">推奨¥${Math.round(c.recommended_jpy ?? 100000).toLocaleString('ja-JP')}で${shares}株</span></div>
           <div><span class="label">決済値</span><span class="value ${cls}">${fmtYen(c.exit_price)}</span></div>
           <div><span class="label">決済日</span><span class="value">${c.exit_date || '-'}</span></div>
         </div>
