@@ -244,6 +244,7 @@
     <h1>📈 JP443 <span class="zone-dots" id="zoneDots"></span></h1>
     <div style="display:flex; gap:6px;">
       <button class="refresh-btn" onclick="load()">更新</button>
+      <button class="refresh-btn" onclick="logout()">ログアウト</button>
     </div>
   </header>
   <div class="updated" id="updated">読み込み中...</div>
@@ -308,6 +309,14 @@ if (localStorage.getItem(GATE_STORAGE_KEY) === '1') {
   document.getElementById('gateOverlay').style.display = 'none';
   document.getElementById('mainContent').style.display = 'block';
 }
+
+function logout() {
+  localStorage.removeItem(GATE_STORAGE_KEY);
+  document.getElementById('gatePassword').value = '';
+  document.getElementById('gateError').textContent = '';
+  document.getElementById('mainContent').style.display = 'none';
+  document.getElementById('gateOverlay').style.display = 'flex';
+}
 </script>
 <script>
 function fmtYen(n) { return '¥' + Math.round(n).toLocaleString('ja-JP'); }
@@ -318,7 +327,7 @@ function fmtPct(n) { return (n >= 0 ? '+' : '') + n.toFixed(1) + '%'; }
 // 計算済みの公開専用フィールド(mode/active_mode/modes/market_score)だけを使い、
 // strategy/strategy_label/dev_pct等の内部フィールドはJSから一切参照しない。
 // MODE_ORDER/MODE_CSSは表示順・CSSクラス名の変換のみに使う(ロジックを含まない)。
-const MODE_ORDER = ['MODE C', 'MODE A', 'MODE B'];
+const MODE_ORDER = ['MODE A', 'MODE B', 'MODE C'];
 const MODE_CSS = { 'MODE A': 'mode-a', 'MODE B': 'mode-b', 'MODE C': 'mode-c' };
 
 function renderNewsCard(e) {
