@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>JP443</title>
+<link rel="icon" href="icon-192.png">
 <meta name="theme-color" content="#2a78d6">
 <style>
   :root {
@@ -93,26 +94,27 @@
   }
   .market-status-panel .ms-title { font-size: 12px; color: var(--text-muted); font-weight: 700; }
   .market-status-panel .ms-dev { font-size: 20px; font-weight: 800; margin: 2px 0 8px; }
-  .market-status-panel.mode-a .ms-dev { color: var(--profit); }
-  .market-status-panel.mode-b .ms-dev { color: var(--entry-yellow); }
-  .market-status-panel.mode-c .ms-dev { color: var(--loss); }
   .market-status-panel .ms-strategies { display: flex; flex-direction: column; gap: 5px; margin-bottom: 6px; }
   .ms-mode-row {
     display: flex; align-items: center; gap: 6px; font-weight: 700;
-    color: var(--text-muted); opacity: 0.35;
+    color: var(--text-primary);
   }
-  .ms-mode-row::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--text-muted); flex-shrink: 0; }
+  .ms-mode-row::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--text-muted); flex-shrink: 0; opacity: 0.4; }
   .ms-mode-row.mode-c::before { background: var(--loss); }
   .ms-mode-row.mode-b::before { background: var(--entry-yellow); }
   .ms-mode-row.mode-a::before { background: var(--profit); }
-  .ms-mode-row.active { opacity: 1; }
-  .ms-mode-row.active.mode-c { color: var(--loss); }
-  .ms-mode-row.active.mode-b { color: var(--entry-yellow); }
-  .ms-mode-row.active.mode-a { color: var(--profit); }
   .ms-mode-row.active::before {
+    opacity: 1;
     box-shadow: 0 0 6px currentColor;
     animation: zonePulse 1.3s ease-in-out infinite;
   }
+  .ms-mode-row.active.mode-c::before { color: var(--loss); }
+  .ms-mode-row.active.mode-b::before { color: var(--entry-yellow); }
+  .ms-mode-row.active.mode-a::before { color: var(--profit); }
+  .ms-onoff { color: var(--text-muted); }
+  .ms-onoff.on.mode-c { color: var(--loss); text-shadow: 0 0 6px currentColor; }
+  .ms-onoff.on.mode-b { color: var(--entry-yellow); text-shadow: 0 0 6px currentColor; }
+  .ms-onoff.on.mode-a { color: var(--profit); text-shadow: 0 0 6px currentColor; }
   .market-status-panel .ms-boundary { font-size: 12px; color: var(--text-secondary); }
   .zone-badge {
     display: inline-flex; align-items: center; gap: 4px; font-size: 11px; font-weight: 700;
@@ -236,7 +238,7 @@
   </div>
   <div id="mainContent">
   <header>
-    <h1 class="kan-title">完 <span class="zone-dots" id="zoneDots"></span></h1>
+    <h1>📈 JP443 <span class="zone-dots" id="zoneDots"></span></h1>
     <div style="display:flex; gap:6px;">
       <button class="refresh-btn" onclick="load()">更新</button>
     </div>
@@ -413,7 +415,7 @@ function renderMarketStatus(mz) {
   const activeCss = MODE_CSS[mz.active_mode] || '';
   const rows = MODE_ORDER.map(key => {
     const on = !!modes[key];
-    return `<div class="ms-mode-row ${MODE_CSS[key] || ''}${on ? ' active' : ''}">${key} ${on ? 'ON' : 'OFF'}</div>`;
+    return `<div class="ms-mode-row ${MODE_CSS[key] || ''}${on ? ' active' : ''}">${key} <span class="ms-onoff${on ? ' on ' + (MODE_CSS[key] || '') : ''}">${on ? 'ON' : 'OFF'}</span></div>`;
   }).join('');
   const nearNote = mz.boundary_near ? '<span style="color:var(--entry-yellow);font-weight:700;">Market Mode切替接近</span>' : '';
   return `
