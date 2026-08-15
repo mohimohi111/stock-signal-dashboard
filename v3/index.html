@@ -315,7 +315,7 @@ function fmtPct(n) { return (n >= 0 ? '+' : '') + n.toFixed(1) + '%'; }
 // 計算済みの公開専用フィールド(mode/active_mode/modes/market_score)だけを使い、
 // strategy/strategy_label/dev_pct等の内部フィールドはJSから一切参照しない。
 // MODE_ORDER/MODE_CSSは表示順・CSSクラス名の変換のみに使う(ロジックを含まない)。
-const MODE_ORDER = ['MODE A', 'MODE B', 'MODE C'];
+const MODE_ORDER = ['MODE C', 'MODE A', 'MODE B'];
 const MODE_CSS = { 'MODE A': 'mode-a', 'MODE B': 'mode-b', 'MODE C': 'mode-c' };
 
 function renderNewsCard(e) {
