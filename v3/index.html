@@ -44,7 +44,41 @@
     padding: max(16px, env(safe-area-inset-top)) 16px 40px;
     max-width: 640px;
     margin: 0 auto;
+    position: relative;
   }
+  .sky-fx { position: fixed; inset: 0; z-index: 0; overflow: hidden; pointer-events: none; }
+  .sky-fx .glow {
+    position: absolute; width: 140%; height: 140%; left: -20%; top: -20%;
+    background:
+      radial-gradient(circle at 20% 22%, rgba(90,150,255,0.16), transparent 40%),
+      radial-gradient(circle at 80% 72%, rgba(255,255,255,0.10), transparent 45%);
+    filter: blur(10px);
+    animation: driftGlow 22s ease-in-out infinite alternate;
+  }
+  @keyframes driftGlow {
+    0%   { transform: translate(0,0) scale(1); }
+    100% { transform: translate(-4%, 3%) scale(1.06); }
+  }
+  .sky-fx .bolt {
+    position: absolute; inset: 0;
+    background: radial-gradient(circle at var(--bx,50%) var(--by,0%), rgba(255,255,255,var(--bi,0.85)), rgba(255,255,255,0) 55%);
+    opacity: 0;
+    mix-blend-mode: screen;
+  }
+  .sky-fx.flash .bolt { animation: boltFlash var(--bdur, 500ms) ease-out; }
+  @keyframes boltFlash {
+    0%   { opacity: 0; }
+    8%   { opacity: 1; }
+    16%  { opacity: 0.1; }
+    26%  { opacity: 0.8; }
+    40%  { opacity: 0; }
+    100% { opacity: 0; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .sky-fx .glow { animation: none; }
+    .sky-fx .bolt { display: none; }
+  }
+  #mainContent { position: relative; z-index: 1; }
   header { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 4px; }
   h1 { font-size: 19px; margin: 0; }
   .kan-title { font-size: 38px; font-weight: 800; margin: 0; line-height: 1; }
@@ -231,6 +265,7 @@
 </style>
 </head>
 <body>
+  <div class="sky-fx" id="skyFx"><div class="glow"></div><div class="bolt"></div></div>
   <div class="gate-overlay" id="gateOverlay">
     <div class="gate-box">
       <h1 class="kan-title">完</h1>
@@ -586,10 +621,11 @@ function render(data) {
     : enteredGroups.map(items => {
       const pnlYen = items.reduce((sum, c) => sum + (c.recommended_shares ?? sharesFor100k(c.entry)) * (c.last_price - c.entry), 0);
       const totalCls = pnlYen >= 0 ? 'profit' : 'loss';
+      const totalJpy = items.reduce((sum, c) => sum + (c.recommended_jpy ?? 100000), 0);
       return `
       <details class="year-group">
         <summary>
-          <span><span class="arrow">▶</span> ${items[0].mode || ''}(${items.length}件)</span>
+          <span><span class="arrow">▶</span> ${items[0].mode || ''} (${items.length}件、${fmtYen(totalJpy)})</span>
           <span class="year-total value ${totalCls}">${fmtYenSigned(pnlYen)}</span>
         </summary>
         <div class="year-body">${items.map(renderEnteredCard).join('')}</div>
@@ -702,6 +738,28 @@ load();
 
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('sw.js');
+}
+
+// --- 背景の稲光演出 ---
+if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  const skyFx = document.getElementById('skyFx');
+  const bolt = skyFx.querySelector('.bolt');
+  const doFlash = () => {
+    bolt.style.setProperty('--bx', (15 + Math.random() * 70).toFixed(0) + '%');
+    bolt.style.setProperty('--by', (Math.random() * 35).toFixed(0) + '%');
+    bolt.style.setProperty('--bi', (0.55 + Math.random() * 0.4).toFixed(2));
+    bolt.style.setProperty('--bdur', (350 + Math.random() * 400).toFixed(0) + 'ms');
+    skyFx.classList.remove('flash');
+    void skyFx.offsetWidth;
+    skyFx.classList.add('flash');
+  };
+  const scheduleFlash = () => {
+    doFlash();
+    if (Math.random() < 0.35) setTimeout(doFlash, 120 + Math.random() * 200);
+    const gap = Math.random() < 0.25 ? 1500 + Math.random() * 2500 : 4000 + Math.random() * 15000;
+    setTimeout(scheduleFlash, gap);
+  };
+  setTimeout(scheduleFlash, 1200 + Math.random() * 3000);
 }
 </script>
 </body>
