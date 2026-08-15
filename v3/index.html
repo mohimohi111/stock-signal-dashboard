@@ -4,7 +4,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>JP443</title>
-<link rel="icon" href="icon-192.png">
 <meta name="theme-color" content="#2a78d6">
 <style>
   :root {
@@ -47,6 +46,7 @@
   }
   header { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 4px; }
   h1 { font-size: 19px; margin: 0; }
+  .kan-title { font-size: 38px; font-weight: 800; margin: 0; line-height: 1; }
   .updated { font-size: 12px; color: var(--text-muted); margin-bottom: 8px; }
   .disclaimer { color: var(--loss); font-weight: 700; font-size: 13px; text-align: center; margin-bottom: 18px; }
   .refresh-btn {
@@ -93,7 +93,26 @@
   }
   .market-status-panel .ms-title { font-size: 12px; color: var(--text-muted); font-weight: 700; }
   .market-status-panel .ms-dev { font-size: 20px; font-weight: 800; margin: 2px 0 8px; }
-  .market-status-panel .ms-strategies { display: flex; flex-direction: column; gap: 3px; margin-bottom: 6px; }
+  .market-status-panel.mode-a .ms-dev { color: var(--profit); }
+  .market-status-panel.mode-b .ms-dev { color: var(--entry-yellow); }
+  .market-status-panel.mode-c .ms-dev { color: var(--loss); }
+  .market-status-panel .ms-strategies { display: flex; flex-direction: column; gap: 5px; margin-bottom: 6px; }
+  .ms-mode-row {
+    display: flex; align-items: center; gap: 6px; font-weight: 700;
+    color: var(--text-muted); opacity: 0.35;
+  }
+  .ms-mode-row::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--text-muted); flex-shrink: 0; }
+  .ms-mode-row.mode-c::before { background: var(--loss); }
+  .ms-mode-row.mode-b::before { background: var(--entry-yellow); }
+  .ms-mode-row.mode-a::before { background: var(--profit); }
+  .ms-mode-row.active { opacity: 1; }
+  .ms-mode-row.active.mode-c { color: var(--loss); }
+  .ms-mode-row.active.mode-b { color: var(--entry-yellow); }
+  .ms-mode-row.active.mode-a { color: var(--profit); }
+  .ms-mode-row.active::before {
+    box-shadow: 0 0 6px currentColor;
+    animation: zonePulse 1.3s ease-in-out infinite;
+  }
   .market-status-panel .ms-boundary { font-size: 12px; color: var(--text-secondary); }
   .zone-badge {
     display: inline-flex; align-items: center; gap: 4px; font-size: 11px; font-weight: 700;
@@ -171,6 +190,8 @@
   .year-group summary .year-total { font-variant-numeric: tabular-nums; }
   .year-group .year-body { padding-top: 10px; }
   section h2 .count { font-size: 11px; color: var(--text-muted); font-weight: 400; }
+  .mode-label { opacity: 0.42; }
+  .mode-label.active { opacity: 1; }
   section h2 .chart-subtitle { font-size: 11px; color: var(--text-muted); font-weight: 400; }
   .chart-wrap { position: relative; background: var(--surface-2); border: 1px solid var(--border); border-radius: 12px; padding: 12px; }
   svg { display: block; width: 100%; height: auto; overflow: visible; }
@@ -191,6 +212,7 @@
   }
   .gate-box { width: 100%; max-width: 320px; text-align: center; }
   .gate-box h1 { font-size: 18px; margin: 0 0 18px; }
+  .gate-box h1.kan-title { font-size: 52px; margin: 0 0 18px; }
   .gate-box input {
     width: 100%; box-sizing: border-box; background: var(--surface-2); color: var(--text-primary);
     border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; font-size: 15px;
@@ -206,7 +228,7 @@
 <body>
   <div class="gate-overlay" id="gateOverlay">
     <div class="gate-box">
-      <h1>📈 JP443</h1>
+      <h1 class="kan-title">完</h1>
       <input type="password" id="gatePassword" placeholder="パスワード" autocomplete="off">
       <button onclick="checkGatePassword()">開く</button>
       <div class="gate-error" id="gateError"></div>
@@ -214,7 +236,7 @@
   </div>
   <div id="mainContent">
   <header>
-    <h1>📈 JP443 <span class="zone-dots" id="zoneDots"></span></h1>
+    <h1 class="kan-title">完 <span class="zone-dots" id="zoneDots"></span></h1>
     <div style="display:flex; gap:6px;">
       <button class="refresh-btn" onclick="load()">更新</button>
     </div>
@@ -239,7 +261,7 @@
   </section>
 
   <section>
-    <h2>累計損益(バックテスト履歴)<span class="chart-subtitle">(戦略別の推奨投入額に応じて投資した場合、実運用約定ではありません)</span></h2>
+    <h2>累計損益(バックテスト履歴)</h2>
     <div class="chart-wrap">
       <svg id="equityChart" viewBox="0 0 560 180"></svg>
       <div class="tooltip" id="equityTooltip"></div>
@@ -248,7 +270,6 @@
 
   <section>
     <h2>決済済み(バックテスト履歴) <span class="count" id="closedCount"></span></h2>
-    <div class="chart-subtitle" style="margin:-4px 0 8px;">現行ロジックによるバックテスト実績です。実際の約定履歴ではありません。</div>
     <div id="closedList"></div>
   </section>
   </div>
@@ -389,13 +410,14 @@ function renderMarketStatus(mz) {
     return '<div class="market-status-panel"><div class="ms-title">市場状態</div><div class="empty" style="padding:8px 0;">取得できませんでした</div></div>';
   }
   const modes = mz.modes || {};
+  const activeCss = MODE_CSS[mz.active_mode] || '';
   const rows = MODE_ORDER.map(key => {
     const on = !!modes[key];
-    return `<div>${on ? '🟢' : '⚪'} ${key} ${on ? 'ON' : 'OFF'}</div>`;
+    return `<div class="ms-mode-row ${MODE_CSS[key] || ''}${on ? ' active' : ''}">${key} ${on ? 'ON' : 'OFF'}</div>`;
   }).join('');
-  const nearNote = mz.boundary_near ? '<span style="color:var(--entry-yellow);font-weight:700;">🟡 Market Mode切替接近</span>' : '';
+  const nearNote = mz.boundary_near ? '<span style="color:var(--entry-yellow);font-weight:700;">Market Mode切替接近</span>' : '';
   return `
-    <div class="market-status-panel">
+    <div class="market-status-panel ${activeCss}">
       <div class="ms-title">市場状態</div>
       <div class="ms-dev">Market Score: ${mz.market_score >= 0 ? '+' : ''}${mz.market_score.toFixed(1)} pt</div>
       <div class="ms-strategies">${rows}</div>
@@ -517,7 +539,7 @@ function render(data) {
       return `
       <details class="year-group">
         <summary>
-          <span><span class="arrow">▶</span> <span class="zone-dot ${MODE_CSS[key] || ''}${activeMode === key ? ' active' : ''}"></span> ${key || ''}(${items.length}件)</span>
+          <span class="mode-label${activeMode === key ? ' active' : ''}"><span class="arrow">▶</span> <span class="zone-dot ${MODE_CSS[key] || ''}${activeMode === key ? ' active' : ''}"></span> ${key || ''}(${items.length}件)</span>
           <span class="year-total value">${warnCount ? `⚠️ ${warnCount}件ゾーン対象外` : ''}</span>
         </summary>
         <div class="year-body">${items.map(renderWatchingCard).join('')}</div>
