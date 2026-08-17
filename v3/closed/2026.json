@@ -1,5 +1,18 @@
 [
   {
+    "code": "7912",
+    "name": "大日本印刷",
+    "win": true,
+    "mode": "MODE A",
+    "entry": 2892.5,
+    "exit_price": 3315.0,
+    "entered_date": "2026-03-23",
+    "exit_date": "2026-08-17",
+    "pnl_pct": 14.606741573033707,
+    "recommended_jpy": 90000.0,
+    "recommended_shares": 31
+  },
+  {
     "code": "2269",
     "name": "明治ホールディングス",
     "win": true,
