@@ -1,5 +1,18 @@
 [
   {
+    "code": "8830",
+    "name": "住友不動産",
+    "win": false,
+    "mode": "MODE A",
+    "entry": 4350.75,
+    "exit_price": 3343.5,
+    "entered_date": "2026-03-23",
+    "exit_date": "2026-08-18",
+    "pnl_pct": -23.151180830891228,
+    "recommended_jpy": 125000.0,
+    "recommended_shares": 28
+  },
+  {
     "code": "7912",
     "name": "大日本印刷",
     "win": true,
