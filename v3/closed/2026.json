@@ -1,5 +1,18 @@
 [
   {
+    "code": "9101",
+    "name": "日本郵船",
+    "win": true,
+    "mode": "MODE A",
+    "entry": 5611.0,
+    "exit_price": 6721.650000000001,
+    "entered_date": "2026-04-28",
+    "exit_date": "2026-08-19",
+    "pnl_pct": 19.794154339689904,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 13
+  },
+  {
     "code": "8830",
     "name": "住友不動産",
     "win": false,
