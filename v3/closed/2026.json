@@ -1,5 +1,31 @@
 [
   {
+    "code": "9107",
+    "name": "川崎汽船",
+    "win": true,
+    "mode": "MODE A",
+    "entry": 2549.25,
+    "exit_price": 3150.0,
+    "entered_date": "2026-04-20",
+    "exit_date": "2026-08-20",
+    "pnl_pct": 23.565754633715798,
+    "recommended_jpy": 90000.0,
+    "recommended_shares": 35
+  },
+  {
+    "code": "5444",
+    "name": "大和工業",
+    "win": false,
+    "mode": "MODE A",
+    "entry": 13202.5,
+    "exit_price": 12115.0,
+    "entered_date": "2026-08-03",
+    "exit_date": "2026-08-20",
+    "pnl_pct": -8.237076311304676,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 5
+  },
+  {
     "code": "9101",
     "name": "日本郵船",
     "win": true,
