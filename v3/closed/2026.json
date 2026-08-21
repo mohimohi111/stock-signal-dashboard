@@ -1,5 +1,18 @@
 [
   {
+    "code": "9065",
+    "name": "山九",
+    "win": false,
+    "mode": "MODE A",
+    "entry": 9096.0,
+    "exit_price": 8127.0,
+    "entered_date": "2026-03-12",
+    "exit_date": "2026-08-21",
+    "pnl_pct": -10.653034300791557,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 8
+  },
+  {
     "code": "9107",
     "name": "川崎汽船",
     "win": true,
