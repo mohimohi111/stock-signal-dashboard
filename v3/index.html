@@ -303,7 +303,7 @@
   </section>
 
   <section>
-    <h2>📊 累計損益(バックテスト履歴)</h2>
+    <h2>📊 累計損益</h2>
     <div class="chart-wrap">
       <svg id="equityChart" viewBox="0 0 560 180"></svg>
       <div class="tooltip" id="equityTooltip"></div>
@@ -311,7 +311,7 @@
   </section>
 
   <section>
-    <h2>✅ 決済済み(バックテスト履歴) <span class="count" id="closedCount"></span></h2>
+    <h2>✅ 決済済み <span class="count" id="closedCount"></span></h2>
     <div id="closedList"></div>
   </section>
   </div>
@@ -552,24 +552,41 @@ function renderWatchingCard(w) {
 
 async function load() {
   document.getElementById('updated').textContent = '更新中...';
+  let data;
   try {
     const res = await fetch('../data.json?t=' + Date.now());
-    const data = await res.json();
+    data = await res.json();
     render(data);
   } catch (e) {
     document.getElementById('updated').textContent = '取得に失敗しました。時間をおいて再試行してください。';
     return;
   }
-  // 決済済み(バックテスト履歴)は、live状態(public_data.json)とは完全に別の
-  // ファイル(closed_history_public.json)から読む。live側のwatching/entered/
-  // market_zone/whats_newには一切影響しない。
+  await loadUnifiedClosedHistory(data);
+}
+
+// 決済済み統合(2026-08-26)。過去バックテスト分(closed_history_public.json、
+// exit_date<=BT_END_CUTOVER、現行コードで2026-08-26に再生成)と実戦決済分
+// (data.jsonのclosed_summary、exit_date>BT_END_CUTOVERのみ、scan.py側で
+// 二重計上排除済み)を単一の「決済済み」「累計損益」として結合表示する。
+// バックテスト/実戦の別はユーザーに見せない。実戦決済は次回scan実行時に
+// 自動的にこの一覧・グラフへ加わっていく(ダッシュボード側の追加変更は不要)。
+async function loadUnifiedClosedHistory(data) {
+  let btItems = [];
   try {
-    const res2 = await fetch('../closed_history_public.json?t=' + Date.now());
-    const closedHistory = await res2.json();
-    renderClosedHistory(closedHistory);
+    const res = await fetch('../closed_history_public.json?t=' + Date.now());
+    btItems = await res.json();
   } catch (e) {
-    document.getElementById('closedList').innerHTML = '<div class="empty">バックテスト履歴の取得に失敗しました。</div>';
+    // バックテスト履歴が取得できなくても実戦分だけで表示は続行する
   }
+
+  const liveYears = (data.closed_summary || []).map(y => y.year);
+  const liveItemsArrays = await Promise.all(liveYears.map(y =>
+    fetch('closed/' + y + '.json?t=' + Date.now()).then(r => r.json()).catch(() => [])
+  ));
+  // liveはpnl_yenキー、backtestはpnlキー。ここでpnlに正規化して結合する。
+  const liveItems = liveItemsArrays.flat().map(c => ({ ...c, pnl: c.pnl_yen }));
+
+  renderClosedHistory(btItems.concat(liveItems));
 }
 
 function render(data) {
@@ -634,9 +651,9 @@ function render(data) {
 
 }
 
-// 決済済み(バックテスト履歴)。live状態(data.json)とは別ファイル
-// (closed_history_public.json)から読み、year単位でグループ化して表示する。
-// 全件を1度に取得済みのため、年グループの開閉はDOM構築のみ(再fetchなし)。
+// 決済済み(統合)。バックテスト履歴+実戦決済を結合したitems配列(loadUnifiedClosedHistory
+// で正規化済み、全件pnlキー)をyear単位でグループ化して表示する。全件を1度に
+// 受け取っているため、年グループの開閉はDOM構築のみ(再fetchなし)。
 function renderClosedHistory(items) {
   items = (items || []).slice().sort((a, b) => (a.exit_date || '').localeCompare(b.exit_date || ''));
   document.getElementById('closedCount').textContent = items.length ? `(${items.length})` : '';
