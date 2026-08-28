@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-27 23:25 JST",
+  "updated": "2026-08-29 06:37 JST",
   "watching": [
     {
       "code": "4043",
@@ -3872,93 +3872,46 @@
   ],
   "whats_new": [
     {
-      "date": "2026-08-27",
-      "type": "level_up_watching",
-      "mode": "MODE A",
-      "code": "7752",
-      "name": "リコー",
-      "prev_entry": 1561.0,
-      "entry": 1564.0,
-      "prev_tp": 1704.0,
-      "tp": 1710.0
+      "date": "2026-08-29",
+      "type": "retracted",
+      "code": "4812",
+      "name": "電通総研"
     },
     {
-      "date": "2026-08-27",
-      "type": "level_up_watching",
-      "mode": "MODE A",
-      "code": "8309",
-      "name": "三井住友トラスト・ホールディングス",
-      "prev_entry": 1542.25,
-      "entry": 1545.75,
-      "prev_tp": 1767.0,
-      "tp": 1774.0
+      "date": "2026-08-29",
+      "type": "retracted",
+      "code": "4812",
+      "name": "電通総研"
     },
     {
-      "date": "2026-08-27",
-      "type": "level_up_watching",
-      "mode": "MODE A",
-      "code": "4912",
-      "name": "ライオン",
-      "prev_entry": 1784.25,
-      "entry": 1796.25,
-      "prev_tp": 1922.0,
-      "tp": 1946.0
+      "date": "2026-08-29",
+      "type": "retracted",
+      "code": "4812",
+      "name": "電通総研"
     },
     {
-      "date": "2026-08-27",
-      "type": "level_up_watching",
-      "mode": "MODE A",
-      "code": "4527",
-      "name": "ロート製薬",
-      "prev_entry": 2774.25,
-      "entry": 2813.25,
-      "prev_tp": 3044.0,
-      "tp": 3122.0
+      "date": "2026-08-29",
+      "type": "retracted",
+      "code": "4812",
+      "name": "電通総研"
     },
     {
-      "date": "2026-08-27",
-      "type": "level_up_watching",
-      "mode": "MODE A",
-      "code": "6417",
-      "name": "SANKYO",
-      "prev_entry": 1824.0,
-      "entry": 1825.5,
-      "prev_tp": 1995.5,
-      "tp": 1998.5
+      "date": "2026-08-29",
+      "type": "retracted",
+      "code": "4812",
+      "name": "電通総研"
     },
     {
-      "date": "2026-08-27",
-      "type": "level_up_watching",
-      "mode": "MODE A",
-      "code": "7846",
-      "name": "パイロットコーポレーション",
-      "prev_entry": 1805.0,
-      "entry": 1805.25,
-      "prev_tp": 2057.0,
-      "tp": 2057.5
+      "date": "2026-08-29",
+      "type": "retracted",
+      "code": "4812",
+      "name": "電通総研"
     },
     {
-      "date": "2026-08-27",
-      "type": "level_up_watching",
-      "mode": "MODE A",
-      "code": "9506",
-      "name": "東北電力",
-      "prev_entry": 1193.5,
-      "entry": 1194.0,
-      "prev_tp": 1334.0,
-      "tp": 1335.0
-    },
-    {
-      "date": "2026-08-27",
-      "type": "new_watching",
-      "mode": "MODE A",
-      "code": "9509",
-      "name": "北海道電力",
-      "entry": 1034.25,
-      "tp": 1107.0,
-      "sl": 961.5,
-      "recommended_jpy": 75000.0,
-      "recommended_shares": 72
+      "date": "2026-08-29",
+      "type": "retracted",
+      "code": "4812",
+      "name": "電通総研"
     }
   ],
   "market_zone": {
