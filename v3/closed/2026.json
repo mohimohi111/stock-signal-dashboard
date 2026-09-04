@@ -1,5 +1,37 @@
 [
   {
+    "code": "6845",
+    "name": "アズビル",
+    "win": false,
+    "mode": "MODE A",
+    "entry": 1499.0,
+    "exit_price": 1451.0,
+    "entered_date": "2026-08-21",
+    "exit_date": "2026-09-04",
+    "pnl_pct": -3.2021347565043365,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 50,
+    "pnl_yen": -2400.0,
+    "span_pct": 0.21045392022008252,
+    "O": 1454.0
+  },
+  {
+    "code": "8098",
+    "name": "稲畑産業",
+    "win": true,
+    "mode": "MODE A",
+    "entry": 3880.0,
+    "exit_price": 4487.5,
+    "entered_date": "2026-03-23",
+    "exit_date": "2026-09-04",
+    "pnl_pct": 15.657216494845361,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 19,
+    "pnl_yen": 11542.5,
+    "span_pct": 0.22284122562674094,
+    "O": 3590.0
+  },
+  {
     "code": "4684",
     "name": "オービック",
     "win": true,
