@@ -1,5 +1,21 @@
 [
   {
+    "code": "2531",
+    "name": "宝ホールディングス",
+    "win": true,
+    "mode": "MODE A",
+    "entry": 2062.5,
+    "exit_price": 2419.875,
+    "entered_date": "2026-07-02",
+    "exit_date": "2026-09-07",
+    "pnl_pct": 17.327272727272728,
+    "recommended_jpy": 90000.0,
+    "recommended_shares": 43,
+    "pnl_yen": 15367.125,
+    "span_pct": 0.301255230125523,
+    "O": 1792.5
+  },
+  {
     "code": "6845",
     "name": "アズビル",
     "win": false,
