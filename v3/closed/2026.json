@@ -1,5 +1,21 @@
 [
   {
+    "code": "4516",
+    "name": "日本新薬",
+    "win": false,
+    "mode": "MODE A",
+    "entry": 4938.0,
+    "exit_price": 3347.0,
+    "entered_date": "2026-02-17",
+    "exit_date": "2026-09-10",
+    "pnl_pct": -32.21952207371405,
+    "recommended_jpy": 125000.0,
+    "recommended_shares": 25,
+    "pnl_yen": -39775.0,
+    "span_pct": 0.9507021213026591,
+    "O": 3347.0
+  },
+  {
     "code": "2531",
     "name": "宝ホールディングス",
     "win": true,
