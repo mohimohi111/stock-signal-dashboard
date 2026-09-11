@@ -1,5 +1,37 @@
 [
   {
+    "code": "5019",
+    "name": "出光興産",
+    "win": true,
+    "mode": "MODE A",
+    "entry": 1345.0,
+    "exit_price": 1645.0,
+    "entered_date": "2026-04-23",
+    "exit_date": "2026-09-11",
+    "pnl_pct": 22.304832713754646,
+    "recommended_jpy": 125000.0,
+    "recommended_shares": 92,
+    "pnl_yen": 27600.0,
+    "span_pct": 0.6398429833169774,
+    "O": 1019.0
+  },
+  {
+    "code": "3382",
+    "name": "セブン&アイ・ホールディングス",
+    "win": false,
+    "mode": "MODE A",
+    "entry": 2008.0,
+    "exit_price": 1966.0,
+    "entered_date": "2026-08-31",
+    "exit_date": "2026-09-11",
+    "pnl_pct": -2.091633466135458,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 37,
+    "pnl_yen": -1554.0,
+    "span_pct": 0.15226232841891205,
+    "O": 1967.0
+  },
+  {
     "code": "4516",
     "name": "日本新薬",
     "win": false,
