@@ -1,5 +1,21 @@
 [
   {
+    "code": "2685",
+    "name": "アンドエスティHD",
+    "win": false,
+    "mode": "MODE A",
+    "entry": 3382.5,
+    "exit_price": 3130.0,
+    "entered_date": "2026-07-21",
+    "exit_date": "2026-09-18",
+    "pnl_pct": -7.464892830746489,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 22,
+    "pnl_yen": -5555.0,
+    "span_pct": 0.16134185303514376,
+    "O": 3130.0
+  },
+  {
     "code": "5019",
     "name": "出光興産",
     "win": true,
