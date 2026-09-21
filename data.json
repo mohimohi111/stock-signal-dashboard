@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-18 20:54 JST",
+  "updated": "2026-09-21 22:26 JST",
   "watching": [
     {
       "code": "4043",
@@ -2976,6 +2976,22 @@
       "zone_badge_label": "⚪ 監視のみ・指値解除",
       "recommended_jpy": 125000.0,
       "recommended_shares": 37
+    },
+    {
+      "code": "2685",
+      "name": "アンドエスティHD",
+      "mode": "MODE B",
+      "entry": 3296.0,
+      "sl": 2957.0,
+      "tp": 3635.0,
+      "last_price": 3130.0,
+      "gap_yen": -166.0,
+      "gap_pct": -5.303514376996805,
+      "zone_ok": false,
+      "zone_badge": "off",
+      "zone_badge_label": "⚪ 監視のみ・指値解除",
+      "recommended_jpy": 75000.0,
+      "recommended_shares": 22
     }
   ],
   "entered": [
@@ -3131,6 +3147,23 @@
       "unrealized_pct": 0.6118648576749135,
       "recommended_jpy": 75000.0,
       "recommended_shares": 26
+    },
+    {
+      "code": "2685",
+      "name": "アンドエスティHD",
+      "mode": "MODE A",
+      "entry": 3296.0,
+      "sl": 2957.0,
+      "tp": 3635.0,
+      "last_price": 3130.0,
+      "entered_date": "2026-09-02",
+      "gap_tp_yen": 505.0,
+      "gap_tp_pct": 16.134185303514375,
+      "gap_sl_yen": 173.0,
+      "gap_sl_pct": 5.527156549520766,
+      "unrealized_pct": -5.036407766990291,
+      "recommended_jpy": 75000.0,
+      "recommended_shares": 22
     },
     {
       "code": "3360",
@@ -3860,82 +3893,17 @@
   ],
   "whats_new": [
     {
-      "date": "2026-09-18",
-      "type": "level_up_watching",
-      "mode": "MODE A",
-      "code": "5301",
-      "name": "東海カーボン",
-      "prev_entry": 1573.25,
-      "entry": 1596.75,
-      "prev_tp": 2100.0,
-      "tp": 2147.0
-    },
-    {
-      "date": "2026-09-18",
-      "type": "level_up_watching",
-      "mode": "MODE A",
-      "code": "8725",
-      "name": "MS&ADインシュアランスグループホールディングス",
-      "prev_entry": 4780.0,
-      "entry": 4785.5,
-      "prev_tp": 5315.0,
-      "tp": 5326.0
-    },
-    {
-      "date": "2026-09-18",
-      "type": "level_up_watching",
-      "mode": "MODE A",
-      "code": "7846",
-      "name": "パイロットコーポレーション",
-      "prev_entry": 1856.5,
-      "entry": 1861.0,
-      "prev_tp": 2160.0,
-      "tp": 2169.0
-    },
-    {
-      "date": "2026-09-18",
-      "type": "level_up_watching",
-      "mode": "MODE A",
-      "code": "7867",
-      "name": "タカラトミー",
-      "prev_entry": 3446.5,
-      "entry": 3447.0,
-      "prev_tp": 4051.0,
-      "tp": 4052.0
-    },
-    {
-      "date": "2026-09-18",
-      "type": "level_up_watching",
-      "mode": "MODE A",
-      "code": "3132",
-      "name": "マクニカホールディングス",
-      "prev_entry": 3215.5,
-      "entry": 3276.0,
-      "prev_tp": 3997.0,
-      "tp": 4118.0
-    },
-    {
-      "date": "2026-09-18",
+      "date": "2026-09-21",
       "type": "entered",
-      "mode": "MODE A",
-      "code": "4527",
-      "name": "ロート製薬",
-      "entry": 2813.25,
-      "tp": 3122.0,
-      "sl": 2504.5,
-      "entered_date": "2026-09-18",
-      "recommended_jpy": 75000.0,
-      "recommended_shares": 26
-    },
-    {
-      "date": "2026-09-18",
-      "type": "closed_loss",
       "mode": "MODE A",
       "code": "2685",
       "name": "アンドエスティHD",
-      "entry": 3382.5,
-      "exit_price": 3130.0,
-      "pnl_pct": -7.464892830746489
+      "entry": 3296.0,
+      "tp": 3635.0,
+      "sl": 2957.0,
+      "entered_date": "2026-09-02",
+      "recommended_jpy": 75000.0,
+      "recommended_shares": 22
     }
   ],
   "market_zone": {
