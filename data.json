@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-21 22:26 JST",
+  "updated": "2026-09-22 21:08 JST",
   "watching": [
     {
       "code": "4043",
@@ -3891,21 +3891,7 @@
       "cum_pnl_yen": 51954.82500000001
     }
   ],
-  "whats_new": [
-    {
-      "date": "2026-09-21",
-      "type": "entered",
-      "mode": "MODE A",
-      "code": "2685",
-      "name": "アンドエスティHD",
-      "entry": 3296.0,
-      "tp": 3635.0,
-      "sl": 2957.0,
-      "entered_date": "2026-09-02",
-      "recommended_jpy": 75000.0,
-      "recommended_shares": 22
-    }
-  ],
+  "whats_new": [],
   "market_zone": {
     "boundary_near": false,
     "market_score": 8.87,
