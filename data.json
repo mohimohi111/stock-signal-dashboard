@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-09 22:52 JST",
+  "updated": "2026-10-13 01:13 JST",
   "watching": [
     {
       "code": "4043",
@@ -2056,9 +2056,9 @@
       "entry": 1894.0,
       "sl": 1554.5,
       "tp": 2233.5,
-      "last_price": 1923.0,
-      "gap_yen": 29.0,
-      "gap_pct": 1.5080603224128966,
+      "last_price": 1987.5,
+      "gap_yen": 93.5,
+      "gap_pct": 4.70440251572327,
       "zone_ok": false,
       "zone_badge": "off",
       "zone_badge_label": "⚪ 監視のみ・指値解除",
@@ -3592,106 +3592,7 @@
       "cum_pnl_yen": -84719.67499999999
     }
   ],
-  "whats_new": [
-    {
-      "date": "2026-10-09",
-      "type": "level_up_entered",
-      "mode": "MODE A",
-      "code": "2914",
-      "name": "日本たばこ産業",
-      "prev_sl": 6040.0,
-      "sl": 7248.0,
-      "tp": 7297.0
-    },
-    {
-      "date": "2026-10-09",
-      "type": "level_up_watching",
-      "mode": "MODE A",
-      "code": "7832",
-      "name": "バンダイナムコホールディングス",
-      "prev_entry": 4859.0,
-      "entry": 4885.0,
-      "prev_tp": 5850.0,
-      "tp": 5902.0
-    },
-    {
-      "date": "2026-10-09",
-      "type": "level_up_entered",
-      "mode": "MODE A",
-      "code": "6532",
-      "name": "ベイカレント",
-      "prev_sl": 6853.0,
-      "sl": 8566.25,
-      "tp": 8769.0
-    },
-    {
-      "date": "2026-10-09",
-      "type": "level_up_watching",
-      "mode": "MODE A",
-      "code": "7846",
-      "name": "パイロットコーポレーション",
-      "prev_entry": 1861.5,
-      "entry": 1864.0,
-      "prev_tp": 2170.0,
-      "tp": 2175.0
-    },
-    {
-      "date": "2026-10-09",
-      "type": "level_up_watching",
-      "mode": "MODE A",
-      "code": "7867",
-      "name": "タカラトミー",
-      "prev_entry": 3554.5,
-      "entry": 3595.0,
-      "prev_tp": 4267.0,
-      "tp": 4348.0
-    },
-    {
-      "date": "2026-10-09",
-      "type": "level_up_entered",
-      "mode": "MODE A",
-      "code": "4194",
-      "name": "ビジョナル",
-      "prev_sl": 7719.0,
-      "sl": 9648.75,
-      "tp": 9839.0
-    },
-    {
-      "date": "2026-10-09",
-      "type": "level_up_watching",
-      "mode": "MODE A",
-      "code": "4768",
-      "name": "大塚商会",
-      "prev_entry": 3505.5,
-      "entry": 3589.5,
-      "prev_tp": 3855.0,
-      "tp": 4023.0
-    },
-    {
-      "date": "2026-10-09",
-      "type": "level_up_watching",
-      "mode": "MODE A",
-      "code": "3132",
-      "name": "マクニカホールディングス",
-      "prev_entry": 3519.0,
-      "entry": 3579.5,
-      "prev_tp": 4604.0,
-      "tp": 4725.0
-    },
-    {
-      "date": "2026-10-09",
-      "type": "entered",
-      "mode": "MODE A",
-      "code": "6178",
-      "name": "日本郵政",
-      "entry": 2252.75,
-      "tp": 2603.0,
-      "sl": 1902.5,
-      "entered_date": "2026-10-09",
-      "recommended_jpy": 90000.0,
-      "recommended_shares": 39
-    }
-  ],
+  "whats_new": [],
   "market_zone": {
     "boundary_near": false,
     "market_score": 13.55,
