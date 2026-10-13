@@ -1,5 +1,37 @@
 [
   {
+    "code": "2914",
+    "name": "日本たばこ産業",
+    "win": true,
+    "mode": "MODE A",
+    "entry": 6629.0,
+    "exit_price": 7235.0,
+    "entered_date": "2026-09-09",
+    "exit_date": "2026-10-13",
+    "pnl_pct": 9.14165032433248,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 11,
+    "pnl_yen": 6666.0,
+    "span_pct": 0.19503311258278147,
+    "O": 6040.0
+  },
+  {
+    "code": "6532",
+    "name": "ベイカレント",
+    "win": true,
+    "mode": "MODE A",
+    "entry": 7530.0,
+    "exit_price": 8566.25,
+    "entered_date": "2026-09-29",
+    "exit_date": "2026-10-13",
+    "pnl_pct": 13.761620185922974,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 9,
+    "pnl_yen": 9326.25,
+    "span_pct": 0.2067707573325551,
+    "O": 6853.0
+  },
+  {
     "code": "8088",
     "name": "岩谷産業",
     "win": false,
