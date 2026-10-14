@@ -1,5 +1,37 @@
 [
   {
+    "code": "4194",
+    "name": "ビジョナル",
+    "win": true,
+    "mode": "MODE A",
+    "entry": 8578.0,
+    "exit_price": 9648.75,
+    "entered_date": "2026-08-03",
+    "exit_date": "2026-10-14",
+    "pnl_pct": 12.482513406388437,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 8,
+    "pnl_yen": 8566.0,
+    "span_pct": 0.22256769011529992,
+    "O": 7719.0
+  },
+  {
+    "code": "8060",
+    "name": "キヤノンマーケティングジャパン",
+    "win": true,
+    "mode": "MODE A",
+    "entry": 3432.75,
+    "exit_price": 3938.0,
+    "entered_date": "2026-06-10",
+    "exit_date": "2026-10-14",
+    "pnl_pct": 14.718520136916466,
+    "recommended_jpy": 90000.0,
+    "recommended_shares": 26,
+    "pnl_yen": 13136.5,
+    "span_pct": 0.34758078303983586,
+    "O": 2924.5
+  },
+  {
     "code": "2914",
     "name": "日本たばこ産業",
     "win": true,
