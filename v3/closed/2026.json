@@ -1,5 +1,21 @@
 [
   {
+    "code": "3360",
+    "name": "シップヘルスケアホールディングス",
+    "win": true,
+    "mode": "MODE A",
+    "entry": 2375.5,
+    "exit_price": 2568.0,
+    "entered_date": "2026-09-01",
+    "exit_date": "2026-10-20",
+    "pnl_pct": 8.103557145864029,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 31,
+    "pnl_yen": 5967.5,
+    "span_pct": 0.1846435100548446,
+    "O": 2188.0
+  },
+  {
     "code": "4502",
     "name": "武田薬品工業",
     "win": true,
