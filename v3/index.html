@@ -216,6 +216,11 @@
   }
   section { margin-bottom: 26px; }
   section h2 { font-size: 13px; color: var(--text-secondary); margin: 0 0 8px; display: flex; align-items: center; gap: 6px; }
+  .live-tiles { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 10px; }
+  .live-tile { background: var(--surface-2); border: 1px solid var(--border); border-radius: 12px; padding: 10px 12px; }
+  .live-tile .label { font-size: 11px; color: var(--text-muted); }
+  .live-tile .value { font-size: 17px; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .live-tile .sub { font-size: 11px; color: var(--text-muted); }
   .year-group { margin-bottom: 10px; }
   .year-group summary {
     cursor: pointer; list-style: none; user-select: none;
@@ -286,6 +291,31 @@
   <div class="updated" id="updated">読み込み中...</div>
   <div id="retracted"></div>
   <div id="marketStatus"></div>
+
+  <section id="liveSection">
+    <h2>🏦 本番口座(実際の保有・注文)</h2>
+    <div id="liveBody">
+      <div class="live-tiles">
+        <div class="live-tile"><div class="label">口座評価額</div><div class="value">¥0</div></div>
+        <div class="live-tile"><div class="label">現金</div><div class="value">¥0</div><div class="sub">待機指値の拘束 ¥0</div></div>
+        <div class="live-tile"><div class="label">含み損益</div><div class="value">¥0</div><div class="sub">+0.0%</div></div>
+        <div class="live-tile"><div class="label">保有 / 待機指値</div><div class="value">0銘柄 / 0件</div></div>
+        <div class="live-tile" style="grid-column:1 / -1"><div class="label">確定損益(記録分 0件)</div><div class="value">¥0</div></div>
+      </div>
+      <details class="year-group">
+        <summary><span><span class="arrow">▶</span> 💼 保有中 (0)</span></summary>
+        <div class="year-body"><div class="empty">保有はありません。</div></div>
+      </details>
+      <details class="year-group">
+        <summary><span><span class="arrow">▶</span> 📍 発注中の指値 (0)</span></summary>
+        <div class="year-body"><div class="empty">発注中の指値はありません。</div></div>
+      </details>
+      <details class="year-group">
+        <summary><span><span class="arrow">▶</span> 🧾 約定履歴 (0)</span></summary>
+        <div class="year-body"><div class="empty">記録された約定はまだありません。</div></div>
+      </details>
+    </div>
+  </section>
 
   <section>
     <h2>🆕 新着 <span class="count" id="whatsNewCount"></span></h2>
