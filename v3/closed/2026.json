@@ -1,5 +1,37 @@
 [
   {
+    "code": "2801",
+    "name": "キッコーマン",
+    "win": true,
+    "mode": "MODE A",
+    "entry": 1665.75,
+    "exit_price": 1842.0,
+    "entered_date": "2026-09-15",
+    "exit_date": "2026-10-26",
+    "pnl_pct": 10.580819450697884,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 45,
+    "pnl_yen": 7931.25,
+    "span_pct": 0.27561475409836067,
+    "O": 1464.0
+  },
+  {
+    "code": "3092",
+    "name": "ZOZO",
+    "win": true,
+    "mode": "MODE A",
+    "entry": 1147.75,
+    "exit_price": 1260.5,
+    "entered_date": "2026-07-31",
+    "exit_date": "2026-10-26",
+    "pnl_pct": 9.823567850141583,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 65,
+    "pnl_yen": 7328.75,
+    "span_pct": 0.17892738490745136,
+    "O": 1053.5
+  },
+  {
     "code": "6966",
     "name": "三井ハイテック",
     "win": false,
