@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30 22:41 JST",
+  "updated": "2026-11-03 01:39 JST",
   "watching": [
     {
       "code": "4043",
@@ -1832,9 +1832,9 @@
       "entry": 1894.0,
       "sl": 1554.5,
       "tp": 2233.5,
-      "last_price": 2038.5,
-      "gap_yen": 144.5,
-      "gap_pct": 7.088545499141525,
+      "last_price": 1972.0,
+      "gap_yen": 78.0,
+      "gap_pct": 3.9553752535496955,
       "zone_ok": false,
       "zone_badge": "near",
       "zone_badge_label": "🟡 市場ゾーン切替接近",
@@ -3779,41 +3779,7 @@
       "cum_pnl_yen": -28942.124999999985
     }
   ],
-  "whats_new": [
-    {
-      "date": "2026-10-30",
-      "type": "level_up_watching",
-      "mode": "MODE A",
-      "code": "8725",
-      "name": "MS&ADインシュアランスグループホールディングス",
-      "prev_entry": 4793.5,
-      "entry": 4801.5,
-      "prev_tp": 5342.0,
-      "tp": 5358.0
-    },
-    {
-      "date": "2026-10-30",
-      "type": "level_up_watching",
-      "mode": "MODE A",
-      "code": "7867",
-      "name": "タカラトミー",
-      "prev_entry": 3818.0,
-      "entry": 3888.5,
-      "prev_tp": 4794.0,
-      "tp": 4935.0
-    },
-    {
-      "date": "2026-10-30",
-      "type": "level_up_watching",
-      "mode": "MODE A",
-      "code": "9069",
-      "name": "センコーグループホールディングス",
-      "prev_entry": 2192.75,
-      "entry": 2195.75,
-      "prev_tp": 2422.0,
-      "tp": 2428.0
-    }
-  ],
+  "whats_new": [],
   "market_zone": {
     "boundary_near": true,
     "market_score": 2.44,
