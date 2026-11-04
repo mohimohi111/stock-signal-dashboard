@@ -1,5 +1,21 @@
 [
   {
+    "code": "4042",
+    "name": "東ソー",
+    "win": false,
+    "mode": "MODE A",
+    "entry": 2787.5,
+    "exit_price": 2489.0,
+    "entered_date": "2026-07-07",
+    "exit_date": "2026-11-04",
+    "pnl_pct": -10.708520179372197,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 26,
+    "pnl_yen": -7761.0,
+    "span_pct": 0.2398553635998393,
+    "O": 2489.0
+  },
+  {
     "code": "2801",
     "name": "キッコーマン",
     "win": true,
