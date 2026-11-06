@@ -547,7 +547,7 @@ function renderEnteredCard(c) {
         </div>
         <div class="rows rows-2col">
           <div><span class="label">建値</span><span class="value">${fmtYen(c.entry)}</span><span class="shares">推奨¥${Math.round(c.recommended_jpy ?? 100000).toLocaleString('ja-JP')}で${c.recommended_shares ?? sharesFor100k(c.entry)}株</span></div>
-          ${(c.mode === 'MODE A' || c.mode === 'MODE B')
+          ${(c.mode === 'MODE A' || c.mode === 'MODE B' || c.mode === 'MODE C')
             ? `<div><span class="label">損切り(トレーリング中)</span><span class="value sl-red">${fmtYen(c.sl)}</span><span class="shares">あと${fmtYen(Math.abs(c.gap_sl_yen))}(${Math.abs(c.gap_sl_pct).toFixed(1)}%)</span></div>`
             : `<div><span class="label">利確まで / 損切りまで</span><span class="value-line"><span class="value tp-green">${fmtYen(Math.abs(c.gap_tp_yen))}(${Math.abs(c.gap_tp_pct).toFixed(1)}%)</span> / <span class="value sl-red">${fmtYen(Math.abs(c.gap_sl_yen))}(${Math.abs(c.gap_sl_pct).toFixed(1)}%)</span></span></div>`
           }
