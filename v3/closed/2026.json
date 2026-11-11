@@ -1,5 +1,21 @@
 [
   {
+    "code": "4612",
+    "name": "日本ペイントホールディングス",
+    "win": true,
+    "mode": "MODE A",
+    "entry": 1151.0,
+    "exit_price": 1412.5,
+    "entered_date": "2026-09-02",
+    "exit_date": "2026-11-11",
+    "pnl_pct": 22.71937445699392,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 65,
+    "pnl_yen": 16997.5,
+    "span_pct": 0.25796959293771454,
+    "O": 1019.5
+  },
+  {
     "code": "4324",
     "name": "電通グループ",
     "win": true,
@@ -62,6 +78,22 @@
     "pnl_yen": 10830.0,
     "span_pct": 0.3609350237717908,
     "O": 2524.0
+  },
+  {
+    "code": "4912",
+    "name": "ライオン",
+    "win": true,
+    "mode": "MODE A",
+    "entry": 1729.5,
+    "exit_price": 2132.0,
+    "entered_date": "2026-10-02",
+    "exit_date": "2026-11-11",
+    "pnl_pct": 23.27262214512865,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 43,
+    "pnl_yen": 17307.5,
+    "span_pct": 0.18190100212572122,
+    "O": 1646.5
   },
   {
     "code": "4816",
