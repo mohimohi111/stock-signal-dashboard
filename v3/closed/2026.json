@@ -1,5 +1,21 @@
 [
   {
+    "code": "8020",
+    "name": "兼松",
+    "win": true,
+    "mode": "MODE A",
+    "entry": 2021.75,
+    "exit_price": 2438.0,
+    "entered_date": "2026-06-02",
+    "exit_date": "2026-11-19",
+    "pnl_pct": 20.588598986026955,
+    "recommended_jpy": 100000.0,
+    "recommended_shares": 49,
+    "pnl_yen": 20396.25,
+    "span_pct": 0.5664868295779117,
+    "O": 1575.5
+  },
+  {
     "code": "4527",
     "name": "ロート製薬",
     "win": false,
