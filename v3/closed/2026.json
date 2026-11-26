@@ -1,5 +1,21 @@
 [
   {
+    "code": "6432",
+    "name": "竹内製作所",
+    "win": false,
+    "mode": "MODE B",
+    "entry": 6960.0,
+    "exit_price": 6660.0,
+    "entered_date": "2026-11-24",
+    "exit_date": "2026-11-27",
+    "pnl_pct": -4.310344827586207,
+    "recommended_jpy": 75000.0,
+    "recommended_shares": 10,
+    "pnl_yen": -3000.0,
+    "span_pct": 0.23353293413173654,
+    "O": 6680.0
+  },
+  {
     "code": "5019",
     "name": "出光興産",
     "win": false,
